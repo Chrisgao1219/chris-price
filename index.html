@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>竞品价格分析系统</title>
+    <script src="data.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: #f5f7fa;
+            color: #1a1a2e;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 24px 32px;
+            border-bottom: 3px solid #e94560;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .header p {
+            font-size: 13px;
+            color: #a0aec0;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        /* 筛选器 */
+        .filters {
+            background: white;
+            border-radius: 8px;
+            padding: 20px 24px;
+            margin-bottom: 20px;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: flex-end;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .filter-group label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #4a5568;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .filter-group select {
+            padding: 8px 12px;
+            border: 1px solid #cbd5e0;
+            border-radius: 6px;
+            font-size: 14px;
+            background: white;
+            cursor: pointer;
+            min-width: 160px;
+            transition: border-color 0.2s;
+        }
+
+        .filter-group select:hover {
+            border-color: #e94560;
+        }
+
+        .filter-group select:focus {
+            outline: none;
+            border-color: #e94560;
+            box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.1);
+        }
+
+        /* KPI 指标 */
+        .kpi-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .kpi-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #e94560;
+        }
+
+        .kpi-card .label {
+            font-size: 12px;
+            color: #718096;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .kpi-card .value {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+
+        .kpi-card .sub {
+            font-size: 12px;
+            color: #a0aec0;
+            margin-top: 4px;
+        }
+
+        /* 矩阵价格对比表 - 浅色主题 */
+        .matrix-container {
+            background: white;
+            border-radius: 8px;
+            padding: 0;
+            margin-bottom: 20px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        .matrix-header {
+            background: #f7fafc;
+            padding: 16px 24px;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .matrix-header h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a2e;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .matrix-header h3::before {
+            content: '';
+            width: 4px;
+            height: 16px;
+            background: #e94560;
+            border-radius: 2px;
+        }
+
+        .matrix-search {
+            position: relative;
+            flex: 1;
+            max-width: 280px;
+        }
+
+        .matrix-search input {
+            width: 100%;
+            padding: 8px 12px 8px 34px;
+            background: white;
+            border: 1px solid #cbd5e0;
+            border-radius: 6px;
+            color: #1a1a2e;
+            font-size: 13px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .matrix-search input:focus {
+            border-color: #e94560;
+            box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.1);
+        }
+
+        .matrix-search input::placeholder {
+            color: #a0aec0;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+            color: #a0aec0;
+        }
+
+        .matrix-tags {
+            display: flex;
+            gap: 6px;
+        }
+
+        .matrix-tag {
+            padding: 6px 12px;
+            background: white;
+            border: 1px solid #cbd5e0;
+            border-radius: 16px;
+            color: #4a5568;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .matrix-tag:hover {
+            border-color: #e94560;
+            color: #e94560;
+        }
+
+        .matrix-tag.active {
+            background: #e94560;
+            border-color: #e94560;
+            color: white;
+            font-weight: 600;
+        }
+
+        .matrix-table-wrapper {
+            overflow-x: auto;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+
+        .price-matrix {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            min-width: 800px;
+        }
+
+        .price-matrix thead th {
+            background: #f7fafc;
+            padding: 12px 10px;
+            text-align: center;
+            font-weight: 600;
+            color: #4a5568;
+            border-bottom: 2px solid #e2e8f0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            white-space: nowrap;
+            font-size: 12px;
+        }
+
+        .price-matrix thead th.model-col {
+            text-align: left;
+            padding-left: 20px;
+            min-width: 160px;
+            position: sticky;
+            left: 0;
+            z-index: 20;
+            background: #f7fafc;
+        }
+
+        .price-matrix thead th.own-site {
+            color: #38a169;
+        }
+
+        .own-badge {
+            display: inline-block;
+            padding: 2px 6px;
+            background: #38a169;
+            color: white;
+            border-radius: 3px;
+            font-size: 10px;
+            font-weight: 700;
+            margin-left: 4px;
+        }
+
+        .price-matrix tbody td {
+            padding: 0;
+            border-bottom: 1px solid #edf2f7;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .price-matrix tbody tr:hover {
+            background: #f7fafc;
+        }
+
+        .price-matrix tbody td.model-cell {
+            text-align: left;
+            padding: 12px 20px;
+            font-weight: 600;
+            color: #1a1a2e;
+            position: sticky;
+            left: 0;
+            z-index: 5;
+            background: white;
+            white-space: nowrap;
+            font-size: 13px;
+        }
+
+        .price-matrix tbody tr:hover td.model-cell {
+            background: #f7fafc;
+        }
+
+        .price-cell {
+            padding: 10px 6px;
+            min-height: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+            position: relative;
+        }
+
+        /* 方案A：以己方为基准 */
+        .price-cell.cheaper {
+            background: #f0fff4;
+        }
+
+        .price-cell.dearer {
+            background: #fff5f5;
+        }
+
+        .price-cell.same {
+            background: transparent;
+        }
+
+        .price-current.cheaper {
+            color: #38a169;
+        }
+
+        .price-current.dearer {
+            color: #e53e3e;
+        }
+
+        .price-current.same {
+            color: #4a5568;
+        }
+
+        .diff-badge {
+            font-size: 10px;
+            font-weight: 600;
+            margin-top: 2px;
+        }
+
+        .diff-badge.cheaper {
+            color: #38a169;
+        }
+
+        .diff-badge.dearer {
+            color: #e53e3e;
+        }
+
+        .price-current {
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .price-current.own {
+            color: #38a169;
+        }
+
+        .price-current.competitor {
+            color: #e53e3e;
+        }
+
+        .price-current.lowest-price {
+            color: #d69e2e;
+        }
+
+        .price-current.highest-price {
+            color: #e53e3e;
+        }
+
+        .no-data {
+            color: #cbd5e0;
+            font-size: 14px;
+        }
+
+        .model-link {
+            color: #1a1a2e;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .model-link:hover {
+            color: #e94560;
+        }
+
+        .matrix-empty {
+            text-align: center;
+            padding: 40px 20px;
+            color: #a0aec0;
+        }
+
+        /* 洞察卡片 */
+        .insight-card {
+            background: linear-gradient(135deg, #fef5f5 0%, #fff5f7 100%);
+            border-radius: 8px;
+            padding: 20px;
+            border: 1px solid #fed7d7;
+            margin-bottom: 20px;
+        }
+
+        .insight-card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            color: #c53030;
+            margin-bottom: 12px;
+        }
+
+        .insight-list {
+            list-style: none;
+        }
+
+        .insight-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #fed7d7;
+            font-size: 13px;
+            color: #742a2a;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .insight-list li:last-child {
+            border-bottom: none;
+        }
+
+        .insight-list li::before {
+            content: '→';
+            color: #e94560;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        /* 滚动条 */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 4px;
+        }
+
+        .matrix-table-wrapper::-webkit-scrollbar-track {
+            background: #f7fafc;
+        }
+
+        .matrix-table-wrapper::-webkit-scrollbar-thumb {
+            background: #cbd5e0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 16px;
+            }
+            .filters {
+                flex-direction: column;
+            }
+            .filter-group select {
+                width: 100%;
+            }
+            .kpi-card .value {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="padding-top: 16px;">
+        <!-- 筛选器 -->
+        <div class="filters">
+            <div class="filter-group">
+                <label>品牌</label>
+                <select id="brandSelect"></select>
+            </div>
+            <div class="filter-group">
+                <label>市场</label>
+                <select id="marketSelect"></select>
+            </div>
+            <div class="filter-group">
+                <label>货币</label>
+                <select id="currencySelect"></select>
+            </div>
+            <div class="filter-group">
+                <label>参考网站（己方）</label>
+                <select id="ownSiteSelect"></select>
+            </div>
+        </div>
+
+        <!-- KPI 指标 -->
+        <div class="kpi-row" id="kpiRow"></div>
+
+        <!-- 矩阵价格对比表 -->
+        <div class="matrix-container">
+            <div class="matrix-header">
+                <h3>价格矩阵对比</h3>
+                <div class="matrix-search">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" id="matrixSearch" placeholder="搜索型号名称...">
+                </div>
+                <div class="matrix-tags">
+                    <span class="matrix-tag active" data-filter="all">全部型号</span>
+                    <span class="matrix-tag" data-filter="own">我方在售</span>
+                    <span class="matrix-tag" data-filter="lowest">我方最低价</span>
+                </div>
+            </div>
+            <div class="matrix-table-wrapper">
+                <table class="price-matrix" id="priceMatrix">
+                    <thead>
+                        <tr id="matrixHeader"></tr>
+                    </thead>
+                    <tbody id="matrixBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 洞察卡片 -->
+        <div class="insight-card" id="insightCard">
+            <h3>价格洞察</h3>
+            <ul class="insight-list" id="insightList"></ul>
+        </div>
+    </div>
+
+    <script>
+        // 全局状态
+        let state = {
+            brand: '',
+            market: '',
+            currency: '',
+            ownSite: '',
+            matrixSearch: '',
+            matrixFilter: 'all',
+            filteredData: [],
+            sites: [],
+            models: []
+        };
+
+        // 初始化
+        function init() {
+            populateFilters();
+            setupEventListeners();
+            applyFilters();
+        }
+
+        // 市场名称映射
+        const marketNameMap = {
+            '欧洲': '欧盟',
+            '英国': '英国',
+            '美国': '美国',
+            '波兰': '波兰',
+            '全球': '全球'
+        };
+
+        // 我方网站默认映射：品牌_市场 -> 网站
+        const ownSiteMap = {
+            'Kukirin_欧洲': 'kugooescooters',
+            'Kukirin_波兰': 'kukirinscooter-pl',
+            'Kukirin_美国': 'kukirin-us',
+            'Kukirin_英国': 'kukirinscooter-uk',
+            'Joyor_全球': 'joyor-escooter',
+            'Meepo_全球': 'Meepoboard-EU',
+            'GPD_全球': 'GPD-minipc'
+        };
+
+        // 填充筛选器
+        function populateFilters() {
+            const brands = [...new Set(PRICE_DATA.map(r => r.brand))].sort();
+            const brandSelect = document.getElementById('brandSelect');
+            brands.forEach(b => {
+                const opt = document.createElement('option');
+                opt.value = b;
+                opt.textContent = b;
+                brandSelect.appendChild(opt);
+            });
+            state.brand = brands[0];
+            brandSelect.value = state.brand;
+
+            updateMarketFilter();
+            updateCurrencyFilter();
+            updateOwnSiteFilter();
+        }
+
+        function updateMarketFilter() {
+            const markets = [...new Set(PRICE_DATA.filter(r => r.brand === state.brand).map(r => r.market_group))].sort();
+            const marketSelect = document.getElementById('marketSelect');
+            marketSelect.innerHTML = '';
+            markets.forEach(m => {
+                const opt = document.createElement('option');
+                opt.value = m;
+                opt.textContent = marketNameMap[m] || m;
+                marketSelect.appendChild(opt);
+            });
+            state.market = markets[0] || '';
+            marketSelect.value = state.market;
+        }
+
+        function updateCurrencyFilter() {
+            const currencies = [...new Set(PRICE_DATA.filter(r => r.brand === state.brand && r.market_group === state.market).map(r => r.currency))].sort();
+            const currencySelect = document.getElementById('currencySelect');
+            currencySelect.innerHTML = '';
+            // 增加"全部"选项
+            const allOpt = document.createElement('option');
+            allOpt.value = 'all';
+            allOpt.textContent = '全部货币';
+            currencySelect.appendChild(allOpt);
+            currencies.forEach(c => {
+                const opt = document.createElement('option');
+                opt.value = c;
+                opt.textContent = c;
+                currencySelect.appendChild(opt);
+            });
+            // 默认选"全部"
+            state.currency = 'all';
+            currencySelect.value = 'all';
+        }
+
+        function updateOwnSiteFilter() {
+            const sites = [...new Set(PRICE_DATA.filter(r => 
+                r.brand === state.brand && 
+                r.market_group === state.market &&
+                (state.currency === 'all' || r.currency === state.currency)
+            ).map(r => r.website))].sort();
+            const ownSiteSelect = document.getElementById('ownSiteSelect');
+            ownSiteSelect.innerHTML = '';
+            sites.forEach(s => {
+                const opt = document.createElement('option');
+                opt.value = s;
+                opt.textContent = s;
+                ownSiteSelect.appendChild(opt);
+            });
+            // 根据品牌和市场自动选择默认的我方网站
+            const key = `${state.brand}_${state.market}`;
+            const defaultOwnSite = ownSiteMap[key];
+            if (defaultOwnSite && sites.includes(defaultOwnSite)) {
+                state.ownSite = defaultOwnSite;
+            } else {
+                state.ownSite = sites[0] || '';
+            }
+            ownSiteSelect.value = state.ownSite;
+        }
+
+        // 设置事件监听
+        function setupEventListeners() {
+            document.getElementById('brandSelect').addEventListener('change', (e) => {
+                state.brand = e.target.value;
+                updateMarketFilter();
+                updateCurrencyFilter();
+                updateOwnSiteFilter();
+                applyFilters();
+            });
+
+            document.getElementById('marketSelect').addEventListener('change', (e) => {
+                state.market = e.target.value;
+                updateCurrencyFilter();
+                updateOwnSiteFilter();
+                applyFilters();
+            });
+
+            document.getElementById('currencySelect').addEventListener('change', (e) => {
+                state.currency = e.target.value;
+                updateOwnSiteFilter();
+                applyFilters();
+            });
+
+            document.getElementById('ownSiteSelect').addEventListener('change', (e) => {
+                state.ownSite = e.target.value;
+                renderAll();
+            });
+
+            document.getElementById('matrixSearch').addEventListener('input', (e) => {
+                state.matrixSearch = e.target.value.toLowerCase();
+                renderMatrix();
+            });
+
+            document.querySelectorAll('.matrix-tag').forEach(tag => {
+                tag.addEventListener('click', () => {
+                    document.querySelectorAll('.matrix-tag').forEach(t => t.classList.remove('active'));
+                    tag.classList.add('active');
+                    state.matrixFilter = tag.dataset.filter;
+                    renderMatrix();
+                });
+            });
+        }
+
+        // 应用筛选
+        function applyFilters() {
+            state.filteredData = PRICE_DATA.filter(r => 
+                r.brand === state.brand &&
+                r.market_group === state.market &&
+                (state.currency === 'all' || r.currency === state.currency) &&
+                r.price !== null
+            );
+            // 己方网站排第一位，其他按字母排序
+            const allSites = [...new Set(state.filteredData.map(r => r.website))].sort();
+            state.sites = state.ownSite 
+                ? [state.ownSite, ...allSites.filter(s => s !== state.ownSite)]
+                : allSites;
+            state.models = [...new Set(state.filteredData.map(r => r.model))].sort();
+            renderAll();
+        }
+
+        function renderAll() {
+            renderKPI();
+            renderMatrix();
+            renderInsights();
+        }
+
+        // 渲染KPI
+        function renderKPI() {
+            const data = state.filteredData;
+            const kpiRow = document.getElementById('kpiRow');
+            
+            if (data.length === 0) {
+                kpiRow.innerHTML = '<div class="kpi-card"><div class="label">暂无数据</div></div>';
+                return;
+            }
+
+            const marketDisplay = marketNameMap[state.market] || state.market;
+            const currenciesInData = [...new Set(data.map(r => r.currency))].sort();
+
+            // 当有多种货币时，分别计算各货币均价
+            let avgPriceDisplay = '';
+            let priceRangeDisplay = '';
+            if (state.currency === 'all' && currenciesInData.length > 1) {
+                const currencyStats = currenciesInData.map(c => {
+                    const prices = data.filter(r => r.currency === c).map(r => r.price);
+                    const avg = (prices.reduce((a, b) => a + b, 0) / prices.length).toFixed(0);
+                    return `${getCurrencySymbol(c)}${avg}`;
+                });
+                avgPriceDisplay = currencyStats.join(' / ');
+                priceRangeDisplay = `多货币 (${currenciesInData.join(', ')})`;
+            } else {
+                const prices = data.map(r => r.price);
+                const avgPrice = (prices.reduce((a, b) => a + b, 0) / prices.length).toFixed(2);
+                const minPrice = Math.min(...prices).toFixed(2);
+                const maxPrice = Math.max(...prices).toFixed(2);
+                avgPriceDisplay = avgPrice;
+                priceRangeDisplay = `${state.currency} | 区间 ${minPrice} - ${maxPrice}`;
+            }
+
+            // 己方和竞品均价（按己方网站的货币计算）
+            const ownRecords = data.filter(r => r.website === state.ownSite);
+            const ownCurrency = ownRecords.length > 0 ? ownRecords[0].currency : state.currency;
+            const ownPrices = ownRecords.filter(r => r.currency === ownCurrency).map(r => r.price);
+            const compPrices = data.filter(r => r.website !== state.ownSite && r.currency === ownCurrency).map(r => r.price);
+            const ownAvg = ownPrices.length ? (ownPrices.reduce((a, b) => a + b, 0) / ownPrices.length).toFixed(2) : '-';
+            const compAvg = compPrices.length ? (compPrices.reduce((a, b) => a + b, 0) / compPrices.length).toFixed(2) : '-';
+
+            kpiRow.innerHTML = `
+                <div class="kpi-card">
+                    <div class="label">监控网站数</div>
+                    <div class="value">${state.sites.length}</div>
+                    <div class="sub">覆盖 ${state.models.length} 个型号</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="label">价格记录数</div>
+                    <div class="value">${data.length}</div>
+                    <div class="sub">${state.brand} - ${marketDisplay}</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="label">平均价格</div>
+                    <div class="value" style="font-size: 20px;">${avgPriceDisplay}</div>
+                    <div class="sub">${priceRangeDisplay}</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="label">己方 vs 竞品均价</div>
+                    <div class="value">${ownAvg} / ${compAvg}</div>
+                    <div class="sub">${state.ownSite} (${ownCurrency})</div>
+                </div>
+            `;
+        }
+
+        // 获取货币符号
+        function getCurrencySymbol(currency) {
+            const symbols = { 'EUR': '€', 'USD': '$', 'GBP': '£', 'PLN': 'zł', 'CNY': '¥' };
+            return symbols[currency] || currency + ' ';
+        }
+
+        // 渲染矩阵价格表
+        function renderMatrix() {
+            const header = document.getElementById('matrixHeader');
+            const body = document.getElementById('matrixBody');
+
+            // 确保己方网站排第一位
+            const allSites = [...new Set(state.filteredData.map(r => r.website))].sort();
+            state.sites = state.ownSite 
+                ? [state.ownSite, ...allSites.filter(s => s !== state.ownSite)]
+                : allSites;
+
+            let displayModels = state.models;
+            
+            if (state.matrixSearch) {
+                displayModels = displayModels.filter(m => m.toLowerCase().includes(state.matrixSearch));
+            }
+
+            if (state.matrixFilter === 'own') {
+                const ownModels = new Set(state.filteredData.filter(r => r.website === state.ownSite).map(r => r.model));
+                displayModels = displayModels.filter(m => ownModels.has(m));
+            } else if (state.matrixFilter === 'lowest') {
+                const lowestOwnModels = [];
+                displayModels.forEach(model => {
+                    const modelPrices = state.filteredData.filter(r => r.model === model);
+                    if (modelPrices.length > 0) {
+                        const minPrice = Math.min(...modelPrices.map(r => r.price));
+                        const ownRecord = modelPrices.find(r => r.website === state.ownSite);
+                        if (ownRecord && ownRecord.price === minPrice) lowestOwnModels.push(model);
+                    }
+                });
+                displayModels = lowestOwnModels;
+            }
+
+            let headerHTML = '<th class="model-col">型号</th>';
+            state.sites.forEach(site => {
+                const isOwn = site === state.ownSite;
+                headerHTML += `<th class="${isOwn ? 'own-site' : ''}">${site}${isOwn ? '<span class="own-badge">我方</span>' : ''}</th>`;
+            });
+            header.innerHTML = headerHTML;
+
+            if (displayModels.length === 0) {
+                body.innerHTML = `<tr><td colspan="${state.sites.length + 1}"><div class="matrix-empty">暂无匹配数据</div></td></tr>`;
+                return;
+            }
+
+            let bodyHTML = '';
+
+            displayModels.forEach(model => {
+                const modelRecords = state.filteredData.filter(r => r.model === model);
+                const modelUrl = modelRecords[0]?.model_url || '';
+                
+                // 获取己方价格作为基准
+                const ownRecord = modelRecords.find(r => r.website === state.ownSite);
+                const ownPrice = ownRecord ? ownRecord.price : null;
+
+                bodyHTML += '<tr>';
+                
+                if (modelUrl) {
+                    bodyHTML += `<td class="model-cell"><a href="${modelUrl}" target="_blank" class="model-link">${model}</a></td>`;
+                } else {
+                    bodyHTML += `<td class="model-cell">${model}</td>`;
+                }
+
+                state.sites.forEach(site => {
+                    const record = modelRecords.find(r => r.website === site);
+                    
+                    if (!record) {
+                        bodyHTML += `<td><div class="price-cell"><span class="no-data">—</span></div></td>`;
+                        return;
+                    }
+
+                    const isOwn = site === state.ownSite;
+                    const currencySymbol = getCurrencySymbol(record.currency);
+                    
+                    let cellClass = '';
+                    let priceClass = '';
+                    let diffBadge = '';
+                    
+                    if (isOwn) {
+                        priceClass = 'own';
+                    } else if (ownPrice !== null) {
+                        const diff = record.price - ownPrice;
+                        const diffPct = ((diff / ownPrice) * 100).toFixed(1);
+                        if (diff < 0) {
+                            cellClass = 'cheaper';
+                            priceClass = 'cheaper';
+                            diffBadge = `<span class="diff-badge cheaper">↓ ${Math.abs(diffPct)}%</span>`;
+                        } else if (diff > 0) {
+                            cellClass = 'dearer';
+                            priceClass = 'dearer';
+                            diffBadge = `<span class="diff-badge dearer">↑ ${diffPct}%</span>`;
+                        } else {
+                            cellClass = 'same';
+                            priceClass = 'same';
+                        }
+                    } else {
+                        priceClass = 'competitor';
+                    }
+
+                    bodyHTML += `<td><div class="price-cell ${cellClass}">
+                        <span class="price-current ${priceClass}">${currencySymbol}${record.price.toFixed(2)}</span>
+                        ${diffBadge}
+                    </div></td>`;
+                });
+
+                bodyHTML += '</tr>';
+            });
+
+            body.innerHTML = bodyHTML;
+        }
+
+        // 渲染洞察
+        function renderInsights() {
+            const data = state.filteredData;
+            const insightList = document.getElementById('insightList');
+            
+            if (data.length === 0) {
+                insightList.innerHTML = '<li>暂无数据</li>';
+                return;
+            }
+
+            const insights = [];
+
+            const siteAvgs = {};
+            state.sites.forEach(site => {
+                const prices = data.filter(r => r.website === site).map(r => r.price);
+                siteAvgs[site] = prices.reduce((a, b) => a + b, 0) / prices.length;
+            });
+            const sortedSites = Object.entries(siteAvgs).sort((a, b) => a[1] - b[1]);
+            insights.push(`价格最低网站: <strong>${sortedSites[0][0]}</strong> (均价 ${sortedSites[0][1].toFixed(2)} ${state.currency})，价格最高网站: <strong>${sortedSites[sortedSites.length - 1][0]}</strong> (均价 ${sortedSites[sortedSites.length - 1][1].toFixed(2)} ${state.currency})`);
+
+            const ownRank = sortedSites.findIndex(s => s[0] === state.ownSite) + 1;
+            const ownAvg = siteAvgs[state.ownSite];
+            insights.push(`己方网站 <strong>${state.ownSite}</strong> 均价排名第 ${ownRank}/${sortedSites.length} 位，均价 ${ownAvg ? ownAvg.toFixed(2) : '-'} ${state.currency}`);
+
+            const modelPriceRanges = {};
+            state.models.forEach(model => {
+                const prices = data.filter(r => r.model === model).map(r => r.price);
+                if (prices.length > 1) modelPriceRanges[model] = Math.max(...prices) - Math.min(...prices);
+            });
+            const sortedModels = Object.entries(modelPriceRanges).sort((a, b) => b[1] - a[1]);
+            if (sortedModels.length > 0) {
+                insights.push(`价差最大型号: <strong>${sortedModels[0][0]}</strong>，各网站价差达 ${sortedModels[0][1].toFixed(2)} ${state.currency}`);
+            }
+
+            const modelComparison = [];
+            state.models.forEach(model => {
+                const ownPrice = data.find(r => r.model === model && r.website === state.ownSite);
+                const compPrices = data.filter(r => r.model === model && r.website !== state.ownSite).map(r => r.price);
+                if (ownPrice && compPrices.length > 0) {
+                    const compAvg = compPrices.reduce((a, b) => a + b, 0) / compPrices.length;
+                    modelComparison.push({ model, diff: ((ownPrice.price - compAvg) / compAvg * 100) });
+                }
+            });
+            const higherCount = modelComparison.filter(m => m.diff > 0).length;
+            const lowerCount = modelComparison.filter(m => m.diff < 0).length;
+            if (modelComparison.length > 0) {
+                insights.push(`己方价格高于竞品均价的型号有 <strong>${higherCount}</strong> 个，低于竞品均价的有 <strong>${lowerCount}</strong> 个（共 ${modelComparison.length} 个可对比型号）`);
+            }
+
+            insightList.innerHTML = insights.map(i => `<li>${i}</li>`).join('');
+        }
+
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
