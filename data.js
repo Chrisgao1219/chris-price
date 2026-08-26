@@ -5238,10 +5238,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "S10S-Z",
     "model_url": "https://www.geekbuying.com/item/JOYOR-S10-S-Z-Electric-Scooter-10in-60V-18Ah-2-1000W-Motor-Black-518045.html",
-    "price": 885.99,
-    "price_raw": "885.99",
+    "price": 659.0,
+    "price_raw": "659.00",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:19:52.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5250,10 +5250,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "S5-Z",
     "model_url": "https://www.geekbuying.com/item/JOYOR-S5-Z-Electric-Scooter-600W-Motor-13Ah-Battery-with-Turn-signal-524087.html",
-    "price": 637.03,
-    "price_raw": "637.03",
+    "price": 479.0,
+    "price_raw": "479.00",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:19:52.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5262,10 +5262,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "T10",
     "model_url": "https://www.geekbuying.com/item/Joyor-T10-Electric-Scooter-1000W-2-60V-18Ah-528584.html",
-    "price": 885.99,
-    "price_raw": "885.99",
+    "price": 749.0,
+    "price_raw": "749.00",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:19:52.000+08:00"
+    "crawl_time": "2026-08-26T16:44:29.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5274,10 +5274,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "Y6-S",
     "model_url": "https://www.geekbuying.com/item/JOYOR-Y6-S-Electric-Scooter-10-Inch-500W-Motor-18Ah-40Km-h-Speed-498464.html",
-    "price": 619.31,
-    "price_raw": "619.31",
+    "price": 539.0,
+    "price_raw": "539.00",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:19:52.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5286,10 +5286,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "Y8-S",
     "model_url": "https://www.geekbuying.com/item/JOYOR-Y8S-500W-Motor-26Ah-Electric-Scooter-10-Inch-Tire-519322.html",
-    "price": 797.34,
-    "price_raw": "797.34",
+    "price": 489.0,
+    "price_raw": "489.00",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:19:52.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5298,10 +5298,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "C10E",
     "model_url": "https://www.geekbuying.com/item/JOYOR-C10E-Electric-Scooter-with-ABE-Certification-525570.html",
-    "price": 530.71,
-    "price_raw": "530.71",
+    "price": 459.0,
+    "price_raw": "459.00",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:19:52.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5310,10 +5310,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "S5 ABE",
     "model_url": "https://www.geekbuying.com/item/JOYOR-S5-Electric-Scooter-48V-13Ah-Battery-with-ABE-Certification-523453.html",
-    "price": 634.37,
-    "price_raw": "634.37",
+    "price": 449.0,
+    "price_raw": "449.00",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:19:52.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5322,10 +5322,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "S8-Z",
     "model_url": "https://www.geekbuying.com/item/Joyor-S8-Electric-Scooter-600W-48V-26AH-525821.html",
-    "price": 707.91,
-    "price_raw": "707.91",
+    "price": 559.0,
+    "price_raw": "559.00",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:19:52.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5334,10 +5334,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "C10",
     "model_url": "https://www.geekbuying.com/item/JOYOR-C10-Electric-Scooter-500W-10-4Ah-524427.html",
-    "price": 646.77,
-    "price_raw": "646.77",
+    "price": 459.0,
+    "price_raw": "459.00",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:19:52.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5346,10 +5346,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "T6",
     "model_url": "https://www.geekbuying.com/item/Joyor-T6-Electric-Scooter-600W-48V-18Ah-528585.html",
-    "price": 788.53,
-    "price_raw": "788.53",
+    "price": 549.0,
+    "price_raw": "549.00",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:19:52.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5358,10 +5358,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "S8E",
     "model_url": "https://www.geekbuying.com/item/JOYOR-S8E-ECC-EMark-approval-Electric-Scooter-525718.html",
-    "price": 1.0,
-    "price_raw": "1",
+    "price": 699.0,
+    "price_raw": "699.00",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:19:52.000+08:00"
+    "crawl_time": "2026-08-26T16:49:04.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5370,10 +5370,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "S8S-Z",
     "model_url": "https://www.geekbuying.com/item/JOYOR-S8-S-Z-Electric-Scooter-600W-2-48V-26Ah-525425.html",
-    "price": 885.11,
-    "price_raw": "885.11",
+    "price": 689.0,
+    "price_raw": "689.00",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:19:52.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5382,10 +5382,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "S5 Pro",
     "model_url": "https://www.geekbuying.com/item/JOYOR-S5-Pro-with-ABE-Electric-Scooter-48V-26Ah-Battery-Black-524515.html",
-    "price": 840.81,
-    "price_raw": "840.81",
+    "price": 599.0,
+    "price_raw": "599.00",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:19:52.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5394,10 +5394,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "T6E Pro",
     "model_url": "https://www.geekbuying.com/item/Joyor-T6E-Pro-Electric-Scooter-500W-48V-26Ah-ABE-Certification-529939.html",
-    "price": 707.91,
-    "price_raw": "707.91",
+    "price": 599.0,
+    "price_raw": "599.00",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:19:52.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5406,10 +5406,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "T6E",
     "model_url": "https://www.geekbuying.com/item/Joyor-T6E-Electric-Scooter-500W-48V-18Ah-ABE-Certification-529938.html",
-    "price": 707.91,
-    "price_raw": "707.91",
+    "price": 549.0,
+    "price_raw": "549.00",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:19:52.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5418,10 +5418,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "F5",
     "model_url": "https://www.geekbuying.com/item/Joyor-F5-Electric-Scooter-500W-48V-10-4Ah-25km-h-530940.html",
-    "price": 2.0,
-    "price_raw": "2",
+    "price": 334.99,
+    "price_raw": "334.99",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:19:52.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5883,37 +5883,37 @@ const PRICE_DATA = [
     "brand": "Joyor",
     "market_group": "全球",
     "website": "banggood",
-    "currency": null,
+    "currency": "EUR",
     "model": "T10",
     "model_url": "https://www.banggood.com/EU-DIRECT-Joyor-T10-Electric-Scooter-60V-18Ah-1000W+2-Dual-Motor-Recommended-Top-Speed-25KM-or-H-10inch-Folding-Moped-Electric-Scooter-75KM-Max-Mileage-Max-Load-120Kg-p-2034049.html?cur_warehouse=CZ&ID=6287830&rmmds=search",
-    "price": 0.0,
-    "price_raw": "0.00",
+    "price": 733.18,
+    "price_raw": "733.18",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:04:51.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
     "market_group": "全球",
     "website": "banggood",
-    "currency": null,
+    "currency": "EUR",
     "model": "S10S-Z",
     "model_url": "https://www.banggood.com/EU-DIRECT-JOYOR-S10-S-Z-Electric-Scooter-18Ah-60V-1000W+2-Dual-Motor-Recommended-Top-Speed-25KM-or-H-10-Inches-Off-Road-Tire-Electric-Scooter-40-70km-Mileage-Max-Load-120Kg-Joyor-S10-Z-KuKirin-p-2015736.html?cur_warehouse=CZ&ID=6287830&rmmds=search",
-    "price": 0.0,
-    "price_raw": "0.00",
+    "price": 643.89,
+    "price_raw": "643.89",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:04:51.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
     "market_group": "全球",
     "website": "banggood",
-    "currency": null,
+    "currency": "EUR",
     "model": "T6",
     "model_url": "https://www.banggood.com/EU-DIRECT-Joyor-T6-Electric-Scooter-48V-18Ah-600W-Motor-Recommended-Top-Speed-25KM-or-H-10inch-Folding-Moped-Electric-Scooter-40-70KM-Mileage-Max-Load-120Kg-UK-DIRECT-p-2038127.html?cur_warehouse=CZ&ID=6287830&rmmds=search",
-    "price": 0.0,
-    "price_raw": "0.00",
+    "price": 554.6,
+    "price_raw": "554.60",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:04:51.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5931,49 +5931,49 @@ const PRICE_DATA = [
     "brand": "Joyor",
     "market_group": "全球",
     "website": "banggood",
-    "currency": null,
+    "currency": "EUR",
     "model": "S8-Z",
     "model_url": "https://www.banggood.com/EU-DIRECT-Joyor-S8-Electric-Scooter-26Ah-48V-600W-Motor-Recommended-Top-Speed-25KM-or-H-10in-Folding-Moped-Electric-Scooter-60-90KM-Mileage-Electric-Scooter-Max-Load-120Kg-p-2018654.html?cur_warehouse=CZ&ID=6287830&rmmds=search",
-    "price": 0.0,
-    "price_raw": "0.00",
+    "price": 594.28,
+    "price_raw": "594.28",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:04:51.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
     "market_group": "全球",
     "website": "banggood",
-    "currency": null,
+    "currency": "EUR",
     "model": "S8S-Z",
     "model_url": "https://www.banggood.com/EU-DIRECT-JOYOR-S8S-Z-Electric-Scooter-26Ah-48V-600W+2-Dual-Motor-Recommended-Top-Speed-25KM-or-H-10-Inches-Off-Road-Tire-Electric-Scooter-45-75km-Mileage-Max-Load-120Kg-p-2011492.html?cur_warehouse=CZ&rmmds=search",
-    "price": 12.99,
-    "price_raw": "12.99",
+    "price": 673.65,
+    "price_raw": "673.65",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:04:51.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
     "market_group": "全球",
     "website": "banggood",
-    "currency": null,
+    "currency": "EUR",
     "model": "C10",
     "model_url": "https://www.banggood.com/EU-DIRECT-JOYOR-C10-Electric-Scooter-10_4Ah-48V-500W-Motor-Recommended-Top-Speed-25KM-or-H-10in-Folding-Moped-Electric-Scooter-30-40KM-Mileage-Electric-Scooter-Max-Load-120Kg-p-2021538.html?cur_warehouse=CZ&rmmds=search",
-    "price": 8.6,
-    "price_raw": "8.60",
+    "price": 445.46,
+    "price_raw": "445.46",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:04:51.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
     "market_group": "全球",
     "website": "banggood",
-    "currency": null,
+    "currency": "EUR",
     "model": "Y6-S",
     "model_url": "https://www.banggood.com/EU-DIRECT-JOYOR-Y6-S-Electric-Scooter-18Ah-48V-500W-Motor-Recommended-Top-Speed-25KM-or-H-10-Inches-Off-Road-Tire-Electric-Scooter-35-60km-Mileage-Max-Load-120Kg-p-2011490.html?cur_warehouse=CZ&rmmds=search",
-    "price": 8.59,
-    "price_raw": "8.59",
+    "price": 475.23,
+    "price_raw": "475.23",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:04:51.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5991,25 +5991,25 @@ const PRICE_DATA = [
     "brand": "Joyor",
     "market_group": "全球",
     "website": "banggood",
-    "currency": null,
+    "currency": "EUR",
     "model": "F5",
     "model_url": "https://www.banggood.com/EU-DIRECT-Joyor-F5-Electric-Scooter-48V-10_4Ah-500W-Max-Speed-25kmh-8-Inch-Tires-38km-Max-Range-120kg-Max-Load-Rear-Drum-Brake-Front-Spring-Suspension-p-2047174.html?cur_warehouse=CZ&ID=6287830&rmmds=search",
-    "price": 0.0,
-    "price_raw": "0.00",
+    "price": 296.65,
+    "price_raw": "296.65",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:04:51.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
     "market_group": "全球",
     "website": "banggood",
-    "currency": null,
+    "currency": "EUR",
     "model": "E6-S",
     "model_url": "https://www.banggood.com/EU-DIRECT-JOYOR-E6-S-Electric-Scooter-31_5Ah-60V-1600W+2-Dual-Motor-Recommended-Top-Speed-25KM-or-H-11-Inches-Off-Road-Tire-Electric-Scooter-70-85km-Mileage-Max-Load-120Kg-p-2011489.html?cur_warehouse=CZ&rmmds=search",
-    "price": 28.99,
-    "price_raw": "28.99",
+    "price": 1487.2,
+    "price_raw": "1487.20",
     "market": "FR",
-    "crawl_time": "2026-08-24T17:04:51.000+08:00"
+    "crawl_time": "2026-08-26T16:40:42.000+08:00"
   },
   {
     "brand": "Joyor",
