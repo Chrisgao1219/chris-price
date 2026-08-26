@@ -859,9 +859,9 @@ const PRICE_DATA = [
     "model": "Kukirin G2",
     "model_url": "https://officialkukirin.com/products/kukirin-g2-electric-scooter",
     "price": 489.0,
-    "price_raw": "489",
+    "price_raw": "489.00",
     "market": "EU",
-    "crawl_time": "2026-08-25T16:25:22.000+08:00"
+    "crawl_time": "2026-08-26T14:31:07.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -871,9 +871,9 @@ const PRICE_DATA = [
     "model": "Kukirin G2 VMP",
     "model_url": "https://officialkukirin.com/products/kukirin-g2-vmp-electric-scooter",
     "price": 489.0,
-    "price_raw": "489",
+    "price_raw": "489.00",
     "market": "EU",
-    "crawl_time": "2026-08-25T16:25:22.000+08:00"
+    "crawl_time": "2026-08-26T14:31:10.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -883,9 +883,9 @@ const PRICE_DATA = [
     "model": "Kukirin G2 Pro",
     "model_url": "https://officialkukirin.com/products/kukirin-g2-pro-electric-scooter",
     "price": 499.0,
-    "price_raw": "499",
+    "price_raw": "499.00",
     "market": "EU",
-    "crawl_time": "2026-08-25T16:25:22.000+08:00"
+    "crawl_time": "2026-08-26T14:31:13.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -895,9 +895,9 @@ const PRICE_DATA = [
     "model": "Kukirin G2 Pro VMP",
     "model_url": "https://officialkukirin.com/products/kukirin-g2-pro-vmp-electric-scooter",
     "price": 499.0,
-    "price_raw": "499",
+    "price_raw": "499.00",
     "market": "EU",
-    "crawl_time": "2026-08-25T16:25:22.000+08:00"
+    "crawl_time": "2026-08-26T14:31:15.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -907,9 +907,9 @@ const PRICE_DATA = [
     "model": "Kukirin G2 Pro ABE",
     "model_url": "https://officialkukirin.com/products/kukirin-g2-pro-abe-electric-scooter",
     "price": 499.0,
-    "price_raw": "499",
+    "price_raw": "499.00",
     "market": "EU",
-    "crawl_time": "2026-08-25T16:25:22.000+08:00"
+    "crawl_time": "2026-08-26T14:31:18.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -919,9 +919,9 @@ const PRICE_DATA = [
     "model": "Kukirin G2 MAX",
     "model_url": "https://officialkukirin.com/products/kukirin-g2-max-electric-scooter",
     "price": 649.0,
-    "price_raw": "649",
+    "price_raw": "649.00",
     "market": "EU",
-    "crawl_time": "2026-08-25T16:25:22.000+08:00"
+    "crawl_time": "2026-08-26T14:31:20.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -931,9 +931,9 @@ const PRICE_DATA = [
     "model": "Kukirin G2 Master",
     "model_url": "https://officialkukirin.com/products/kukirin-g2-master-electric-scooter",
     "price": 839.0,
-    "price_raw": "839",
+    "price_raw": "839.00",
     "market": "EU",
-    "crawl_time": "2026-08-25T16:25:22.000+08:00"
+    "crawl_time": "2026-08-26T14:31:23.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -943,9 +943,9 @@ const PRICE_DATA = [
     "model": "Kukirin G3 Pro",
     "model_url": "https://officialkukirin.com/products/kukirin-g3-pro-electric-scooter",
     "price": 1159.0,
-    "price_raw": "1159",
+    "price_raw": "1159.00",
     "market": "EU",
-    "crawl_time": "2026-08-25T16:25:22.000+08:00"
+    "crawl_time": "2026-08-26T14:31:26.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -955,9 +955,9 @@ const PRICE_DATA = [
     "model": "Kukirin G4",
     "model_url": "https://officialkukirin.com/products/kukirin-g4-electric-scooter",
     "price": 859.0,
-    "price_raw": "859",
+    "price_raw": "859.00",
     "market": "EU",
-    "crawl_time": "2026-08-25T16:25:22.000+08:00"
+    "crawl_time": "2026-08-26T14:31:29.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -967,9 +967,9 @@ const PRICE_DATA = [
     "model": "Kukirin S1 Max",
     "model_url": "https://officialkukirin.com/products/kukirin-s1-max-electric-scooter",
     "price": 259.0,
-    "price_raw": "259",
+    "price_raw": "259.00",
     "market": "EU",
-    "crawl_time": "2026-08-25T16:25:22.000+08:00"
+    "crawl_time": "2026-08-26T14:31:32.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -979,9 +979,9 @@ const PRICE_DATA = [
     "model": "Kukirin M4 Max",
     "model_url": "https://officialkukirin.com/products/kukirin-m4-max-electric-scooter",
     "price": 419.0,
-    "price_raw": "419",
+    "price_raw": "419.00",
     "market": "EU",
-    "crawl_time": "2026-08-25T16:25:22.000+08:00"
+    "crawl_time": "2026-08-26T14:31:35.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -991,9 +991,9 @@ const PRICE_DATA = [
     "model": "Kukirin T3",
     "model_url": "https://officialkukirin.com/products/kukirin-t3-electric-scooter",
     "price": 529.0,
-    "price_raw": "529",
+    "price_raw": "529.00",
     "market": "EU",
-    "crawl_time": "2026-08-25T16:43:33.000+08:00"
+    "crawl_time": "2026-08-26T14:31:38.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1003,9 +1003,9 @@ const PRICE_DATA = [
     "model": "KuKirin G2 Ultra",
     "model_url": "https://officialkukirin.com/products/kukirin-g2-ultra-electric-scooter",
     "price": 669.0,
-    "price_raw": "669",
+    "price_raw": "669.00",
     "market": "EU",
-    "crawl_time": "2026-08-25T16:25:22.000+08:00"
+    "crawl_time": "2026-08-26T14:31:41.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1015,9 +1015,9 @@ const PRICE_DATA = [
     "model": "KuKirin X1",
     "model_url": "https://officialkukirin.com/products/kukirin-x1-electric-dirt-bike",
     "price": 1239.0,
-    "price_raw": "1239",
+    "price_raw": "1239.00",
     "market": "EU",
-    "crawl_time": "2026-08-25T16:25:22.000+08:00"
+    "crawl_time": "2026-08-26T14:31:43.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -3199,9 +3199,9 @@ const PRICE_DATA = [
     "model": "G2 PRO",
     "model_url": "https://www.kukirin-scooter.pl/collections/all/products/hulajnoga-elektryczna-kukirin-g2-pro",
     "price": 2099.0,
-    "price_raw": "2099.0",
+    "price_raw": "2099.00",
     "market": "PL",
-    "crawl_time": "2026-08-25T17:03:04.000+08:00"
+    "crawl_time": "2026-08-26T14:31:51.000+08:00"
   },
   {
     "brand": "Kukirin",
