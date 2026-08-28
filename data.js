@@ -9,7 +9,7 @@ const PRICE_DATA = [
     "price": 409.0,
     "price_raw": "409",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:47:15.000+08:00"
+    "crawl_time": "2026-08-28T10:11:00.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -21,7 +21,7 @@ const PRICE_DATA = [
     "price": 489.0,
     "price_raw": "489",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:47:18.000+08:00"
+    "crawl_time": "2026-08-28T10:11:03.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -33,7 +33,7 @@ const PRICE_DATA = [
     "price": 489.0,
     "price_raw": "489",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:47:21.000+08:00"
+    "crawl_time": "2026-08-28T10:11:05.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -45,7 +45,7 @@ const PRICE_DATA = [
     "price": 479.0,
     "price_raw": "479",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:47:24.000+08:00"
+    "crawl_time": "2026-08-28T10:11:09.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -57,7 +57,7 @@ const PRICE_DATA = [
     "price": 499.0,
     "price_raw": "499",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:47:27.000+08:00"
+    "crawl_time": "2026-08-28T10:11:12.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -69,7 +69,7 @@ const PRICE_DATA = [
     "price": 499.0,
     "price_raw": "499",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:47:30.000+08:00"
+    "crawl_time": "2026-08-28T10:11:15.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -81,7 +81,7 @@ const PRICE_DATA = [
     "price": 649.0,
     "price_raw": "649",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:47:33.000+08:00"
+    "crawl_time": "2026-08-28T10:11:18.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -93,7 +93,7 @@ const PRICE_DATA = [
     "price": 839.0,
     "price_raw": "839",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:47:35.000+08:00"
+    "crawl_time": "2026-08-28T10:11:20.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -105,7 +105,7 @@ const PRICE_DATA = [
     "price": 1159.0,
     "price_raw": "1159",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:47:38.000+08:00"
+    "crawl_time": "2026-08-28T10:11:23.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -117,7 +117,7 @@ const PRICE_DATA = [
     "price": 859.0,
     "price_raw": "859",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:47:42.000+08:00"
+    "crawl_time": "2026-08-28T10:11:26.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -129,7 +129,7 @@ const PRICE_DATA = [
     "price": 259.0,
     "price_raw": "259",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:47:45.000+08:00"
+    "crawl_time": "2026-08-28T10:11:29.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -141,7 +141,7 @@ const PRICE_DATA = [
     "price": 449.0,
     "price_raw": "449",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:47:48.000+08:00"
+    "crawl_time": "2026-08-28T10:11:32.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -153,7 +153,7 @@ const PRICE_DATA = [
     "price": 529.0,
     "price_raw": "529",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:47:51.000+08:00"
+    "crawl_time": "2026-08-28T10:11:35.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -165,7 +165,7 @@ const PRICE_DATA = [
     "price": 669.0,
     "price_raw": "669",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:47:53.000+08:00"
+    "crawl_time": "2026-08-28T10:11:37.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -177,7 +177,7 @@ const PRICE_DATA = [
     "price": 1239.0,
     "price_raw": "1239",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:47:56.000+08:00"
+    "crawl_time": "2026-08-28T10:11:41.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -189,7 +189,7 @@ const PRICE_DATA = [
     "price": 489.0,
     "price_raw": "489.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:47:59.000+08:00"
+    "crawl_time": "2026-08-28T10:11:43.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -201,7 +201,7 @@ const PRICE_DATA = [
     "price": 489.0,
     "price_raw": "489.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:48:02.000+08:00"
+    "crawl_time": "2026-08-28T10:11:46.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -213,7 +213,7 @@ const PRICE_DATA = [
     "price": 509.0,
     "price_raw": "509.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:48:05.000+08:00"
+    "crawl_time": "2026-08-28T10:11:49.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -225,7 +225,7 @@ const PRICE_DATA = [
     "price": 509.0,
     "price_raw": "509.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:48:08.000+08:00"
+    "crawl_time": "2026-08-28T10:11:52.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -237,7 +237,7 @@ const PRICE_DATA = [
     "price": 649.0,
     "price_raw": "649.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:48:10.000+08:00"
+    "crawl_time": "2026-08-28T10:11:55.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -249,7 +249,7 @@ const PRICE_DATA = [
     "price": 839.0,
     "price_raw": "839.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:48:13.000+08:00"
+    "crawl_time": "2026-08-28T10:11:58.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -261,7 +261,7 @@ const PRICE_DATA = [
     "price": 1199.0,
     "price_raw": "1199.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:48:16.000+08:00"
+    "crawl_time": "2026-08-28T10:12:02.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -273,7 +273,7 @@ const PRICE_DATA = [
     "price": 859.0,
     "price_raw": "859.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:48:19.000+08:00"
+    "crawl_time": "2026-08-28T10:12:05.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -285,7 +285,7 @@ const PRICE_DATA = [
     "price": 229.0,
     "price_raw": "229.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:48:21.000+08:00"
+    "crawl_time": "2026-08-28T10:12:08.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -297,7 +297,7 @@ const PRICE_DATA = [
     "price": 449.0,
     "price_raw": "449.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:48:24.000+08:00"
+    "crawl_time": "2026-08-28T10:12:11.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -309,7 +309,7 @@ const PRICE_DATA = [
     "price": 489.0,
     "price_raw": "489.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:48:27.000+08:00"
+    "crawl_time": "2026-08-28T10:12:14.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -321,7 +321,7 @@ const PRICE_DATA = [
     "price": 669.0,
     "price_raw": "669.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:48:29.000+08:00"
+    "crawl_time": "2026-08-28T10:12:17.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -333,7 +333,7 @@ const PRICE_DATA = [
     "price": 1239.0,
     "price_raw": "1239.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:48:32.000+08:00"
+    "crawl_time": "2026-08-28T10:12:20.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -345,7 +345,7 @@ const PRICE_DATA = [
     "price": 489.0,
     "price_raw": "489.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:48:35.000+08:00"
+    "crawl_time": "2026-08-28T10:12:23.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -357,7 +357,7 @@ const PRICE_DATA = [
     "price": 489.0,
     "price_raw": "489.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:48:38.000+08:00"
+    "crawl_time": "2026-08-28T10:12:26.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -369,7 +369,7 @@ const PRICE_DATA = [
     "price": 479.0,
     "price_raw": "479.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:48:41.000+08:00"
+    "crawl_time": "2026-08-28T10:12:29.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -381,7 +381,7 @@ const PRICE_DATA = [
     "price": 499.0,
     "price_raw": "499.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:48:44.000+08:00"
+    "crawl_time": "2026-08-28T10:12:32.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -393,7 +393,7 @@ const PRICE_DATA = [
     "price": 499.0,
     "price_raw": "499.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:48:47.000+08:00"
+    "crawl_time": "2026-08-28T10:12:36.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -405,7 +405,7 @@ const PRICE_DATA = [
     "price": 649.0,
     "price_raw": "649.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:48:50.000+08:00"
+    "crawl_time": "2026-08-28T10:12:39.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -417,7 +417,7 @@ const PRICE_DATA = [
     "price": 839.0,
     "price_raw": "839.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:48:53.000+08:00"
+    "crawl_time": "2026-08-28T10:12:44.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -429,7 +429,7 @@ const PRICE_DATA = [
     "price": 1159.0,
     "price_raw": "1159.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:48:56.000+08:00"
+    "crawl_time": "2026-08-28T10:12:47.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -441,7 +441,7 @@ const PRICE_DATA = [
     "price": 859.0,
     "price_raw": "859.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:48:58.000+08:00"
+    "crawl_time": "2026-08-28T10:12:49.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -453,7 +453,7 @@ const PRICE_DATA = [
     "price": 259.0,
     "price_raw": "259.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:49:01.000+08:00"
+    "crawl_time": "2026-08-28T10:12:53.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -465,7 +465,7 @@ const PRICE_DATA = [
     "price": 449.0,
     "price_raw": "449.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:49:04.000+08:00"
+    "crawl_time": "2026-08-28T10:12:55.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -477,7 +477,7 @@ const PRICE_DATA = [
     "price": 529.0,
     "price_raw": "529.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:49:07.000+08:00"
+    "crawl_time": "2026-08-28T10:12:59.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -489,7 +489,7 @@ const PRICE_DATA = [
     "price": 669.0,
     "price_raw": "669.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:49:10.000+08:00"
+    "crawl_time": "2026-08-28T10:13:02.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -501,7 +501,7 @@ const PRICE_DATA = [
     "price": 1239.0,
     "price_raw": "1239.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:49:13.000+08:00"
+    "crawl_time": "2026-08-28T10:13:05.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -513,7 +513,7 @@ const PRICE_DATA = [
     "price": 489.0,
     "price_raw": "489.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:49:15.000+08:00"
+    "crawl_time": "2026-08-28T10:13:07.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -525,7 +525,7 @@ const PRICE_DATA = [
     "price": 489.0,
     "price_raw": "489.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:49:19.000+08:00"
+    "crawl_time": "2026-08-28T10:13:10.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -537,7 +537,7 @@ const PRICE_DATA = [
     "price": 479.0,
     "price_raw": "479.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:49:21.000+08:00"
+    "crawl_time": "2026-08-28T10:13:13.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -549,7 +549,7 @@ const PRICE_DATA = [
     "price": 499.0,
     "price_raw": "499.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:49:24.000+08:00"
+    "crawl_time": "2026-08-28T10:13:16.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -561,7 +561,7 @@ const PRICE_DATA = [
     "price": 499.0,
     "price_raw": "499.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:49:26.000+08:00"
+    "crawl_time": "2026-08-28T10:13:18.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -573,7 +573,7 @@ const PRICE_DATA = [
     "price": 649.0,
     "price_raw": "649.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:49:29.000+08:00"
+    "crawl_time": "2026-08-28T10:13:21.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -585,7 +585,7 @@ const PRICE_DATA = [
     "price": 839.0,
     "price_raw": "839.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:50:01.000+08:00"
+    "crawl_time": "2026-08-28T10:13:24.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -597,7 +597,7 @@ const PRICE_DATA = [
     "price": 1159.0,
     "price_raw": "1159.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:50:05.000+08:00"
+    "crawl_time": "2026-08-28T10:13:26.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -609,7 +609,7 @@ const PRICE_DATA = [
     "price": 859.0,
     "price_raw": "859.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:50:07.000+08:00"
+    "crawl_time": "2026-08-28T10:13:29.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -621,7 +621,7 @@ const PRICE_DATA = [
     "price": 259.0,
     "price_raw": "259.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:50:10.000+08:00"
+    "crawl_time": "2026-08-28T10:13:32.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -633,7 +633,7 @@ const PRICE_DATA = [
     "price": 449.0,
     "price_raw": "449.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:50:13.000+08:00"
+    "crawl_time": "2026-08-28T10:13:35.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -645,7 +645,7 @@ const PRICE_DATA = [
     "price": 529.0,
     "price_raw": "529.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:50:16.000+08:00"
+    "crawl_time": "2026-08-28T10:13:39.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -657,7 +657,7 @@ const PRICE_DATA = [
     "price": 669.0,
     "price_raw": "669.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:50:18.000+08:00"
+    "crawl_time": "2026-08-28T10:13:42.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -669,7 +669,7 @@ const PRICE_DATA = [
     "price": 1239.0,
     "price_raw": "1239.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:50:23.000+08:00"
+    "crawl_time": "2026-08-28T10:13:44.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -681,7 +681,7 @@ const PRICE_DATA = [
     "price": 439.0,
     "price_raw": "439.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:50:26.000+08:00"
+    "crawl_time": "2026-08-28T10:13:51.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -693,7 +693,7 @@ const PRICE_DATA = [
     "price": 489.0,
     "price_raw": "489.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:50:29.000+08:00"
+    "crawl_time": "2026-08-28T10:13:53.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -705,7 +705,7 @@ const PRICE_DATA = [
     "price": 489.0,
     "price_raw": "489.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:50:32.000+08:00"
+    "crawl_time": "2026-08-28T10:13:56.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -717,7 +717,7 @@ const PRICE_DATA = [
     "price": 479.0,
     "price_raw": "479.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:50:35.000+08:00"
+    "crawl_time": "2026-08-28T10:14:00.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -729,7 +729,7 @@ const PRICE_DATA = [
     "price": 499.0,
     "price_raw": "499.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:50:38.000+08:00"
+    "crawl_time": "2026-08-28T10:14:02.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -741,7 +741,7 @@ const PRICE_DATA = [
     "price": 499.0,
     "price_raw": "499.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:50:40.000+08:00"
+    "crawl_time": "2026-08-28T10:14:06.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -753,7 +753,7 @@ const PRICE_DATA = [
     "price": 649.0,
     "price_raw": "649.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:50:43.000+08:00"
+    "crawl_time": "2026-08-28T10:14:08.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -765,7 +765,7 @@ const PRICE_DATA = [
     "price": 839.0,
     "price_raw": "839.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:50:46.000+08:00"
+    "crawl_time": "2026-08-28T10:14:12.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -777,7 +777,7 @@ const PRICE_DATA = [
     "price": 1159.0,
     "price_raw": "1159.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:50:50.000+08:00"
+    "crawl_time": "2026-08-28T10:14:15.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -789,7 +789,7 @@ const PRICE_DATA = [
     "price": 859.0,
     "price_raw": "859.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:51:00.000+08:00"
+    "crawl_time": "2026-08-28T10:14:18.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -801,7 +801,7 @@ const PRICE_DATA = [
     "price": 259.0,
     "price_raw": "259.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:51:03.000+08:00"
+    "crawl_time": "2026-08-28T10:14:21.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -813,7 +813,7 @@ const PRICE_DATA = [
     "price": 449.0,
     "price_raw": "449.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:51:06.000+08:00"
+    "crawl_time": "2026-08-28T10:14:24.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -825,7 +825,7 @@ const PRICE_DATA = [
     "price": 529.0,
     "price_raw": "529.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:51:10.000+08:00"
+    "crawl_time": "2026-08-28T10:14:27.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -837,7 +837,7 @@ const PRICE_DATA = [
     "price": 669.0,
     "price_raw": "669.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:51:13.000+08:00"
+    "crawl_time": "2026-08-28T10:14:30.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -849,7 +849,7 @@ const PRICE_DATA = [
     "price": 1239.0,
     "price_raw": "1239.00",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:51:16.000+08:00"
+    "crawl_time": "2026-08-28T10:14:32.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1029,7 +1029,7 @@ const PRICE_DATA = [
     "price": 489.0,
     "price_raw": "489",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:51:19.000+08:00"
+    "crawl_time": "2026-08-28T10:14:36.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1041,7 +1041,7 @@ const PRICE_DATA = [
     "price": 489.0,
     "price_raw": "489",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:51:22.000+08:00"
+    "crawl_time": "2026-08-28T10:14:39.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1053,7 +1053,7 @@ const PRICE_DATA = [
     "price": 509.0,
     "price_raw": "509",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:51:25.000+08:00"
+    "crawl_time": "2026-08-28T10:14:42.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1065,7 +1065,7 @@ const PRICE_DATA = [
     "price": 509.0,
     "price_raw": "509",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:51:28.000+08:00"
+    "crawl_time": "2026-08-28T10:14:45.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1077,7 +1077,7 @@ const PRICE_DATA = [
     "price": 649.0,
     "price_raw": "649",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:51:32.000+08:00"
+    "crawl_time": "2026-08-28T10:14:49.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1089,7 +1089,7 @@ const PRICE_DATA = [
     "price": 839.0,
     "price_raw": "839",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:51:35.000+08:00"
+    "crawl_time": "2026-08-28T10:14:52.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1101,7 +1101,7 @@ const PRICE_DATA = [
     "price": 1199.0,
     "price_raw": "1199",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:51:37.000+08:00"
+    "crawl_time": "2026-08-28T10:14:55.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1113,7 +1113,7 @@ const PRICE_DATA = [
     "price": 859.0,
     "price_raw": "859",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:51:40.000+08:00"
+    "crawl_time": "2026-08-28T10:14:59.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1125,7 +1125,7 @@ const PRICE_DATA = [
     "price": 229.0,
     "price_raw": "229",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:51:43.000+08:00"
+    "crawl_time": "2026-08-28T10:15:02.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1137,7 +1137,7 @@ const PRICE_DATA = [
     "price": 449.0,
     "price_raw": "449",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:51:47.000+08:00"
+    "crawl_time": "2026-08-28T10:15:06.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1149,7 +1149,7 @@ const PRICE_DATA = [
     "price": 489.0,
     "price_raw": "489",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:51:49.000+08:00"
+    "crawl_time": "2026-08-28T10:15:09.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1161,7 +1161,7 @@ const PRICE_DATA = [
     "price": 669.0,
     "price_raw": "669",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:51:52.000+08:00"
+    "crawl_time": "2026-08-28T10:15:14.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1173,7 +1173,7 @@ const PRICE_DATA = [
     "price": 1239.0,
     "price_raw": "1239",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:51:55.000+08:00"
+    "crawl_time": "2026-08-28T10:15:17.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1185,7 +1185,7 @@ const PRICE_DATA = [
     "price": 489.0,
     "price_raw": "489.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:51:58.000+08:00"
+    "crawl_time": "2026-08-28T10:15:20.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1197,7 +1197,7 @@ const PRICE_DATA = [
     "price": 489.0,
     "price_raw": "489.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:52:02.000+08:00"
+    "crawl_time": "2026-08-28T10:15:23.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1209,7 +1209,7 @@ const PRICE_DATA = [
     "price": 499.0,
     "price_raw": "499.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:52:05.000+08:00"
+    "crawl_time": "2026-08-28T10:15:26.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1221,7 +1221,7 @@ const PRICE_DATA = [
     "price": 499.0,
     "price_raw": "499.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:52:09.000+08:00"
+    "crawl_time": "2026-08-28T10:15:29.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1233,7 +1233,7 @@ const PRICE_DATA = [
     "price": 499.0,
     "price_raw": "499.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:52:12.000+08:00"
+    "crawl_time": "2026-08-28T10:15:32.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1245,7 +1245,7 @@ const PRICE_DATA = [
     "price": 649.0,
     "price_raw": "649.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:52:15.000+08:00"
+    "crawl_time": "2026-08-28T10:15:37.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1257,7 +1257,7 @@ const PRICE_DATA = [
     "price": 839.0,
     "price_raw": "839.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:52:17.000+08:00"
+    "crawl_time": "2026-08-28T10:15:40.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1269,7 +1269,7 @@ const PRICE_DATA = [
     "price": 1229.0,
     "price_raw": "1229.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:52:20.000+08:00"
+    "crawl_time": "2026-08-28T10:15:43.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1281,7 +1281,7 @@ const PRICE_DATA = [
     "price": 859.0,
     "price_raw": "859.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:52:24.000+08:00"
+    "crawl_time": "2026-08-28T10:15:46.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1293,7 +1293,7 @@ const PRICE_DATA = [
     "price": 239.0,
     "price_raw": "239.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:52:28.000+08:00"
+    "crawl_time": "2026-08-28T10:15:49.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1305,7 +1305,7 @@ const PRICE_DATA = [
     "price": 469.0,
     "price_raw": "469.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:52:31.000+08:00"
+    "crawl_time": "2026-08-28T10:15:52.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1317,7 +1317,7 @@ const PRICE_DATA = [
     "price": 569.0,
     "price_raw": "569.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:52:34.000+08:00"
+    "crawl_time": "2026-08-28T10:15:55.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1329,7 +1329,7 @@ const PRICE_DATA = [
     "price": 689.0,
     "price_raw": "689.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:52:37.000+08:00"
+    "crawl_time": "2026-08-28T10:15:58.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1341,7 +1341,7 @@ const PRICE_DATA = [
     "price": 1239.0,
     "price_raw": "1239.0",
     "market": "EU",
-    "crawl_time": "2026-08-27T10:52:40.000+08:00"
+    "crawl_time": "2026-08-28T10:16:01.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1353,7 +1353,7 @@ const PRICE_DATA = [
     "price": 499.0,
     "price_raw": "499",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:52:42.000+08:00"
+    "crawl_time": "2026-08-28T10:16:04.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1365,7 +1365,7 @@ const PRICE_DATA = [
     "price": 439.0,
     "price_raw": "439",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:52:45.000+08:00"
+    "crawl_time": "2026-08-28T10:16:07.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1377,7 +1377,7 @@ const PRICE_DATA = [
     "price": 739.0,
     "price_raw": "739",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:52:47.000+08:00"
+    "crawl_time": "2026-08-28T10:16:10.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1389,7 +1389,7 @@ const PRICE_DATA = [
     "price": 649.0,
     "price_raw": "649",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:52:50.000+08:00"
+    "crawl_time": "2026-08-28T10:16:13.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1401,7 +1401,7 @@ const PRICE_DATA = [
     "price": 489.0,
     "price_raw": "489",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:52:52.000+08:00"
+    "crawl_time": "2026-08-28T10:16:15.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1413,7 +1413,7 @@ const PRICE_DATA = [
     "price": 609.0,
     "price_raw": "609",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:52:57.000+08:00"
+    "crawl_time": "2026-08-28T10:16:18.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1425,7 +1425,7 @@ const PRICE_DATA = [
     "price": 1199.0,
     "price_raw": "1199",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:53:04.000+08:00"
+    "crawl_time": "2026-08-28T10:16:21.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1437,7 +1437,7 @@ const PRICE_DATA = [
     "price": 739.0,
     "price_raw": "739",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:53:07.000+08:00"
+    "crawl_time": "2026-08-28T10:16:25.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1449,7 +1449,7 @@ const PRICE_DATA = [
     "price": 300.0,
     "price_raw": "300",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:53:10.000+08:00"
+    "crawl_time": "2026-08-28T10:16:28.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1461,7 +1461,7 @@ const PRICE_DATA = [
     "price": 539.0,
     "price_raw": "539",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:53:12.000+08:00"
+    "crawl_time": "2026-08-28T10:16:31.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1473,7 +1473,7 @@ const PRICE_DATA = [
     "price": 589.0,
     "price_raw": "589",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:53:16.000+08:00"
+    "crawl_time": "2026-08-28T10:16:34.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1485,7 +1485,7 @@ const PRICE_DATA = [
     "price": 529.0,
     "price_raw": "529",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:53:18.000+08:00"
+    "crawl_time": "2026-08-28T10:16:37.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1497,7 +1497,7 @@ const PRICE_DATA = [
     "price": 2149.0,
     "price_raw": "2149",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:53:21.000+08:00"
+    "crawl_time": "2026-08-28T10:16:41.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1509,7 +1509,7 @@ const PRICE_DATA = [
     "price": 1239.0,
     "price_raw": "1239",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:53:23.000+08:00"
+    "crawl_time": "2026-08-28T10:16:43.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1521,7 +1521,7 @@ const PRICE_DATA = [
     "price": 419.0,
     "price_raw": "419.0",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:53:28.000+08:00"
+    "crawl_time": "2026-08-28T10:16:46.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1533,7 +1533,7 @@ const PRICE_DATA = [
     "price": 439.0,
     "price_raw": "439.0",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:53:31.000+08:00"
+    "crawl_time": "2026-08-28T10:16:49.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1545,7 +1545,7 @@ const PRICE_DATA = [
     "price": 729.0,
     "price_raw": "729.0",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:53:34.000+08:00"
+    "crawl_time": "2026-08-28T10:16:52.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1557,7 +1557,7 @@ const PRICE_DATA = [
     "price": 629.0,
     "price_raw": "629.0",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:53:37.000+08:00"
+    "crawl_time": "2026-08-28T10:16:55.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1569,7 +1569,7 @@ const PRICE_DATA = [
     "price": 489.0,
     "price_raw": "489.0",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:53:40.000+08:00"
+    "crawl_time": "2026-08-28T10:16:58.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1581,7 +1581,7 @@ const PRICE_DATA = [
     "price": 1199.0,
     "price_raw": "1199.0",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:53:43.000+08:00"
+    "crawl_time": "2026-08-28T10:17:00.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1593,7 +1593,7 @@ const PRICE_DATA = [
     "price": 739.0,
     "price_raw": "739.0",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:53:45.000+08:00"
+    "crawl_time": "2026-08-28T10:17:03.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1605,7 +1605,7 @@ const PRICE_DATA = [
     "price": 269.0,
     "price_raw": "269.0",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:53:48.000+08:00"
+    "crawl_time": "2026-08-28T10:17:06.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1617,7 +1617,7 @@ const PRICE_DATA = [
     "price": 479.0,
     "price_raw": "479.0",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:53:51.000+08:00"
+    "crawl_time": "2026-08-28T10:17:09.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1629,7 +1629,7 @@ const PRICE_DATA = [
     "price": 589.0,
     "price_raw": "589.0",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:53:54.000+08:00"
+    "crawl_time": "2026-08-28T10:17:12.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1641,7 +1641,7 @@ const PRICE_DATA = [
     "price": 529.0,
     "price_raw": "529.0",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:53:57.000+08:00"
+    "crawl_time": "2026-08-28T10:17:15.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1653,7 +1653,7 @@ const PRICE_DATA = [
     "price": 1239.0,
     "price_raw": "1239.0",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:53:59.000+08:00"
+    "crawl_time": "2026-08-28T10:17:18.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1665,7 +1665,7 @@ const PRICE_DATA = [
     "price": 4.99,
     "price_raw": "4.99",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:54:03.000+08:00"
+    "crawl_time": "2026-08-28T10:17:20.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1677,7 +1677,7 @@ const PRICE_DATA = [
     "price": 6.49,
     "price_raw": "6.49",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:54:07.000+08:00"
+    "crawl_time": "2026-08-28T10:17:23.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1689,7 +1689,7 @@ const PRICE_DATA = [
     "price": 8.49,
     "price_raw": "8.49",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:54:11.000+08:00"
+    "crawl_time": "2026-08-28T10:17:26.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1701,7 +1701,7 @@ const PRICE_DATA = [
     "price": 6.49,
     "price_raw": "6.49",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:54:13.000+08:00"
+    "crawl_time": "2026-08-28T10:17:28.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1713,7 +1713,7 @@ const PRICE_DATA = [
     "price": 5.49,
     "price_raw": "5.49",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:54:15.000+08:00"
+    "crawl_time": "2026-08-28T10:17:31.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1725,7 +1725,7 @@ const PRICE_DATA = [
     "price": 6.49,
     "price_raw": "6.49",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:54:19.000+08:00"
+    "crawl_time": "2026-08-28T10:17:33.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1737,7 +1737,7 @@ const PRICE_DATA = [
     "price": 12.99,
     "price_raw": "12.99",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:54:22.000+08:00"
+    "crawl_time": "2026-08-28T10:17:36.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1749,7 +1749,7 @@ const PRICE_DATA = [
     "price": 7.99,
     "price_raw": "7.99",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:54:27.000+08:00"
+    "crawl_time": "2026-08-28T10:17:38.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1761,7 +1761,7 @@ const PRICE_DATA = [
     "price": 22.19,
     "price_raw": "22.19",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:54:30.000+08:00"
+    "crawl_time": "2026-08-28T10:17:41.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1773,7 +1773,7 @@ const PRICE_DATA = [
     "price": 439.0,
     "price_raw": "439",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:54:34.000+08:00"
+    "crawl_time": "2026-08-28T10:17:44.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1785,7 +1785,7 @@ const PRICE_DATA = [
     "price": 789.0,
     "price_raw": "789",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:54:37.000+08:00"
+    "crawl_time": "2026-08-28T10:17:48.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1797,7 +1797,7 @@ const PRICE_DATA = [
     "price": 549.0,
     "price_raw": "549",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:54:40.000+08:00"
+    "crawl_time": "2026-08-28T10:17:51.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1809,7 +1809,7 @@ const PRICE_DATA = [
     "price": 499.0,
     "price_raw": "499",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:54:43.000+08:00"
+    "crawl_time": "2026-08-28T10:17:54.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1821,7 +1821,7 @@ const PRICE_DATA = [
     "price": 739.0,
     "price_raw": "739",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:54:46.000+08:00"
+    "crawl_time": "2026-08-28T10:17:58.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1833,7 +1833,7 @@ const PRICE_DATA = [
     "price": 649.0,
     "price_raw": "649",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:54:48.000+08:00"
+    "crawl_time": "2026-08-28T10:18:01.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1845,7 +1845,7 @@ const PRICE_DATA = [
     "price": 499.0,
     "price_raw": "499.00",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:54:51.000+08:00"
+    "crawl_time": "2026-08-28T10:18:04.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1857,7 +1857,7 @@ const PRICE_DATA = [
     "price": 469.0,
     "price_raw": "469.00",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:54:54.000+08:00"
+    "crawl_time": "2026-08-28T10:18:07.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1869,7 +1869,7 @@ const PRICE_DATA = [
     "price": 829.0,
     "price_raw": "829.00",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:54:56.000+08:00"
+    "crawl_time": "2026-08-28T10:18:38.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1881,7 +1881,7 @@ const PRICE_DATA = [
     "price": 519.0,
     "price_raw": "519.00",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:54:59.000+08:00"
+    "crawl_time": "2026-08-28T10:18:41.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1893,7 +1893,7 @@ const PRICE_DATA = [
     "price": 759.0,
     "price_raw": "759.00",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:55:01.000+08:00"
+    "crawl_time": "2026-08-28T10:18:44.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1905,7 +1905,7 @@ const PRICE_DATA = [
     "price": 599.0,
     "price_raw": "599",
     "market": "US",
-    "crawl_time": "2026-08-27T10:55:04.000+08:00"
+    "crawl_time": "2026-08-28T10:18:51.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1917,7 +1917,7 @@ const PRICE_DATA = [
     "price": 749.0,
     "price_raw": "749",
     "market": "US",
-    "crawl_time": "2026-08-27T10:55:08.000+08:00"
+    "crawl_time": "2026-08-28T10:18:54.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1929,7 +1929,7 @@ const PRICE_DATA = [
     "price": 799.0,
     "price_raw": "799",
     "market": "US",
-    "crawl_time": "2026-08-27T10:55:12.000+08:00"
+    "crawl_time": "2026-08-28T10:18:57.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1953,7 +1953,7 @@ const PRICE_DATA = [
     "price": 999.0,
     "price_raw": "999",
     "market": "US",
-    "crawl_time": "2026-08-27T10:55:15.000+08:00"
+    "crawl_time": "2026-08-28T10:19:00.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1965,7 +1965,7 @@ const PRICE_DATA = [
     "price": 1299.0,
     "price_raw": "1299",
     "market": "US",
-    "crawl_time": "2026-08-27T10:55:17.000+08:00"
+    "crawl_time": "2026-08-28T10:19:03.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1977,7 +1977,7 @@ const PRICE_DATA = [
     "price": 749.0,
     "price_raw": "749",
     "market": "US",
-    "crawl_time": "2026-08-27T10:55:20.000+08:00"
+    "crawl_time": "2026-08-28T10:19:06.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1989,7 +1989,7 @@ const PRICE_DATA = [
     "price": 1999.0,
     "price_raw": "1999",
     "market": "US",
-    "crawl_time": "2026-08-27T10:55:23.000+08:00"
+    "crawl_time": "2026-08-28T10:19:08.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2001,7 +2001,7 @@ const PRICE_DATA = [
     "price": 589.0,
     "price_raw": "589",
     "market": "US",
-    "crawl_time": "2026-08-27T10:55:31.000+08:00"
+    "crawl_time": "2026-08-28T10:19:11.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2013,7 +2013,7 @@ const PRICE_DATA = [
     "price": 579.0,
     "price_raw": "579",
     "market": "US",
-    "crawl_time": "2026-08-27T10:55:33.000+08:00"
+    "crawl_time": "2026-08-28T10:19:14.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2025,7 +2025,7 @@ const PRICE_DATA = [
     "price": 589.0,
     "price_raw": "589",
     "market": "US",
-    "crawl_time": "2026-08-27T10:55:39.000+08:00"
+    "crawl_time": "2026-08-28T10:19:17.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2037,7 +2037,7 @@ const PRICE_DATA = [
     "price": 589.0,
     "price_raw": "589",
     "market": "US",
-    "crawl_time": "2026-08-27T10:55:43.000+08:00"
+    "crawl_time": "2026-08-28T10:19:19.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2049,7 +2049,7 @@ const PRICE_DATA = [
     "price": 405.0,
     "price_raw": "405",
     "market": "US",
-    "crawl_time": "2026-08-27T10:55:46.000+08:00"
+    "crawl_time": "2026-08-28T10:19:22.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2061,7 +2061,7 @@ const PRICE_DATA = [
     "price": 609.0,
     "price_raw": "609",
     "market": "US",
-    "crawl_time": "2026-08-27T10:55:49.000+08:00"
+    "crawl_time": "2026-08-28T10:19:25.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2073,7 +2073,7 @@ const PRICE_DATA = [
     "price": 659.0,
     "price_raw": "659",
     "market": "US",
-    "crawl_time": "2026-08-27T10:55:51.000+08:00"
+    "crawl_time": "2026-08-28T10:19:27.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2085,7 +2085,7 @@ const PRICE_DATA = [
     "price": 1589.0,
     "price_raw": "1589",
     "market": "US",
-    "crawl_time": "2026-08-27T10:55:54.000+08:00"
+    "crawl_time": "2026-08-28T10:19:30.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2097,7 +2097,7 @@ const PRICE_DATA = [
     "price": 599.0,
     "price_raw": "599.00",
     "market": "US",
-    "crawl_time": "2026-08-27T10:55:58.000+08:00"
+    "crawl_time": "2026-08-28T10:20:05.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2109,7 +2109,7 @@ const PRICE_DATA = [
     "price": 589.0,
     "price_raw": "589",
     "market": "US",
-    "crawl_time": "2026-08-27T10:56:02.000+08:00"
+    "crawl_time": "2026-08-28T10:20:07.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2121,7 +2121,7 @@ const PRICE_DATA = [
     "price": 749.0,
     "price_raw": "749.00",
     "market": "US",
-    "crawl_time": "2026-08-27T10:56:04.000+08:00"
+    "crawl_time": "2026-08-28T10:20:16.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2133,7 +2133,7 @@ const PRICE_DATA = [
     "price": 849.0,
     "price_raw": "849.00",
     "market": "US",
-    "crawl_time": "2026-08-27T10:56:35.000+08:00"
+    "crawl_time": "2026-08-28T10:20:21.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2145,7 +2145,7 @@ const PRICE_DATA = [
     "price": 849.0,
     "price_raw": "849.00",
     "market": "US",
-    "crawl_time": "2026-08-27T10:56:38.000+08:00"
+    "crawl_time": "2026-08-28T10:20:26.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2157,7 +2157,7 @@ const PRICE_DATA = [
     "price": 999.0,
     "price_raw": "999.00",
     "market": "US",
-    "crawl_time": "2026-08-27T10:56:43.000+08:00"
+    "crawl_time": "2026-08-28T10:20:29.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2169,7 +2169,7 @@ const PRICE_DATA = [
     "price": 559.99,
     "price_raw": "559.99",
     "market": "US",
-    "crawl_time": "2026-08-27T10:56:48.000+08:00"
+    "crawl_time": "2026-08-28T10:20:32.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2181,7 +2181,7 @@ const PRICE_DATA = [
     "price": 739.99,
     "price_raw": "739.99",
     "market": "US",
-    "crawl_time": "2026-08-27T10:56:50.000+08:00"
+    "crawl_time": "2026-08-28T10:20:35.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2193,7 +2193,7 @@ const PRICE_DATA = [
     "price": 769.99,
     "price_raw": "769.99",
     "market": "US",
-    "crawl_time": "2026-08-27T10:56:53.000+08:00"
+    "crawl_time": "2026-08-28T10:20:40.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2205,7 +2205,7 @@ const PRICE_DATA = [
     "price": 929.99,
     "price_raw": "929.99",
     "market": "US",
-    "crawl_time": "2026-08-27T10:56:56.000+08:00"
+    "crawl_time": "2026-08-28T10:20:43.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2217,7 +2217,7 @@ const PRICE_DATA = [
     "price": 979.99,
     "price_raw": "979.99",
     "market": "US",
-    "crawl_time": "2026-08-27T10:56:59.000+08:00"
+    "crawl_time": "2026-08-28T10:20:46.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2229,7 +2229,7 @@ const PRICE_DATA = [
     "price": 1249.99,
     "price_raw": "1249.99",
     "market": "US",
-    "crawl_time": "2026-08-27T10:57:03.000+08:00"
+    "crawl_time": "2026-08-28T10:20:50.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2241,7 +2241,7 @@ const PRICE_DATA = [
     "price": 579.99,
     "price_raw": "579.99",
     "market": "US",
-    "crawl_time": "2026-08-27T10:57:05.000+08:00"
+    "crawl_time": "2026-08-28T10:20:53.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2253,7 +2253,7 @@ const PRICE_DATA = [
     "price": 479.99,
     "price_raw": "479.99",
     "market": "US",
-    "crawl_time": "2026-08-27T10:57:09.000+08:00"
+    "crawl_time": "2026-08-28T10:20:56.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2265,7 +2265,7 @@ const PRICE_DATA = [
     "price": 279.99,
     "price_raw": "279.99",
     "market": "US",
-    "crawl_time": "2026-08-27T10:57:12.000+08:00"
+    "crawl_time": "2026-08-28T10:21:01.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2277,7 +2277,7 @@ const PRICE_DATA = [
     "price": 539.99,
     "price_raw": "539.99",
     "market": "US",
-    "crawl_time": "2026-08-27T10:57:15.000+08:00"
+    "crawl_time": "2026-08-28T10:21:04.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2289,7 +2289,7 @@ const PRICE_DATA = [
     "price": 659.99,
     "price_raw": "659.99",
     "market": "US",
-    "crawl_time": "2026-08-27T10:57:19.000+08:00"
+    "crawl_time": "2026-08-28T10:21:07.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2301,7 +2301,7 @@ const PRICE_DATA = [
     "price": 1299.99,
     "price_raw": "1299.99",
     "market": "US",
-    "crawl_time": "2026-08-27T10:57:22.000+08:00"
+    "crawl_time": "2026-08-28T10:21:10.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2313,7 +2313,7 @@ const PRICE_DATA = [
     "price": 2099.0,
     "price_raw": "2099",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:57:26.000+08:00"
+    "crawl_time": "2026-08-28T10:21:13.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2325,7 +2325,7 @@ const PRICE_DATA = [
     "price": 3599.0,
     "price_raw": "3599",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:57:32.000+08:00"
+    "crawl_time": "2026-08-28T10:21:15.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2337,7 +2337,7 @@ const PRICE_DATA = [
     "price": 3549.0,
     "price_raw": "3549",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:57:36.000+08:00"
+    "crawl_time": "2026-08-28T10:21:19.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2349,7 +2349,7 @@ const PRICE_DATA = [
     "price": 2529.0,
     "price_raw": "2529",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:57:40.000+08:00"
+    "crawl_time": "2026-08-28T10:21:37.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2361,7 +2361,7 @@ const PRICE_DATA = [
     "price": 2659.0,
     "price_raw": "2659",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:57:44.000+08:00"
+    "crawl_time": "2026-08-28T10:21:40.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2373,7 +2373,7 @@ const PRICE_DATA = [
     "price": 2099.0,
     "price_raw": "2099",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:57:47.000+08:00"
+    "crawl_time": "2026-08-28T10:21:43.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2385,7 +2385,7 @@ const PRICE_DATA = [
     "price": 2189.0,
     "price_raw": "2189",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:57:50.000+08:00"
+    "crawl_time": "2026-08-28T10:21:46.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2397,7 +2397,7 @@ const PRICE_DATA = [
     "price": 1959.0,
     "price_raw": "1959",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:57:53.000+08:00"
+    "crawl_time": "2026-08-28T10:21:49.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2409,7 +2409,7 @@ const PRICE_DATA = [
     "price": 1869.0,
     "price_raw": "1869",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:57:56.000+08:00"
+    "crawl_time": "2026-08-28T10:21:52.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2421,7 +2421,7 @@ const PRICE_DATA = [
     "price": 1369.0,
     "price_raw": "1369",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:01.000+08:00"
+    "crawl_time": "2026-08-28T10:21:55.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2433,7 +2433,7 @@ const PRICE_DATA = [
     "price": 4959.0,
     "price_raw": "4959",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:04.000+08:00"
+    "crawl_time": "2026-08-28T10:21:58.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2445,7 +2445,7 @@ const PRICE_DATA = [
     "price": 919.0,
     "price_raw": "919",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:07.000+08:00"
+    "crawl_time": "2026-08-28T10:22:02.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2457,7 +2457,7 @@ const PRICE_DATA = [
     "price": 4658.0,
     "price_raw": "4658",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:09.000+08:00"
+    "crawl_time": "2026-08-28T10:22:05.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2469,7 +2469,7 @@ const PRICE_DATA = [
     "price": 2189.0,
     "price_raw": "2189",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:12.000+08:00"
+    "crawl_time": "2026-08-28T10:22:08.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2481,7 +2481,7 @@ const PRICE_DATA = [
     "price": 2902.0,
     "price_raw": "2902",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:15.000+08:00"
+    "crawl_time": "2026-08-28T10:22:11.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2493,7 +2493,7 @@ const PRICE_DATA = [
     "price": 7675.0,
     "price_raw": "7675",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:19.000+08:00"
+    "crawl_time": "2026-08-28T10:22:13.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2505,7 +2505,7 @@ const PRICE_DATA = [
     "price": 2189.0,
     "price_raw": "2189",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:21.000+08:00"
+    "crawl_time": "2026-08-28T10:22:16.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2517,7 +2517,7 @@ const PRICE_DATA = [
     "price": 2099.0,
     "price_raw": "2099.0",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:24.000+08:00"
+    "crawl_time": "2026-08-28T10:22:19.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2529,7 +2529,7 @@ const PRICE_DATA = [
     "price": 3599.0,
     "price_raw": "3599.0",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:26.000+08:00"
+    "crawl_time": "2026-08-28T10:22:22.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2541,7 +2541,7 @@ const PRICE_DATA = [
     "price": 3549.0,
     "price_raw": "3549.0",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:29.000+08:00"
+    "crawl_time": "2026-08-28T10:22:24.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2553,7 +2553,7 @@ const PRICE_DATA = [
     "price": 2499.0,
     "price_raw": "2499.0",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:31.000+08:00"
+    "crawl_time": "2026-08-28T10:22:27.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2565,7 +2565,7 @@ const PRICE_DATA = [
     "price": 2659.0,
     "price_raw": "2659.0",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:34.000+08:00"
+    "crawl_time": "2026-08-28T10:22:30.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2577,7 +2577,7 @@ const PRICE_DATA = [
     "price": 2099.0,
     "price_raw": "2099.0",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:37.000+08:00"
+    "crawl_time": "2026-08-28T10:22:33.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2589,7 +2589,7 @@ const PRICE_DATA = [
     "price": 2189.0,
     "price_raw": "2189.0",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:40.000+08:00"
+    "crawl_time": "2026-08-28T10:22:35.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2601,7 +2601,7 @@ const PRICE_DATA = [
     "price": 1959.0,
     "price_raw": "1959.0",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:42.000+08:00"
+    "crawl_time": "2026-08-28T10:22:38.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2613,7 +2613,7 @@ const PRICE_DATA = [
     "price": 1869.0,
     "price_raw": "1869.0",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:45.000+08:00"
+    "crawl_time": "2026-08-28T10:22:41.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2625,7 +2625,7 @@ const PRICE_DATA = [
     "price": 1369.0,
     "price_raw": "1369.0",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:47.000+08:00"
+    "crawl_time": "2026-08-28T10:22:44.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2637,7 +2637,7 @@ const PRICE_DATA = [
     "price": 4959.0,
     "price_raw": "4959.0",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:50.000+08:00"
+    "crawl_time": "2026-08-28T10:22:47.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2649,7 +2649,7 @@ const PRICE_DATA = [
     "price": 919.0,
     "price_raw": "919.0",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:52.000+08:00"
+    "crawl_time": "2026-08-28T10:22:49.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2661,7 +2661,7 @@ const PRICE_DATA = [
     "price": 4658.0,
     "price_raw": "4658.0",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:55.000+08:00"
+    "crawl_time": "2026-08-28T10:23:15.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2673,7 +2673,7 @@ const PRICE_DATA = [
     "price": 2189.0,
     "price_raw": "2189.0",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:58:57.000+08:00"
+    "crawl_time": "2026-08-28T10:23:18.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2685,7 +2685,7 @@ const PRICE_DATA = [
     "price": 2189.0,
     "price_raw": "2189.0",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:59:00.000+08:00"
+    "crawl_time": "2026-08-28T10:23:21.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2697,7 +2697,7 @@ const PRICE_DATA = [
     "price": 2099.0,
     "price_raw": "2099",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:59:04.000+08:00"
+    "crawl_time": "2026-08-28T10:23:25.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2709,7 +2709,7 @@ const PRICE_DATA = [
     "price": 3599.0,
     "price_raw": "3599",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:59:07.000+08:00"
+    "crawl_time": "2026-08-28T10:23:28.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2721,7 +2721,7 @@ const PRICE_DATA = [
     "price": 3549.0,
     "price_raw": "3549",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:59:11.000+08:00"
+    "crawl_time": "2026-08-28T10:23:31.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2733,7 +2733,7 @@ const PRICE_DATA = [
     "price": 2599.0,
     "price_raw": "2599",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:59:14.000+08:00"
+    "crawl_time": "2026-08-28T10:23:34.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2745,7 +2745,7 @@ const PRICE_DATA = [
     "price": 2859.0,
     "price_raw": "2859",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:59:17.000+08:00"
+    "crawl_time": "2026-08-28T10:23:37.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2757,7 +2757,7 @@ const PRICE_DATA = [
     "price": 2039.0,
     "price_raw": "2039",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:59:21.000+08:00"
+    "crawl_time": "2026-08-28T10:23:40.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2769,7 +2769,7 @@ const PRICE_DATA = [
     "price": 2189.0,
     "price_raw": "2189",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:59:25.000+08:00"
+    "crawl_time": "2026-08-28T10:23:43.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2781,7 +2781,7 @@ const PRICE_DATA = [
     "price": 2099.0,
     "price_raw": "2099",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:59:28.000+08:00"
+    "crawl_time": "2026-08-28T10:24:30.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2793,7 +2793,7 @@ const PRICE_DATA = [
     "price": 1869.0,
     "price_raw": "1869",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:59:31.000+08:00"
+    "crawl_time": "2026-08-28T10:24:34.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2805,7 +2805,7 @@ const PRICE_DATA = [
     "price": 4999.0,
     "price_raw": "4999",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:59:35.000+08:00"
+    "crawl_time": "2026-08-28T10:24:37.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2817,7 +2817,7 @@ const PRICE_DATA = [
     "price": 939.0,
     "price_raw": "939",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:59:38.000+08:00"
+    "crawl_time": "2026-08-28T10:24:41.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -2829,7 +2829,7 @@ const PRICE_DATA = [
     "price": 4899.0,
     "price_raw": "4899",
     "market": "PL",
-    "crawl_time": "2026-08-27T10:59:42.000+08:00"
+    "crawl_time": "2026-08-28T10:24:44.000+08:00"
   },
   {
     "brand": "GPD",
@@ -2841,7 +2841,7 @@ const PRICE_DATA = [
     "price": 1999.0,
     "price_raw": "1999",
     "market": "US",
-    "crawl_time": "2026-08-27T10:00:09.000+08:00"
+    "crawl_time": "2026-08-28T10:00:59.000+08:00"
   },
   {
     "brand": "GPD",
@@ -2850,10 +2850,10 @@ const PRICE_DATA = [
     "currency": "GBP",
     "model": "GPD WIN 5 AMD AI Max 385 32GB+1TB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-win5",
-    "price": 1495.0,
-    "price_raw": "1495",
+    "price": 1501.0,
+    "price_raw": "1501",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:01:43.000+08:00"
+    "crawl_time": "2026-08-28T10:01:03.000+08:00"
   },
   {
     "brand": "GPD",
@@ -2862,10 +2862,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "GPD WIN 5 AMD AI Max 385 32GB+1TB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-win5",
-    "price": 1746.95,
-    "price_raw": "1746.95",
+    "price": 1749.95,
+    "price_raw": "1749.95",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:01:47.000+08:00"
+    "crawl_time": "2026-08-28T10:01:07.000+08:00"
   },
   {
     "brand": "GPD",
@@ -2877,7 +2877,7 @@ const PRICE_DATA = [
     "price": 1299.0,
     "price_raw": "1299",
     "market": "US",
-    "crawl_time": "2026-08-27T10:01:51.000+08:00"
+    "crawl_time": "2026-08-28T10:01:11.000+08:00"
   },
   {
     "brand": "GPD",
@@ -2886,10 +2886,10 @@ const PRICE_DATA = [
     "currency": "GBP",
     "model": "GPD Pocket 4 8840U 16GB+1TB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-pocket4",
-    "price": 972.0,
-    "price_raw": "972",
+    "price": 976.0,
+    "price_raw": "976",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:01:54.000+08:00"
+    "crawl_time": "2026-08-28T10:01:14.000+08:00"
   },
   {
     "brand": "GPD",
@@ -2898,10 +2898,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "GPD Pocket 4 8840U 16GB+1TB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-pocket4",
-    "price": 1134.95,
-    "price_raw": "1134.95",
+    "price": 1137.95,
+    "price_raw": "1137.95",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:02:00.000+08:00"
+    "crawl_time": "2026-08-28T10:01:18.000+08:00"
   },
   {
     "brand": "GPD",
@@ -2913,7 +2913,7 @@ const PRICE_DATA = [
     "price": 1479.0,
     "price_raw": "1479",
     "market": "US",
-    "crawl_time": "2026-08-27T10:02:06.000+08:00"
+    "crawl_time": "2026-08-28T10:01:22.000+08:00"
   },
   {
     "brand": "GPD",
@@ -2925,7 +2925,7 @@ const PRICE_DATA = [
     "price": 1108.0,
     "price_raw": "1108",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:02:10.000+08:00"
+    "crawl_time": "2026-08-28T10:01:26.000+08:00"
   },
   {
     "brand": "GPD",
@@ -2937,7 +2937,7 @@ const PRICE_DATA = [
     "price": 1294.95,
     "price_raw": "1294.95",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:02:14.000+08:00"
+    "crawl_time": "2026-08-28T10:01:32.000+08:00"
   },
   {
     "brand": "GPD",
@@ -2949,7 +2949,7 @@ const PRICE_DATA = [
     "price": 739.0,
     "price_raw": "739",
     "market": "US",
-    "crawl_time": "2026-08-27T10:02:19.000+08:00"
+    "crawl_time": "2026-08-28T10:01:39.000+08:00"
   },
   {
     "brand": "GPD",
@@ -2961,7 +2961,7 @@ const PRICE_DATA = [
     "price": 554.0,
     "price_raw": "554",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:02:23.000+08:00"
+    "crawl_time": "2026-08-28T10:01:42.000+08:00"
   },
   {
     "brand": "GPD",
@@ -2973,7 +2973,7 @@ const PRICE_DATA = [
     "price": 645.95,
     "price_raw": "645.95",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:02:27.000+08:00"
+    "crawl_time": "2026-08-28T10:01:46.000+08:00"
   },
   {
     "brand": "GPD",
@@ -2985,7 +2985,7 @@ const PRICE_DATA = [
     "price": 1309.0,
     "price_raw": "1309",
     "market": "US",
-    "crawl_time": "2026-08-27T10:02:30.000+08:00"
+    "crawl_time": "2026-08-28T10:01:49.000+08:00"
   },
   {
     "brand": "GPD",
@@ -2994,10 +2994,10 @@ const PRICE_DATA = [
     "currency": "GBP",
     "model": "GPD WIN Mini 2025款 8840U 16GB+1TB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-winmini-2025",
-    "price": 979.0,
-    "price_raw": "979",
+    "price": 983.0,
+    "price_raw": "983",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:02:34.000+08:00"
+    "crawl_time": "2026-08-28T10:01:53.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3006,10 +3006,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "GPD WIN Mini 2025款 8840U 16GB+1TB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-winmini-2025",
-    "price": 1143.95,
-    "price_raw": "1143.95",
+    "price": 1145.95,
+    "price_raw": "1145.95",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:02:38.000+08:00"
+    "crawl_time": "2026-08-28T10:01:57.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3021,7 +3021,7 @@ const PRICE_DATA = [
     "price": 829.0,
     "price_raw": "829",
     "market": "US",
-    "crawl_time": "2026-08-27T10:02:41.000+08:00"
+    "crawl_time": "2026-08-28T10:02:01.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3030,10 +3030,10 @@ const PRICE_DATA = [
     "currency": "GBP",
     "model": "GPD Pocket 3 Intel Pentium Gold 7505 16GB+512GB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-pocket3-2025",
-    "price": 620.0,
-    "price_raw": "620",
+    "price": 623.0,
+    "price_raw": "623",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:02:45.000+08:00"
+    "crawl_time": "2026-08-28T10:02:05.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3042,10 +3042,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "GPD Pocket 3 Intel Pentium Gold 7505 16GB+512GB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-pocket3-2025",
-    "price": 724.95,
-    "price_raw": "724.95",
+    "price": 725.95,
+    "price_raw": "725.95",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:02:48.000+08:00"
+    "crawl_time": "2026-08-28T10:02:09.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3057,7 +3057,7 @@ const PRICE_DATA = [
     "price": 1659.0,
     "price_raw": "1659",
     "market": "US",
-    "crawl_time": "2026-08-27T10:02:52.000+08:00"
+    "crawl_time": "2026-08-28T10:02:13.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3066,10 +3066,10 @@ const PRICE_DATA = [
     "currency": "GBP",
     "model": "GPD BOX Core™ Ultra 7 356H 32G+1TB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-box",
-    "price": 1241.0,
-    "price_raw": "1241",
+    "price": 1246.0,
+    "price_raw": "1246",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:02:55.000+08:00"
+    "crawl_time": "2026-08-28T10:02:17.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3078,10 +3078,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "GPD BOX Core™ Ultra 7 356H 32G+1TB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-box",
-    "price": 1449.95,
-    "price_raw": "1449.95",
+    "price": 1452.95,
+    "price_raw": "1452.95",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:02:59.000+08:00"
+    "crawl_time": "2026-08-28T10:02:20.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3093,7 +3093,7 @@ const PRICE_DATA = [
     "price": 399.0,
     "price_raw": "399",
     "market": "US",
-    "crawl_time": "2026-08-27T10:03:02.000+08:00"
+    "crawl_time": "2026-08-28T10:02:24.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3102,10 +3102,10 @@ const PRICE_DATA = [
     "currency": "GBP",
     "model": "GPD G2",
     "model_url": "https://www.gpd-minipc.com/products/gpd-g2",
-    "price": 299.0,
-    "price_raw": "299",
+    "price": 300.0,
+    "price_raw": "300",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:03:05.000+08:00"
+    "crawl_time": "2026-08-28T10:02:27.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3114,10 +3114,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "GPD G2",
     "model_url": "https://www.gpd-minipc.com/products/gpd-g2",
-    "price": 348.95,
-    "price_raw": "348.95",
+    "price": 349.95,
+    "price_raw": "349.95",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:03:09.000+08:00"
+    "crawl_time": "2026-08-28T10:02:31.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3129,7 +3129,7 @@ const PRICE_DATA = [
     "price": 2429.0,
     "price_raw": "2429",
     "market": "US",
-    "crawl_time": "2026-08-27T10:00:09.000+08:00"
+    "crawl_time": "2026-08-28T10:00:59.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3138,10 +3138,10 @@ const PRICE_DATA = [
     "currency": "GBP",
     "model": "GPD WIN 5 AMD AI Max+ 395 32GB+2TB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-win5",
-    "price": 1817.0,
-    "price_raw": "1817",
+    "price": 1824.0,
+    "price_raw": "1824",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:01:43.000+08:00"
+    "crawl_time": "2026-08-28T10:01:03.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3150,10 +3150,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "GPD WIN 5 AMD AI Max+ 395 32GB+2TB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-win5",
-    "price": 2121.95,
-    "price_raw": "2121.95",
+    "price": 2126.95,
+    "price_raw": "2126.95",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:01:47.000+08:00"
+    "crawl_time": "2026-08-28T10:01:07.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3165,7 +3165,7 @@ const PRICE_DATA = [
     "price": 2749.0,
     "price_raw": "2749",
     "market": "US",
-    "crawl_time": "2026-08-27T10:00:09.000+08:00"
+    "crawl_time": "2026-08-28T10:00:59.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3174,10 +3174,10 @@ const PRICE_DATA = [
     "currency": "GBP",
     "model": "GPD WIN 5 AMD AI Max+ 395 64GB+2TB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-win5",
-    "price": 2056.0,
-    "price_raw": "2056",
+    "price": 2064.0,
+    "price_raw": "2064",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:01:43.000+08:00"
+    "crawl_time": "2026-08-28T10:01:03.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3186,10 +3186,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "GPD WIN 5 AMD AI Max+ 395 64GB+2TB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-win5",
-    "price": 2401.95,
-    "price_raw": "2401.95",
+    "price": 2406.95,
+    "price_raw": "2406.95",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:01:47.000+08:00"
+    "crawl_time": "2026-08-28T10:01:07.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3201,7 +3201,7 @@ const PRICE_DATA = [
     "price": 1829.0,
     "price_raw": "1829",
     "market": "US",
-    "crawl_time": "2026-08-27T10:01:51.000+08:00"
+    "crawl_time": "2026-08-28T10:01:11.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3210,10 +3210,10 @@ const PRICE_DATA = [
     "currency": "GBP",
     "model": "GPD Pocket 4 AI 9 HX 370 32GB+2TB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-pocket4",
-    "price": 1368.0,
-    "price_raw": "1368",
+    "price": 1374.0,
+    "price_raw": "1374",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:01:54.000+08:00"
+    "crawl_time": "2026-08-28T10:01:14.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3222,10 +3222,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "GPD Pocket 4 AI 9 HX 370 32GB+2TB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-pocket4",
-    "price": 1597.95,
-    "price_raw": "1597.95",
+    "price": 1601.95,
+    "price_raw": "1601.95",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:02:00.000+08:00"
+    "crawl_time": "2026-08-28T10:01:18.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3237,7 +3237,7 @@ const PRICE_DATA = [
     "price": 1929.0,
     "price_raw": "1929",
     "market": "US",
-    "crawl_time": "2026-08-27T10:02:06.000+08:00"
+    "crawl_time": "2026-08-28T10:01:22.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3249,7 +3249,7 @@ const PRICE_DATA = [
     "price": 1444.0,
     "price_raw": "1444",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:02:10.000+08:00"
+    "crawl_time": "2026-08-28T10:01:26.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3261,7 +3261,7 @@ const PRICE_DATA = [
     "price": 1688.95,
     "price_raw": "1688.95",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:02:14.000+08:00"
+    "crawl_time": "2026-08-28T10:01:32.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3273,7 +3273,7 @@ const PRICE_DATA = [
     "price": 2349.0,
     "price_raw": "2349",
     "market": "US",
-    "crawl_time": "2026-08-27T10:01:51.000+08:00"
+    "crawl_time": "2026-08-28T10:01:11.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3282,10 +3282,10 @@ const PRICE_DATA = [
     "currency": "GBP",
     "model": "GPD Pocket 4 AI 9 HX 370 64GB+2TB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-pocket4",
-    "price": 1757.0,
-    "price_raw": "1757",
+    "price": 1764.0,
+    "price_raw": "1764",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:01:54.000+08:00"
+    "crawl_time": "2026-08-28T10:01:14.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3294,10 +3294,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "GPD Pocket 4 AI 9 HX 370 64GB+2TB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-pocket4",
-    "price": 2051.95,
-    "price_raw": "2051.95",
+    "price": 2056.95,
+    "price_raw": "2056.95",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:02:00.000+08:00"
+    "crawl_time": "2026-08-28T10:01:18.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3309,7 +3309,7 @@ const PRICE_DATA = [
     "price": 759.0,
     "price_raw": "759",
     "market": "US",
-    "crawl_time": "2026-08-27T10:02:19.000+08:00"
+    "crawl_time": "2026-08-28T10:01:39.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3321,7 +3321,7 @@ const PRICE_DATA = [
     "price": 569.0,
     "price_raw": "569",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:02:23.000+08:00"
+    "crawl_time": "2026-08-28T10:01:42.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3333,7 +3333,7 @@ const PRICE_DATA = [
     "price": 662.95,
     "price_raw": "662.95",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:02:27.000+08:00"
+    "crawl_time": "2026-08-28T10:01:46.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3345,7 +3345,7 @@ const PRICE_DATA = [
     "price": 779.0,
     "price_raw": "779",
     "market": "US",
-    "crawl_time": "2026-08-27T10:02:19.000+08:00"
+    "crawl_time": "2026-08-28T10:01:39.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3357,7 +3357,7 @@ const PRICE_DATA = [
     "price": 584.0,
     "price_raw": "584",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:02:23.000+08:00"
+    "crawl_time": "2026-08-28T10:01:42.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3369,7 +3369,7 @@ const PRICE_DATA = [
     "price": 680.95,
     "price_raw": "680.95",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:02:27.000+08:00"
+    "crawl_time": "2026-08-28T10:01:46.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3381,7 +3381,7 @@ const PRICE_DATA = [
     "price": 1899.0,
     "price_raw": "1899",
     "market": "US",
-    "crawl_time": "2026-08-27T10:02:30.000+08:00"
+    "crawl_time": "2026-08-28T10:01:49.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3390,10 +3390,10 @@ const PRICE_DATA = [
     "currency": "GBP",
     "model": "GPD WIN Mini 2025款 AI 9 HX 370 32GB+2TB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-winmini-2025",
-    "price": 1421.0,
-    "price_raw": "1421",
+    "price": 1426.0,
+    "price_raw": "1426",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:02:34.000+08:00"
+    "crawl_time": "2026-08-28T10:01:53.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3402,10 +3402,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "GPD WIN Mini 2025款 AI 9 HX 370 32GB+2TB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-winmini-2025",
-    "price": 1658.95,
-    "price_raw": "1658.95",
+    "price": 1662.95,
+    "price_raw": "1662.95",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:02:38.000+08:00"
+    "crawl_time": "2026-08-28T10:01:57.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3417,7 +3417,7 @@ const PRICE_DATA = [
     "price": 1729.0,
     "price_raw": "1729",
     "market": "US",
-    "crawl_time": "2026-08-27T10:02:52.000+08:00"
+    "crawl_time": "2026-08-28T10:02:13.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3426,10 +3426,10 @@ const PRICE_DATA = [
     "currency": "GBP",
     "model": "GPD BOX Core™ Ultra X7 358H 32G+1TB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-box",
-    "price": 1293.0,
-    "price_raw": "1293",
+    "price": 1298.0,
+    "price_raw": "1298",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:02:55.000+08:00"
+    "crawl_time": "2026-08-28T10:02:17.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3438,10 +3438,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "GPD BOX Core™ Ultra X7 358H 32G+1TB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-box",
-    "price": 1510.95,
-    "price_raw": "1510.95",
+    "price": 1513.95,
+    "price_raw": "1513.95",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:02:59.000+08:00"
+    "crawl_time": "2026-08-28T10:02:20.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3453,7 +3453,7 @@ const PRICE_DATA = [
     "price": 2050.95,
     "price_raw": "2050.95",
     "market": "US",
-    "crawl_time": "2026-08-27T10:03:11.000+08:00"
+    "crawl_time": "2026-08-28T10:02:33.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3465,7 +3465,7 @@ const PRICE_DATA = [
     "price": 1831.21,
     "price_raw": "1831.21",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:03:14.000+08:00"
+    "crawl_time": "2026-08-28T10:02:36.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3477,7 +3477,7 @@ const PRICE_DATA = [
     "price": 2120.04,
     "price_raw": "2120.04",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:03:16.000+08:00"
+    "crawl_time": "2026-08-28T10:03:35.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3486,10 +3486,10 @@ const PRICE_DATA = [
     "currency": "USD",
     "model": "GPD WIN 5 AMD AI Max+ 395 32GB+2TB",
     "model_url": "https://gpdstore.net/gpd-win-5/",
-    "price": 2432.95,
-    "price_raw": "2432.95",
+    "price": 2286.97,
+    "price_raw": "2286.97",
     "market": "US",
-    "crawl_time": "2026-08-27T10:03:11.000+08:00"
+    "crawl_time": "2026-08-28T10:02:33.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3498,10 +3498,10 @@ const PRICE_DATA = [
     "currency": "GBP",
     "model": "GPD WIN 5 AMD AI Max+ 395 32GB+2TB",
     "model_url": "https://gpdstore.net/gpd-win-5/",
-    "price": 2172.28,
-    "price_raw": "2172.28",
+    "price": 2041.94,
+    "price_raw": "2041.94",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:03:14.000+08:00"
+    "crawl_time": "2026-08-28T10:02:36.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3510,10 +3510,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "GPD WIN 5 AMD AI Max+ 395 32GB+2TB",
     "model_url": "https://gpdstore.net/gpd-win-5/",
-    "price": 2514.9,
-    "price_raw": "2514.9",
+    "price": 2364.01,
+    "price_raw": "2364.01",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:03:16.000+08:00"
+    "crawl_time": "2026-08-28T10:03:35.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3522,10 +3522,10 @@ const PRICE_DATA = [
     "currency": "USD",
     "model": "GPD WIN 5 AMD AI Max+ 395 64GB+2TB",
     "model_url": "https://gpdstore.net/gpd-win-5/",
-    "price": 2752.95,
-    "price_raw": "2752.95",
+    "price": 2587.77,
+    "price_raw": "2587.77",
     "market": "US",
-    "crawl_time": "2026-08-27T10:03:11.000+08:00"
+    "crawl_time": "2026-08-28T10:02:33.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3534,10 +3534,10 @@ const PRICE_DATA = [
     "currency": "GBP",
     "model": "GPD WIN 5 AMD AI Max+ 395 64GB+2TB",
     "model_url": "https://gpdstore.net/gpd-win-5/",
-    "price": 2458.0,
-    "price_raw": "2458",
+    "price": 2310.52,
+    "price_raw": "2310.52",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:03:14.000+08:00"
+    "crawl_time": "2026-08-28T10:02:36.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3546,10 +3546,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "GPD WIN 5 AMD AI Max+ 395 64GB+2TB",
     "model_url": "https://gpdstore.net/gpd-win-5/",
-    "price": 2845.68,
-    "price_raw": "2845.68",
+    "price": 2674.94,
+    "price_raw": "2674.94",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:03:16.000+08:00"
+    "crawl_time": "2026-08-28T10:03:35.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3558,10 +3558,10 @@ const PRICE_DATA = [
     "currency": "USD",
     "model": "GPD Pocket 4 8840U 16GB+1TB",
     "model_url": "https://gpdstore.net/gpd-pocket-4/",
-    "price": 1307.95,
-    "price_raw": "1307.95",
+    "price": 1242.55,
+    "price_raw": "1242.55",
     "market": "US",
-    "crawl_time": "2026-08-27T10:03:19.000+08:00"
+    "crawl_time": "2026-08-28T10:03:38.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3570,10 +3570,10 @@ const PRICE_DATA = [
     "currency": "GBP",
     "model": "GPD Pocket 4 8840U 16GB+1TB",
     "model_url": "https://gpdstore.net/gpd-pocket-4/",
-    "price": 1167.82,
-    "price_raw": "1167.82",
+    "price": 1109.42,
+    "price_raw": "1109.42",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:03:22.000+08:00"
+    "crawl_time": "2026-08-28T10:03:41.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3582,10 +3582,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "GPD Pocket 4 8840U 16GB+1TB",
     "model_url": "https://gpdstore.net/gpd-pocket-4/",
-    "price": 1352.0,
-    "price_raw": "1352",
+    "price": 1284.41,
+    "price_raw": "1284.41",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:03:40.000+08:00"
+    "crawl_time": "2026-08-28T10:03:44.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3597,7 +3597,7 @@ const PRICE_DATA = [
     "price": 2025.95,
     "price_raw": "2025.95",
     "market": "US",
-    "crawl_time": "2026-08-27T10:03:19.000+08:00"
+    "crawl_time": "2026-08-28T10:03:38.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3609,7 +3609,7 @@ const PRICE_DATA = [
     "price": 1808.88,
     "price_raw": "1808.88",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:03:22.000+08:00"
+    "crawl_time": "2026-08-28T10:03:41.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3621,7 +3621,7 @@ const PRICE_DATA = [
     "price": 2094.19,
     "price_raw": "2094.19",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:03:40.000+08:00"
+    "crawl_time": "2026-08-28T10:03:44.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3633,7 +3633,7 @@ const PRICE_DATA = [
     "price": 2270.95,
     "price_raw": "2270.95",
     "market": "US",
-    "crawl_time": "2026-08-27T10:03:19.000+08:00"
+    "crawl_time": "2026-08-28T10:03:38.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3645,7 +3645,7 @@ const PRICE_DATA = [
     "price": 2027.64,
     "price_raw": "2027.64",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:03:22.000+08:00"
+    "crawl_time": "2026-08-28T10:03:41.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3657,7 +3657,7 @@ const PRICE_DATA = [
     "price": 2347.45,
     "price_raw": "2347.45",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:03:40.000+08:00"
+    "crawl_time": "2026-08-28T10:03:44.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3666,10 +3666,10 @@ const PRICE_DATA = [
     "currency": "USD",
     "model": "GPD WIN Max 2 2025款 8840U 32GB+1TB",
     "model_url": "https://gpdstore.net/gpd-win-max-2-2025/",
-    "price": 1493.95,
-    "price_raw": "1493.95",
+    "price": 1419.25,
+    "price_raw": "1419.25",
     "market": "US",
-    "crawl_time": "2026-08-27T10:03:42.000+08:00"
+    "crawl_time": "2026-08-28T10:03:46.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3681,7 +3681,7 @@ const PRICE_DATA = [
     "price": 1333.88,
     "price_raw": "1333.88",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:03:45.000+08:00"
+    "crawl_time": "2026-08-28T10:03:49.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3690,10 +3690,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "GPD WIN Max 2 2025款 8840U 32GB+1TB",
     "model_url": "https://gpdstore.net/gpd-win-max-2-2025/",
-    "price": 1544.27,
-    "price_raw": "1544.27",
+    "price": 1467.06,
+    "price_raw": "1467.06",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:03:47.000+08:00"
+    "crawl_time": "2026-08-28T10:03:52.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3702,10 +3702,10 @@ const PRICE_DATA = [
     "currency": "USD",
     "model": "GPD WIN Max 2 2025款 AI 9 HX 370 32GB+2TB",
     "model_url": "https://gpdstore.net/gpd-win-max-2-2025/",
-    "price": 1941.95,
-    "price_raw": "1941.95",
+    "price": 1844.85,
+    "price_raw": "1844.85",
     "market": "US",
-    "crawl_time": "2026-08-27T10:03:42.000+08:00"
+    "crawl_time": "2026-08-28T10:03:46.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3717,7 +3717,7 @@ const PRICE_DATA = [
     "price": 1733.88,
     "price_raw": "1733.88",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:03:45.000+08:00"
+    "crawl_time": "2026-08-28T10:03:49.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3726,10 +3726,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "GPD WIN Max 2 2025款 AI 9 HX 370 32GB+2TB",
     "model_url": "https://gpdstore.net/gpd-win-max-2-2025/",
-    "price": 2007.36,
-    "price_raw": "2007.36",
+    "price": 1906.99,
+    "price_raw": "1906.99",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:03:47.000+08:00"
+    "crawl_time": "2026-08-28T10:03:52.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3774,10 +3774,10 @@ const PRICE_DATA = [
     "currency": "USD",
     "model": "GPD MicroPC 2 Intel N300 16GB+512GB",
     "model_url": "https://gpdstore.net/gpd-micropc-2/",
-    "price": 729.95,
-    "price_raw": "729.95",
+    "price": 693.45,
+    "price_raw": "693.45",
     "market": "US",
-    "crawl_time": "2026-08-27T10:03:50.000+08:00"
+    "crawl_time": "2026-08-28T10:03:55.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3786,10 +3786,10 @@ const PRICE_DATA = [
     "currency": "GBP",
     "model": "GPD MicroPC 2 Intel N300 16GB+512GB",
     "model_url": "https://gpdstore.net/gpd-micropc-2/",
-    "price": 651.74,
-    "price_raw": "651.74",
+    "price": 619.15,
+    "price_raw": "619.15",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:03:53.000+08:00"
+    "crawl_time": "2026-08-28T10:03:57.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3798,10 +3798,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "GPD MicroPC 2 Intel N300 16GB+512GB",
     "model_url": "https://gpdstore.net/gpd-micropc-2/",
-    "price": 754.54,
-    "price_raw": "754.54",
+    "price": 716.81,
+    "price_raw": "716.81",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:03:55.000+08:00"
+    "crawl_time": "2026-08-28T10:04:00.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3810,10 +3810,10 @@ const PRICE_DATA = [
     "currency": "USD",
     "model": "GPD MicroPC 2 Intel N350 16GB+512GN",
     "model_url": "https://gpdstore.net/gpd-micropc-2/",
-    "price": 789.95,
-    "price_raw": "789.95",
+    "price": 750.45,
+    "price_raw": "750.45",
     "market": "US",
-    "crawl_time": "2026-08-27T10:03:50.000+08:00"
+    "crawl_time": "2026-08-28T10:03:55.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3822,10 +3822,10 @@ const PRICE_DATA = [
     "currency": "GBP",
     "model": "GPD MicroPC 2 Intel N350 16GB+512GN",
     "model_url": "https://gpdstore.net/gpd-micropc-2/",
-    "price": 705.31,
-    "price_raw": "705.31",
+    "price": 670.04,
+    "price_raw": "670.04",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:03:53.000+08:00"
+    "crawl_time": "2026-08-28T10:03:57.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3834,10 +3834,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "GPD MicroPC 2 Intel N350 16GB+512GN",
     "model_url": "https://gpdstore.net/gpd-micropc-2/",
-    "price": 816.56,
-    "price_raw": "816.56",
+    "price": 775.73,
+    "price_raw": "775.73",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:03:55.000+08:00"
+    "crawl_time": "2026-08-28T10:04:00.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3846,10 +3846,10 @@ const PRICE_DATA = [
     "currency": "USD",
     "model": "GPD WIN Mini 2025款 8840U 16GB+1TB",
     "model_url": "https://gpdstore.net/gpd-win-mini-2025/",
-    "price": 1316.95,
-    "price_raw": "1316.95",
+    "price": 1211.59,
+    "price_raw": "1211.59",
     "market": "US",
-    "crawl_time": "2026-08-27T10:03:58.000+08:00"
+    "crawl_time": "2026-08-28T10:04:02.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3861,7 +3861,7 @@ const PRICE_DATA = [
     "price": 1175.84,
     "price_raw": "1175.84",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:04:00.000+08:00"
+    "crawl_time": "2026-08-28T10:04:05.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3873,7 +3873,7 @@ const PRICE_DATA = [
     "price": 1361.32,
     "price_raw": "1361.32",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:04:03.000+08:00"
+    "crawl_time": "2026-08-28T10:04:08.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3885,7 +3885,7 @@ const PRICE_DATA = [
     "price": 2110.95,
     "price_raw": "2110.95",
     "market": "US",
-    "crawl_time": "2026-08-27T10:03:58.000+08:00"
+    "crawl_time": "2026-08-28T10:04:02.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3897,7 +3897,7 @@ const PRICE_DATA = [
     "price": 1884.78,
     "price_raw": "1884.78",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:04:00.000+08:00"
+    "crawl_time": "2026-08-28T10:04:05.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3909,7 +3909,7 @@ const PRICE_DATA = [
     "price": 2182.06,
     "price_raw": "2182.06",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:04:03.000+08:00"
+    "crawl_time": "2026-08-28T10:04:08.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3918,10 +3918,10 @@ const PRICE_DATA = [
     "currency": "USD",
     "model": "GPD Pocket 3 Intel Pentium Gold 7505 16GB+512GB",
     "model_url": "https://gpdstore.net/gpd-pocket-3/",
-    "price": 831.95,
-    "price_raw": "831.95",
+    "price": 790.35,
+    "price_raw": "790.35",
     "market": "US",
-    "crawl_time": "2026-08-27T10:04:05.000+08:00"
+    "crawl_time": "2026-08-28T10:04:11.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3933,7 +3933,7 @@ const PRICE_DATA = [
     "price": 742.81,
     "price_raw": "742.81",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:04:08.000+08:00"
+    "crawl_time": "2026-08-28T10:04:14.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3945,7 +3945,7 @@ const PRICE_DATA = [
     "price": 859.98,
     "price_raw": "859.98",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:04:23.000+08:00"
+    "crawl_time": "2026-08-28T10:04:16.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3957,7 +3957,7 @@ const PRICE_DATA = [
     "price": 1663.95,
     "price_raw": "1663.95",
     "market": "US",
-    "crawl_time": "2026-08-27T10:04:25.000+08:00"
+    "crawl_time": "2026-08-28T10:04:19.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3969,7 +3969,7 @@ const PRICE_DATA = [
     "price": 1485.67,
     "price_raw": "1485.67",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:04:43.000+08:00"
+    "crawl_time": "2026-08-28T10:04:22.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3981,7 +3981,7 @@ const PRICE_DATA = [
     "price": 1720.0,
     "price_raw": "1720",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:04:48.000+08:00"
+    "crawl_time": "2026-08-28T10:04:26.000+08:00"
   },
   {
     "brand": "GPD",
@@ -3990,10 +3990,10 @@ const PRICE_DATA = [
     "currency": "USD",
     "model": "GPD BOX Core™ Ultra X7 358H 32G+1TB",
     "model_url": "https://gpdstore.net/gpd-box/",
-    "price": 1740.95,
-    "price_raw": "1740.95",
+    "price": 1409.6,
+    "price_raw": "1409.6",
     "market": "US",
-    "crawl_time": "2026-08-27T10:04:25.000+08:00"
+    "crawl_time": "2026-08-28T10:04:19.000+08:00"
   },
   {
     "brand": "GPD",
@@ -4002,10 +4002,10 @@ const PRICE_DATA = [
     "currency": "GBP",
     "model": "GPD BOX Core™ Ultra X7 358H 32G+1TB",
     "model_url": "https://gpdstore.net/gpd-box/",
-    "price": 1554.42,
-    "price_raw": "1554.42",
+    "price": 1258.57,
+    "price_raw": "1258.57",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:04:43.000+08:00"
+    "crawl_time": "2026-08-28T10:04:22.000+08:00"
   },
   {
     "brand": "GPD",
@@ -4014,10 +4014,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "GPD BOX Core™ Ultra X7 358H 32G+1TB",
     "model_url": "https://gpdstore.net/gpd-box/",
-    "price": 1799.59,
-    "price_raw": "1799.59",
+    "price": 1457.09,
+    "price_raw": "1457.09",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:04:48.000+08:00"
+    "crawl_time": "2026-08-28T10:04:26.000+08:00"
   },
   {
     "brand": "GPD",
@@ -4029,7 +4029,7 @@ const PRICE_DATA = [
     "price": 352.95,
     "price_raw": "352.95",
     "market": "US",
-    "crawl_time": "2026-08-27T10:04:51.000+08:00"
+    "crawl_time": "2026-08-28T10:04:30.000+08:00"
   },
   {
     "brand": "GPD",
@@ -4041,7 +4041,7 @@ const PRICE_DATA = [
     "price": 262.61,
     "price_raw": "262.61",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:04:56.000+08:00"
+    "crawl_time": "2026-08-28T10:04:32.000+08:00"
   },
   {
     "brand": "GPD",
@@ -4053,7 +4053,7 @@ const PRICE_DATA = [
     "price": 304.03,
     "price_raw": "304.03",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:05:02.000+08:00"
+    "crawl_time": "2026-08-28T10:04:35.000+08:00"
   },
   {
     "brand": "GPD",
@@ -4065,7 +4065,7 @@ const PRICE_DATA = [
     "price": 679.0,
     "price_raw": "679",
     "market": "US",
-    "crawl_time": "2026-08-27T10:02:41.000+08:00"
+    "crawl_time": "2026-08-28T10:02:01.000+08:00"
   },
   {
     "brand": "GPD",
@@ -4074,10 +4074,10 @@ const PRICE_DATA = [
     "currency": "GBP",
     "model": "GPD Pocket 3 Intel Core i3-1125G4 16GB+512GB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-pocket3-2025",
-    "price": 508.0,
-    "price_raw": "508",
+    "price": 510.0,
+    "price_raw": "510",
     "market": "UK",
-    "crawl_time": "2026-08-27T10:02:45.000+08:00"
+    "crawl_time": "2026-08-28T10:02:05.000+08:00"
   },
   {
     "brand": "GPD",
@@ -4086,10 +4086,10 @@ const PRICE_DATA = [
     "currency": "EUR",
     "model": "GPD Pocket 3 Intel Core i3-1125G4 16GB+512GB",
     "model_url": "https://www.gpd-minipc.com/products/gpd-pocket3-2025",
-    "price": 593.95,
-    "price_raw": "593.95",
+    "price": 594.95,
+    "price_raw": "594.95",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:02:48.000+08:00"
+    "crawl_time": "2026-08-28T10:02:09.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4101,7 +4101,7 @@ const PRICE_DATA = [
     "price": 399.0,
     "price_raw": "399",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:09.000+08:00"
+    "crawl_time": "2026-08-28T10:00:07.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4113,7 +4113,7 @@ const PRICE_DATA = [
     "price": 799.0,
     "price_raw": "799",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:09.000+08:00"
+    "crawl_time": "2026-08-28T10:00:07.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4125,7 +4125,7 @@ const PRICE_DATA = [
     "price": 699.0,
     "price_raw": "699",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:10.000+08:00"
+    "crawl_time": "2026-08-28T10:00:08.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4137,7 +4137,7 @@ const PRICE_DATA = [
     "price": 1099.0,
     "price_raw": "1099",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:10.000+08:00"
+    "crawl_time": "2026-08-28T10:00:08.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4149,7 +4149,7 @@ const PRICE_DATA = [
     "price": 449.0,
     "price_raw": "449",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:11.000+08:00"
+    "crawl_time": "2026-08-28T10:00:09.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4161,7 +4161,7 @@ const PRICE_DATA = [
     "price": 519.0,
     "price_raw": "519",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:11.000+08:00"
+    "crawl_time": "2026-08-28T10:00:09.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4173,7 +4173,7 @@ const PRICE_DATA = [
     "price": 519.0,
     "price_raw": "519",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:12.000+08:00"
+    "crawl_time": "2026-08-28T10:00:10.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4185,7 +4185,7 @@ const PRICE_DATA = [
     "price": 449.0,
     "price_raw": "449",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:12.000+08:00"
+    "crawl_time": "2026-08-28T10:00:10.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4197,7 +4197,7 @@ const PRICE_DATA = [
     "price": 579.0,
     "price_raw": "579",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:13.000+08:00"
+    "crawl_time": "2026-08-28T10:00:11.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4209,7 +4209,7 @@ const PRICE_DATA = [
     "price": 799.0,
     "price_raw": "799",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:13.000+08:00"
+    "crawl_time": "2026-08-28T10:00:11.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4221,7 +4221,7 @@ const PRICE_DATA = [
     "price": 579.0,
     "price_raw": "579",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:13.000+08:00"
+    "crawl_time": "2026-08-28T10:00:12.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4233,7 +4233,7 @@ const PRICE_DATA = [
     "price": 1199.0,
     "price_raw": "1199",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:14.000+08:00"
+    "crawl_time": "2026-08-28T10:00:12.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4245,7 +4245,7 @@ const PRICE_DATA = [
     "price": 519.0,
     "price_raw": "519.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:16.000+08:00"
+    "crawl_time": "2026-08-28T10:00:15.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4257,7 +4257,7 @@ const PRICE_DATA = [
     "price": 449.0,
     "price_raw": "449.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:17.000+08:00"
+    "crawl_time": "2026-08-28T10:00:16.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4269,7 +4269,7 @@ const PRICE_DATA = [
     "price": 579.0,
     "price_raw": "579.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:17.000+08:00"
+    "crawl_time": "2026-08-28T10:00:16.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4281,7 +4281,7 @@ const PRICE_DATA = [
     "price": 799.0,
     "price_raw": "799.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:18.000+08:00"
+    "crawl_time": "2026-08-28T10:00:17.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4293,7 +4293,7 @@ const PRICE_DATA = [
     "price": 579.0,
     "price_raw": "579.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:19.000+08:00"
+    "crawl_time": "2026-08-28T10:00:18.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4305,7 +4305,7 @@ const PRICE_DATA = [
     "price": 199.0,
     "price_raw": "199.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:20.000+08:00"
+    "crawl_time": "2026-08-28T10:00:18.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4317,7 +4317,7 @@ const PRICE_DATA = [
     "price": 799.0,
     "price_raw": "799.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:20.000+08:00"
+    "crawl_time": "2026-08-28T10:00:19.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4329,7 +4329,7 @@ const PRICE_DATA = [
     "price": 699.0,
     "price_raw": "699.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:21.000+08:00"
+    "crawl_time": "2026-08-28T10:00:19.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4341,7 +4341,7 @@ const PRICE_DATA = [
     "price": 1099.0,
     "price_raw": "1099.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:22.000+08:00"
+    "crawl_time": "2026-08-28T10:00:20.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4353,7 +4353,7 @@ const PRICE_DATA = [
     "price": 449.0,
     "price_raw": "449.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:22.000+08:00"
+    "crawl_time": "2026-08-28T10:00:21.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4365,7 +4365,7 @@ const PRICE_DATA = [
     "price": 519.0,
     "price_raw": "519.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:23.000+08:00"
+    "crawl_time": "2026-08-28T10:00:21.000+08:00"
   },
   {
     "brand": "Meepo",
@@ -4377,7 +4377,7 @@ const PRICE_DATA = [
     "price": 1199.0,
     "price_raw": "1199.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:00:24.000+08:00"
+    "crawl_time": "2026-08-28T10:00:22.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4389,7 +4389,7 @@ const PRICE_DATA = [
     "price": 685.98,
     "price_raw": "685.98",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:05.000+08:00"
+    "crawl_time": "2026-08-28T10:09:04.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4401,7 +4401,7 @@ const PRICE_DATA = [
     "price": 655.98,
     "price_raw": "655.98",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:07.000+08:00"
+    "crawl_time": "2026-08-28T10:09:05.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4413,7 +4413,7 @@ const PRICE_DATA = [
     "price": 585.98,
     "price_raw": "585.98",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:08.000+08:00"
+    "crawl_time": "2026-08-28T10:09:07.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4425,7 +4425,7 @@ const PRICE_DATA = [
     "price": 535.98,
     "price_raw": "535.98",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:10.000+08:00"
+    "crawl_time": "2026-08-28T10:09:08.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4437,7 +4437,7 @@ const PRICE_DATA = [
     "price": 455.98,
     "price_raw": "455.98",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:11.000+08:00"
+    "crawl_time": "2026-08-28T10:09:09.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4449,7 +4449,7 @@ const PRICE_DATA = [
     "price": 525.98,
     "price_raw": "525.98",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:12.000+08:00"
+    "crawl_time": "2026-08-28T10:09:10.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4461,7 +4461,7 @@ const PRICE_DATA = [
     "price": 525.98,
     "price_raw": "525.98",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:14.000+08:00"
+    "crawl_time": "2026-08-28T10:09:10.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4473,7 +4473,7 @@ const PRICE_DATA = [
     "price": 455.98,
     "price_raw": "455.98",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:16.000+08:00"
+    "crawl_time": "2026-08-28T10:09:11.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4485,7 +4485,7 @@ const PRICE_DATA = [
     "price": 565.98,
     "price_raw": "565.98",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:17.000+08:00"
+    "crawl_time": "2026-08-28T10:09:12.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4497,7 +4497,7 @@ const PRICE_DATA = [
     "price": 655.98,
     "price_raw": "655.98",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:17.000+08:00"
+    "crawl_time": "2026-08-28T10:09:13.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4509,7 +4509,7 @@ const PRICE_DATA = [
     "price": 719.98,
     "price_raw": "719.98",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:19.000+08:00"
+    "crawl_time": "2026-08-28T10:09:13.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4521,7 +4521,7 @@ const PRICE_DATA = [
     "price": 629.98,
     "price_raw": "629.98",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:21.000+08:00"
+    "crawl_time": "2026-08-28T10:09:14.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4533,7 +4533,7 @@ const PRICE_DATA = [
     "price": 455.98,
     "price_raw": "455.98",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:23.000+08:00"
+    "crawl_time": "2026-08-28T10:09:15.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4545,7 +4545,7 @@ const PRICE_DATA = [
     "price": 485.98,
     "price_raw": "485.98",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:25.000+08:00"
+    "crawl_time": "2026-08-28T10:09:15.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4557,7 +4557,7 @@ const PRICE_DATA = [
     "price": 565.98,
     "price_raw": "565.98",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:27.000+08:00"
+    "crawl_time": "2026-08-28T10:09:16.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4569,7 +4569,7 @@ const PRICE_DATA = [
     "price": 445.98,
     "price_raw": "445.98",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:29.000+08:00"
+    "crawl_time": "2026-08-28T10:09:17.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4581,7 +4581,7 @@ const PRICE_DATA = [
     "price": 655.98,
     "price_raw": "655.98",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:31.000+08:00"
+    "crawl_time": "2026-08-28T10:09:17.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4593,7 +4593,7 @@ const PRICE_DATA = [
     "price": 335.98,
     "price_raw": "335.98",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:32.000+08:00"
+    "crawl_time": "2026-08-28T10:09:18.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4605,7 +4605,7 @@ const PRICE_DATA = [
     "price": 1399.98,
     "price_raw": "1399.98",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:33.000+08:00"
+    "crawl_time": "2026-08-28T10:09:19.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4809,7 +4809,7 @@ const PRICE_DATA = [
     "price": 796.2,
     "price_raw": "796.20",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:36.000+08:00"
+    "crawl_time": "2026-08-28T10:09:21.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4821,7 +4821,7 @@ const PRICE_DATA = [
     "price": 714.0,
     "price_raw": "714.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:38.000+08:00"
+    "crawl_time": "2026-08-28T10:09:22.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4833,7 +4833,7 @@ const PRICE_DATA = [
     "price": 669.0,
     "price_raw": "669.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:39.000+08:00"
+    "crawl_time": "2026-08-28T10:09:22.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4845,7 +4845,7 @@ const PRICE_DATA = [
     "price": 599.0,
     "price_raw": "599.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:40.000+08:00"
+    "crawl_time": "2026-08-28T10:09:23.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4857,7 +4857,7 @@ const PRICE_DATA = [
     "price": 499.0,
     "price_raw": "499.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:41.000+08:00"
+    "crawl_time": "2026-08-28T10:09:23.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4869,7 +4869,7 @@ const PRICE_DATA = [
     "price": 609.0,
     "price_raw": "609.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:42.000+08:00"
+    "crawl_time": "2026-08-28T10:09:24.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4881,7 +4881,7 @@ const PRICE_DATA = [
     "price": 599.0,
     "price_raw": "599.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:43.000+08:00"
+    "crawl_time": "2026-08-28T10:09:25.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4893,7 +4893,7 @@ const PRICE_DATA = [
     "price": 479.0,
     "price_raw": "479.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:44.000+08:00"
+    "crawl_time": "2026-08-28T10:09:26.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4905,7 +4905,7 @@ const PRICE_DATA = [
     "price": 599.0,
     "price_raw": "599.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:45.000+08:00"
+    "crawl_time": "2026-08-28T10:09:26.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4917,7 +4917,7 @@ const PRICE_DATA = [
     "price": 772.0,
     "price_raw": "772.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:46.000+08:00"
+    "crawl_time": "2026-08-28T10:09:27.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4929,7 +4929,7 @@ const PRICE_DATA = [
     "price": 807.93,
     "price_raw": "807.93",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:48.000+08:00"
+    "crawl_time": "2026-08-28T10:09:27.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4941,7 +4941,7 @@ const PRICE_DATA = [
     "price": 730.0,
     "price_raw": "730.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:49.000+08:00"
+    "crawl_time": "2026-08-28T10:09:28.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4953,7 +4953,7 @@ const PRICE_DATA = [
     "price": 509.0,
     "price_raw": "509.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:50.000+08:00"
+    "crawl_time": "2026-08-28T10:09:29.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4965,7 +4965,7 @@ const PRICE_DATA = [
     "price": 499.0,
     "price_raw": "499.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:51.000+08:00"
+    "crawl_time": "2026-08-28T10:09:29.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4977,7 +4977,7 @@ const PRICE_DATA = [
     "price": 526.5,
     "price_raw": "526.50",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:52.000+08:00"
+    "crawl_time": "2026-08-28T10:09:30.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -4989,7 +4989,7 @@ const PRICE_DATA = [
     "price": 439.0,
     "price_raw": "439.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:53.000+08:00"
+    "crawl_time": "2026-08-28T10:09:31.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5001,7 +5001,7 @@ const PRICE_DATA = [
     "price": 769.0,
     "price_raw": "769.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:54.000+08:00"
+    "crawl_time": "2026-08-28T10:09:32.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5013,7 +5013,7 @@ const PRICE_DATA = [
     "price": 339.0,
     "price_raw": "339.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:55.000+08:00"
+    "crawl_time": "2026-08-28T10:09:32.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5025,7 +5025,7 @@ const PRICE_DATA = [
     "price": 1659.0,
     "price_raw": "1659.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:55.000+08:00"
+    "crawl_time": "2026-08-28T10:09:33.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5037,7 +5037,7 @@ const PRICE_DATA = [
     "price": 669.0,
     "price_raw": "669.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:30:58.000+08:00"
+    "crawl_time": "2026-08-28T10:09:35.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5049,7 +5049,7 @@ const PRICE_DATA = [
     "price": 609.0,
     "price_raw": "609.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:31:00.000+08:00"
+    "crawl_time": "2026-08-28T10:09:36.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5061,7 +5061,7 @@ const PRICE_DATA = [
     "price": 579.0,
     "price_raw": "579.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:31:01.000+08:00"
+    "crawl_time": "2026-08-28T10:09:37.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5073,7 +5073,7 @@ const PRICE_DATA = [
     "price": 529.0,
     "price_raw": "529.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:31:02.000+08:00"
+    "crawl_time": "2026-08-28T10:09:38.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5085,7 +5085,7 @@ const PRICE_DATA = [
     "price": 449.0,
     "price_raw": "449.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:31:02.000+08:00"
+    "crawl_time": "2026-08-28T10:09:39.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5097,7 +5097,7 @@ const PRICE_DATA = [
     "price": 529.0,
     "price_raw": "529.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:31:03.000+08:00"
+    "crawl_time": "2026-08-28T10:09:40.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5109,7 +5109,7 @@ const PRICE_DATA = [
     "price": 519.0,
     "price_raw": "519.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:31:04.000+08:00"
+    "crawl_time": "2026-08-28T10:09:40.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5121,7 +5121,7 @@ const PRICE_DATA = [
     "price": 419.0,
     "price_raw": "419.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:31:05.000+08:00"
+    "crawl_time": "2026-08-28T10:09:41.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5133,7 +5133,7 @@ const PRICE_DATA = [
     "price": 529.0,
     "price_raw": "529.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:31:06.000+08:00"
+    "crawl_time": "2026-08-28T10:09:42.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5145,7 +5145,7 @@ const PRICE_DATA = [
     "price": 669.0,
     "price_raw": "669.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:31:07.000+08:00"
+    "crawl_time": "2026-08-28T10:09:43.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5157,7 +5157,7 @@ const PRICE_DATA = [
     "price": 749.0,
     "price_raw": "749.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:31:08.000+08:00"
+    "crawl_time": "2026-08-28T10:09:44.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5169,7 +5169,7 @@ const PRICE_DATA = [
     "price": 629.0,
     "price_raw": "629.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:31:09.000+08:00"
+    "crawl_time": "2026-08-28T10:09:44.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5193,7 +5193,7 @@ const PRICE_DATA = [
     "price": 449.0,
     "price_raw": "449.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:31:11.000+08:00"
+    "crawl_time": "2026-08-28T10:09:46.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5205,7 +5205,7 @@ const PRICE_DATA = [
     "price": 499.0,
     "price_raw": "499.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:31:12.000+08:00"
+    "crawl_time": "2026-08-28T10:09:47.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5217,7 +5217,7 @@ const PRICE_DATA = [
     "price": 399.0,
     "price_raw": "399.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:31:13.000+08:00"
+    "crawl_time": "2026-08-28T10:09:47.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5229,7 +5229,7 @@ const PRICE_DATA = [
     "price": 679.0,
     "price_raw": "679.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:31:14.000+08:00"
+    "crawl_time": "2026-08-28T10:09:48.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5241,7 +5241,7 @@ const PRICE_DATA = [
     "price": 319.0,
     "price_raw": "319.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:31:16.000+08:00"
+    "crawl_time": "2026-08-28T10:09:48.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5253,7 +5253,7 @@ const PRICE_DATA = [
     "price": 1459.0,
     "price_raw": "1459.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:31:17.000+08:00"
+    "crawl_time": "2026-08-28T10:09:49.000+08:00"
   },
   {
     "brand": "Joyor",
@@ -5757,7 +5757,7 @@ const PRICE_DATA = [
     "price": 449.0,
     "price_raw": "449.00",
     "market": "FR",
-    "crawl_time": "2026-08-27T10:31:11.000+08:00"
+    "crawl_time": "2026-08-28T10:09:45.000+08:00"
   },
   {
     "brand": "Joyor",
