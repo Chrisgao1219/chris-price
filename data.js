@@ -861,7 +861,7 @@ const PRICE_DATA = [
     "price": 489.0,
     "price_raw": "489",
     "market": "EU",
-    "crawl_time": "2026-08-27T11:14:40.000+08:00"
+    "crawl_time": "2026-08-28T10:32:26.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -873,7 +873,7 @@ const PRICE_DATA = [
     "price": 489.0,
     "price_raw": "489",
     "market": "EU",
-    "crawl_time": "2026-08-27T11:14:40.000+08:00"
+    "crawl_time": "2026-08-28T10:32:26.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -885,7 +885,7 @@ const PRICE_DATA = [
     "price": 499.0,
     "price_raw": "499",
     "market": "EU",
-    "crawl_time": "2026-08-27T11:14:40.000+08:00"
+    "crawl_time": "2026-08-28T10:33:08.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -897,7 +897,7 @@ const PRICE_DATA = [
     "price": 499.0,
     "price_raw": "499",
     "market": "EU",
-    "crawl_time": "2026-08-27T11:14:40.000+08:00"
+    "crawl_time": "2026-08-28T10:32:26.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -909,7 +909,7 @@ const PRICE_DATA = [
     "price": 499.0,
     "price_raw": "499",
     "market": "EU",
-    "crawl_time": "2026-08-27T11:14:40.000+08:00"
+    "crawl_time": "2026-08-28T10:32:26.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -921,7 +921,7 @@ const PRICE_DATA = [
     "price": 649.0,
     "price_raw": "649",
     "market": "EU",
-    "crawl_time": "2026-08-27T11:14:40.000+08:00"
+    "crawl_time": "2026-08-28T10:32:26.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -933,7 +933,7 @@ const PRICE_DATA = [
     "price": 839.0,
     "price_raw": "839",
     "market": "EU",
-    "crawl_time": "2026-08-27T11:14:40.000+08:00"
+    "crawl_time": "2026-08-28T10:32:26.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -945,7 +945,7 @@ const PRICE_DATA = [
     "price": 1159.0,
     "price_raw": "1159",
     "market": "EU",
-    "crawl_time": "2026-08-27T11:14:40.000+08:00"
+    "crawl_time": "2026-08-28T10:32:26.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -957,7 +957,7 @@ const PRICE_DATA = [
     "price": 859.0,
     "price_raw": "859",
     "market": "EU",
-    "crawl_time": "2026-08-27T11:14:40.000+08:00"
+    "crawl_time": "2026-08-28T10:32:26.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -969,7 +969,7 @@ const PRICE_DATA = [
     "price": 259.0,
     "price_raw": "259",
     "market": "EU",
-    "crawl_time": "2026-08-27T11:14:40.000+08:00"
+    "crawl_time": "2026-08-28T10:32:26.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -981,7 +981,7 @@ const PRICE_DATA = [
     "price": 419.0,
     "price_raw": "419",
     "market": "EU",
-    "crawl_time": "2026-08-27T11:14:40.000+08:00"
+    "crawl_time": "2026-08-28T10:32:26.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -993,7 +993,7 @@ const PRICE_DATA = [
     "price": 529.0,
     "price_raw": "529",
     "market": "EU",
-    "crawl_time": "2026-08-27T11:14:40.000+08:00"
+    "crawl_time": "2026-08-28T10:32:26.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1005,7 +1005,7 @@ const PRICE_DATA = [
     "price": 669.0,
     "price_raw": "669",
     "market": "EU",
-    "crawl_time": "2026-08-27T11:14:40.000+08:00"
+    "crawl_time": "2026-08-28T10:32:26.000+08:00"
   },
   {
     "brand": "Kukirin",
@@ -1017,7 +1017,7 @@ const PRICE_DATA = [
     "price": 1239.0,
     "price_raw": "1239",
     "market": "EU",
-    "crawl_time": "2026-08-27T11:14:40.000+08:00"
+    "crawl_time": "2026-08-28T10:32:26.000+08:00"
   },
   {
     "brand": "Kukirin",
