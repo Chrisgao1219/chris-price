@@ -40,7 +40,6 @@
   .bot { background: #0f172a; color: #e2e8f0; border-radius: 10px; padding: 18px 20px; }
   .bot .line { padding: 5px 0; font-size: 14px; }
   .bot .q { color: #93c5fd; }
-  .bot .a { color: #86efac; }
   a { color: #0d9488; }
   .back { display: inline-block; margin-top: 24px; font-size: 14px; }
 </style>
@@ -48,82 +47,64 @@
 <body>
 <div class="header">
   <h1>竞品价格分析系统</h1>
-  <p>功能介绍与使用说明 · 数据来自飞书多维表，每日自动更新</p>
+  <p>功能介绍与使用说明 · 登录后按账号查看，数据每日自动更新</p>
 </div>
 
 <div class="container">
 
   <section>
-    <h2>🎯 这个系统是什么</h2>
+    <h2>🔐 登录与权限</h2>
     <p style="font-size:14px; color:#4a5568;">
-      自动监控 Meepo / Joyor / GPD / Kukirin 四个竞品品牌的价格、库存、上新与页面变化，
-      实时推送到飞书群，支持 @机器人 中文问答；本页面展示抓取到的多品牌价格矩阵与「我方 vs 竞品」价差。
+      系统按<b>账号</b>管理访问权限。每个账号只能看到被授权的那几个品牌的价格与利润数据，
+      未授权的品牌在本页<b>不会出现任何数据</b>（数据在服务端隔离，不是前端隐藏）。
     </p>
     <table style="margin-top:12px;">
-      <tr><th>品牌</th><th>覆盖</th><th>监控站点</th><th>价格视角</th></tr>
-      <tr><td><b>Meepo</b></td><td>24 款</td><td>官方主站 + 欧洲站</td><td>USD / EUR</td></tr>
-      <tr><td><b>Joyor</b></td><td>官方 + 第三方渠道</td><td>官方站 + geekbuying/banggood 等</td><td>EUR</td></tr>
-      <tr><td><b>GPD</b></td><td>38 款 × 3 国（每配置独立）</td><td>gpd-minipc + gpdstore</td><td>USD / GBP / EUR</td></tr>
-      <tr><td><b>Kukirin</b></td><td>288 条 × 4 国</td><td>欧洲/英国/美国/波兰多渠道</td><td>EUR / GBP / USD / PLN</td></tr>
+      <tr><th>项目</th><th>说明</th></tr>
+      <tr><td>登录地址</td><td><code>price.chrisgao1219.com</code></td></tr>
+      <tr><td>账号密码</td><td>由管理员分配，一人一号</td></tr>
+      <tr><td>可见范围</td><td>账号绑定品牌（如只负责某品牌的同事只能看该品牌）</td></tr>
+      <tr><td>权限变更</td><td>找管理员调整（改账号 / 改密码 / 换品牌）</td></tr>
     </table>
   </section>
 
   <section>
-    <h2>🔄 运行方式</h2>
-    <p style="font-size:14px; color:#4a5568; margin-bottom:12px;">系统由 Windows 计划任务全自动运行，无需人工干预：</p>
-    <table>
-      <tr><th>任务</th><th>频率</th><th>说明</th></tr>
-      <tr><td>Meepo 价格 + 库存</td><td>每天 10:00</td><td>24 款价格与库存</td></tr>
-      <tr><td>GPD 三国价格</td><td>每天 10:00</td><td>美 / 英 / 法，按 SKU 配置</td></tr>
-      <tr><td>Joyor 价格 + 库存</td><td>每天 10:30</td><td>官方 + 第三方渠道</td></tr>
-      <tr><td>Kukirin 四国价格</td><td>每天 11:00</td><td>欧 / 英 / 美 / 波</td></tr>
-      <tr><td>价格网站自动更新</td><td>每天 11:40</td><td>导出飞书表 → 生成本页 → 自动上传</td></tr>
-      <tr><td>页面变化检测</td><td>周一 / 三 / 五 12:00</td><td>新品上架 / 下架 / 博客 / 首页变化</td></tr>
-      <tr><td>社媒监控</td><td>周一 / 三 / 五 12:30</td><td>YouTube / Facebook / Instagram</td></tr>
-      <tr><td>日报推送</td><td>每天 18:00</td><td>当日情报汇总</td></tr>
-      <tr><td>周报推送</td><td>每周五 18:00</td><td>一周变化汇总</td></tr>
-      <tr><td>问答机器人</td><td>7×24 在线</td><td>开机自启，随时可问</td></tr>
-      <tr><td>VPN 保活</td><td>每 5 分钟</td><td>保证法国出口（价格视角准确）</td></tr>
-    </table>
-  </section>
-
-  <section>
-    <h2>⚡ 核心功能</h2>
-    <div class="cards">
-      <div class="card"><div class="icon">💰</div><h4>价格监控</h4><p>每天抓取 500+ 条价格，大幅/明显/微调分级提醒</p></div>
-      <div class="card"><div class="icon">📦</div><h4>库存监控</h4><p>缺货 / 恢复库存实时提醒</p></div>
-      <div class="card"><div class="icon">🆕</div><h4>上新 / 下架</h4><p>新品上架、产品下架自动发现</p></div>
-      <div class="card"><div class="icon">🔁</div><h4>页面 / 博客变化</h4><p>官网首页、促销页、博客改动提醒</p></div>
-      <div class="card"><div class="icon">📊</div><h4>日报 / 周报</h4><p>每天 18:00 日报，每周五 18:00 周报</p></div>
-      <div class="card"><div class="icon">⚠️</div><h4>抓取异常提醒</h4><p>某渠道反爬 / 抓取失败自动推送</p></div>
-      <div class="card"><div class="icon">🤖</div><h4>@机器人 问答</h4><p>中文提问查价格、降价、缺货、价差</p></div>
-      <div class="card"><div class="icon">🛡️</div><h4>IP 视角保护</h4><p>主站价格按法国出口抓取，非法国自动保护</p></div>
-    </div>
-  </section>
-
-  <section>
-    <h2>🤖 飞书群 @机器人 用法</h2>
-    <p style="font-size:14px; color:#4a5568; margin-bottom:12px;">在群里输入 <code>@机器人</code> + 下面任意一句即可：</p>
-    <div class="bot">
-      <div class="line"><span class="q">@机器人 Meepo V5 现在多少钱</span></div>
-      <div class="line"><span class="q">@机器人 最近7天哪些型号降价了</span></div>
-      <div class="line"><span class="q">@机器人 哪个型号缺货了</span></div>
-      <div class="line"><span class="q">@机器人 竞品比我便宜多少</span></div>
-      <div class="line"><span class="q">@机器人 GPD WIN 5 美国多少钱</span></div>
-      <div class="line"><span class="q">@机器人 Kukirin G2 欧洲多少钱</span></div>
-      <div class="line"><span class="q">@机器人 Joyor T10 各渠道多少钱</span></div>
-      <div class="line"><span class="q">@机器人 监控跑了没</span></div>
-    </div>
-  </section>
-
-  <section>
-    <h2>👀 本页面怎么看</h2>
+    <h2>🎯 这个系统是什么</h2>
     <p style="font-size:14px; color:#4a5568;">
-      顶部按 <b>品牌</b> / <b>市场</b> / <b>货币</b> 筛选；价格矩阵每行一个型号，
-      我方站点标「<b style="color:#e94560;">我方</b>」，竞品价格与己方对比显示 ↑/↓ 百分比；
-      底部「价格洞察」给出最低价网站、己方排名、价差最大型号等结论。
+      自动监控竞品品牌的价格、库存、上新与页面变化，每天更新到本页面；
+      并自动计算每个产品在你负责品牌的欧洲站售价下的<b>利润</b>（成本、运费、扣点、汇率按品牌公式折算）。
     </p>
+  </section>
+
+  <section>
+    <h2>⚡ 本页面核心功能</h2>
+    <div class="cards">
+      <div class="card"><div class="icon">📊</div><h4>价格矩阵对比</h4><p>每行一个型号，己方站点 vs 各渠道价差，↑/↓ 百分比对比</p></div>
+      <div class="card"><div class="icon">💰</div><h4>利润表</h4><p>每个产品两行：欧洲站售价利润 + 全渠道最低价利润（成本运费已折 CNY）</p></div>
+      <div class="card"><div class="icon">🧮</div><h4>利润计算器</h4><p>选型号 + 填售价，实时算该售价下的利润，参数自动取</p></div>
+      <div class="card"><div class="icon">🔎</div><h4>价格洞察</h4><p>最低价网站、己方排名、价差最大型号等自动结论</p></div>
+      <div class="card"><div class="icon">⚠️</div><h4>异常提醒</h4><p>抓取失败 / 反爬自动告警，保证数据可靠</p></div>
+      <div class="card"><div class="icon">📈</div><h4>日报 / 周报</h4><p>每天 18:00 日报、每周五 18:00 周报，附利润汇总</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>👀 页面怎么看</h2>
+    <table>
+      <tr><th>区块</th><th>怎么看</th></tr>
+      <tr><td><b>价格矩阵</b></td><td>顶部按品牌 / 市场 / 货币筛选；每行型号，标「我方」的列是己方站点，竞品列显示与己方的 ↑/↓ 差价百分比</td></tr>
+      <tr><td><b>利润表</b></td><td>每个产品两行：第一行「欧洲站售价 → 利润」，第二行「↳ 最低价（渠道）→ 利润」，可看出如果压到全渠道最低价还有多少利润</td></tr>
+      <tr><td><b>利润计算器</b></td><td>选型号 → 填售价（EUR）→ 实时显示该售价下的利润，方便测算改价空间</td></tr>
+      <tr><td><b>价格洞察</b></td><td>自动给出最低价网站、己方排名、价差最大型号等结论</td></tr>
+    </table>
     <div class="note">⚠️ <b>提醒时效</b>：价格最长延迟 1 天（每天抓一次）；大范围价格波动先怀疑抓取源临时异常，点产品链接核实。</div>
+  </section>
+
+  <section>
+    <h2>🔄 数据更新</h2>
+    <p style="font-size:14px; color:#4a5568;">
+      系统每天自动串联抓取你负责品牌的价格、库存与利润数据，随后自动更新本页与利润表，
+      全程无需人工干预。遇到个别渠道反爬会先自动补抓，仍失败的会在群内提醒。
+    </p>
   </section>
 
   <a class="back" href="./">← 返回价格矩阵</a>
