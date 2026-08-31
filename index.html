@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>竞品价格分析系统</title>
-    <script src="data.js?v=20260831112925"></script>
+    <script src="data.js?v=20260831114335"></script>
     <style>
         * {
             margin: 0;
@@ -560,6 +560,24 @@
             </div>
         </div>
 
+        <!-- 利润计算器（手动填售价算利润） -->
+        <div class="matrix-container" id="calcSection">
+            <div class="matrix-header">
+                <h3>利润计算器</h3>
+            </div>
+            <div style="padding:16px 24px; display:flex; gap:16px; align-items:flex-end; flex-wrap:wrap;">
+                <div class="filter-group">
+                    <label>型号</label>
+                    <select id="calcModel" style="min-width:200px;"></select>
+                </div>
+                <div class="filter-group">
+                    <label>售价（EUR）</label>
+                    <input type="number" id="calcPrice" placeholder="输入售价" style="padding:8px 12px; border:1px solid #cbd5e0; border-radius:6px; font-size:14px; min-width:140px;">
+                </div>
+                <div id="calcResult" style="font-size:16px; font-weight:600; padding-bottom:8px;"></div>
+            </div>
+        </div>
+
         <!-- 洞察卡片 -->
         <div class="insight-card" id="insightCard">
             <h3>价格洞察</h3>
@@ -586,6 +604,7 @@
             populateFilters();
             setupEventListeners();
             applyFilters();
+            initCalc();
         }
 
         // 市场名称映射
@@ -752,7 +771,7 @@
             renderInsights();
         }
 
-        // 渲染利润表（独立表格：有利润配置的产品，按型号去重）
+        // 渲染利润表（独立表格：有利润配置的产品，按型号去重，每型号两行：欧洲站/最低价）
         function renderProfit() {
             const body = document.getElementById('profitBody');
             const seen = new Set();
@@ -769,6 +788,7 @@
             let html = '';
             profitRecords.forEach(r => {
                 const cs = getCurrencySymbol(r.currency) || '';
+                // 第一行：欧洲站售价利润
                 html += `<tr>
                     <td class="model-cell"><a href="${r.model_url}" target="_blank" class="model-link">${r.model}</a></td>
                     <td>${cs}${(r.price || 0).toFixed(0)}</td>
@@ -776,8 +796,46 @@
                     <td>¥${(r.shipping || 0).toFixed(0)}</td>
                     <td><span class="price-current own">¥${r.profit.toFixed(0)}</span></td>
                 </tr>`;
+                // 第二行：全渠道最低价利润
+                if (r.min_profit !== null && r.min_profit !== undefined) {
+                    html += `<tr class="min-price-row">
+                        <td class="model-cell">↳ 最低价（${r.min_site || ''}）</td>
+                        <td>${r.min_currency || ''}${(r.min_price || 0).toFixed(0)}</td>
+                        <td>¥${(r.cost || 0).toFixed(0)}</td>
+                        <td>¥${(r.shipping || 0).toFixed(0)}</td>
+                        <td><span class="price-current own">¥${r.min_profit.toFixed(0)}</span></td>
+                    </tr>`;
+                }
             });
             body.innerHTML = html;
+        }
+
+        // 利润计算器：选型号 + 填售价 → 实时算利润（公式参数从数据取）
+        function initCalc() {
+            const sel = document.getElementById('calcModel');
+            const input = document.getElementById('calcPrice');
+            const result = document.getElementById('calcResult');
+            const recs = [];
+            const seen = new Set();
+            PRICE_DATA.forEach(r => {
+                if (r.profit === null || r.profit === undefined) return;
+                if (seen.has(r.model)) return;
+                seen.add(r.model);
+                recs.push(r);
+            });
+            recs.forEach(r => sel.appendChild(new Option(r.model, r.model)));
+            const recalc = () => {
+                const rec = recs.find(r => r.model === sel.value);
+                const price = parseFloat(input.value);
+                if (!rec || !price || price <= 0) { result.innerHTML = ''; return; }
+                const fx = rec.fx_rate || 1;
+                const profit = price * (rec.payout_rate || 1) * (rec.shop_rate || 1) * fx
+                    - ((rec.cost || 0) + (rec.shipping || 0));
+                result.innerHTML = `售价 €${price} → 利润 <span style="color:#38a169;font-weight:700;">¥${profit.toFixed(0)}</span>`;
+            };
+            sel.onchange = recalc;
+            input.oninput = recalc;
+            if (recs.length) { sel.value = recs[0].model; recalc(); }
         }
 
         // 渲染KPI
