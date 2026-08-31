@@ -2,6 +2,7 @@
 # Pages 构建时读取仓库根此文件自动绑定资源。
 name = "chris-price"
 compatibility_date = "2025-06-01"
+pages_build_output_dir = "/"
 
 [[kv_namespaces]]
 binding = "PRICE_DATA_KV"
