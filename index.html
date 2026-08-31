@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>竞品价格分析系统</title>
-    <script src="data.js?v=20260831115559"></script>
+    <!-- 数据改为登录后经 /api/data 获取，不再静态加载 data.js（真隔离） -->
     <style>
         * {
             margin: 0;
@@ -484,6 +484,17 @@
     </style>
 </head>
 <body>
+    <!-- 登录层 -->
+    <div id="login" style="max-width:360px;margin:80px auto;padding:32px;background:#fff;border-radius:8px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.08);">
+        <h2 style="margin-bottom:20px;">竞品价格分析系统</h2>
+        <div style="margin-bottom:12px;"><input id="loginUser" placeholder="用户名" style="width:100%;padding:10px 12px;border:1px solid #cbd5e0;border-radius:6px;font-size:14px;box-sizing:border-box;"></div>
+        <div style="margin-bottom:16px;"><input id="loginPass" type="password" placeholder="密码" style="width:100%;padding:10px 12px;border:1px solid #cbd5e0;border-radius:6px;font-size:14px;box-sizing:border-box;"></div>
+        <button id="loginBtn" style="width:100%;padding:10px;background:#e94560;color:#fff;border:none;border-radius:6px;font-size:14px;cursor:pointer;">登 录</button>
+        <div id="loginErr" style="color:#e53e3e;font-size:13px;margin-top:10px;"></div>
+    </div>
+
+    <!-- 主应用（登录后显示） -->
+    <div id="app" style="display:none;">
     <div style="background: linear-gradient(135deg,#1a1a2e,#16213e); color:#fff; padding:16px 32px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
         <div><b style="font-size:19px;">竞品价格分析系统</b><span style="font-size:12px; color:#a0aec0; margin-left:12px;">竞品价格 · 我方对比 · 每日更新</span></div>
         <a href="./guide.html" style="color:#fff; text-decoration:none; background:#e94560; padding:7px 16px; border-radius:6px; font-size:13px; font-weight:600;">📖 使用说明</a>
@@ -584,8 +595,12 @@
             <ul class="insight-list" id="insightList"></ul>
         </div>
     </div>
+    </div>
 
     <script>
+        // 全局数据（登录后由 /api/data 填充，未登录为空）
+        let PRICE_DATA = [];
+
         // 全局状态
         let state = {
             brand: '',
@@ -1088,7 +1103,56 @@
             insightList.innerHTML = insights.map(i => `<li>${i}</li>`).join('');
         }
 
-        document.addEventListener('DOMContentLoaded', init);
+        // 登录 + 数据加载流程
+        function showLogin() {
+            document.getElementById('login').style.display = 'block';
+            document.getElementById('app').style.display = 'none';
+        }
+
+        async function loadData(token) {
+            try {
+                const res = await fetch('/api/data', { headers: { Authorization: 'Bearer ' + token } });
+                if (res.status === 401) {
+                    localStorage.removeItem('price_token');
+                    showLogin();
+                    return;
+                }
+                if (!res.ok) { showLogin(); return; }
+                PRICE_DATA = await res.json();
+                document.getElementById('login').style.display = 'none';
+                document.getElementById('app').style.display = 'block';
+                init();
+            } catch (e) {
+                showLogin();
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const token = localStorage.getItem('price_token');
+            if (token) { loadData(token); } else { showLogin(); }
+        });
+
+        document.getElementById('loginBtn').addEventListener('click', async () => {
+            const u = document.getElementById('loginUser').value.trim();
+            const p = document.getElementById('loginPass').value;
+            const err = document.getElementById('loginErr');
+            err.textContent = '';
+            try {
+                const res = await fetch('/api/login', {
+                    method: 'POST', headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ username: u, password: p })
+                });
+                if (res.status !== 200) { err.textContent = '用户名或密码错误'; return; }
+                const data = await res.json();
+                localStorage.setItem('price_token', data.token);
+                loadData(data.token);
+            } catch (e) {
+                err.textContent = '登录服务不可用';
+            }
+        });
+        document.getElementById('loginPass').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') document.getElementById('loginBtn').click();
+        });
     </script>
 </body>
 </html>
