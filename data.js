@@ -12,7 +12,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:34:52.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -27,7 +34,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:34:55.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -42,7 +56,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:34:58.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -57,7 +78,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:35:00.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -72,7 +100,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:35:03.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -87,7 +122,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:35:06.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -102,7 +144,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:35:09.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -117,7 +166,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:35:12.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -132,7 +188,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:35:15.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -147,7 +210,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:35:18.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -162,7 +232,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:35:21.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -177,7 +254,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:35:24.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -192,7 +276,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:35:27.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -207,7 +298,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:35:30.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -222,7 +320,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:35:33.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -237,7 +342,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:35:36.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -252,7 +364,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:35:39.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -267,7 +386,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:35:43.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -282,7 +408,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:35:47.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -297,7 +430,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:35:49.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -312,7 +452,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:35:52.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -327,7 +474,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:35:55.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -342,7 +496,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:35:58.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -357,7 +518,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:36:01.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -372,7 +540,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:36:03.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -387,7 +562,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:36:06.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -402,7 +584,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:36:09.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -417,7 +606,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:36:12.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -432,7 +628,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:36:14.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -447,7 +650,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:36:17.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -462,7 +672,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:36:20.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -477,7 +694,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:36:23.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -492,7 +716,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:36:26.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -507,7 +738,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:36:28.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -522,7 +760,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:36:31.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -537,7 +782,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:37:03.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -552,7 +804,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:37:06.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -567,7 +826,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:37:09.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -582,7 +848,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:37:12.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -597,7 +870,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:37:14.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -612,7 +892,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:37:18.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -627,7 +914,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:37:21.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -642,7 +936,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:37:23.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -657,7 +958,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:37:27.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -672,7 +980,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:37:29.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -687,7 +1002,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:37:33.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -702,7 +1024,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:37:36.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -717,7 +1046,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:37:39.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -732,7 +1068,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:37:41.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -747,7 +1090,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:37:44.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -762,7 +1112,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:37:47.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -777,7 +1134,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:37:50.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -792,7 +1156,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:37:52.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -807,7 +1178,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:37:55.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -822,7 +1200,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:37:57.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -837,7 +1222,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:38:00.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -852,7 +1244,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:38:03.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -867,7 +1266,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:38:06.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -882,7 +1288,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:38:09.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -897,7 +1310,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:38:11.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -912,7 +1332,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:38:14.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -927,7 +1354,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:38:17.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -942,7 +1376,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:38:20.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -957,7 +1398,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:38:23.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -972,7 +1420,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:38:26.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -987,7 +1442,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:38:29.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1002,7 +1464,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:38:32.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1017,7 +1486,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:38:35.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1032,7 +1508,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:38:38.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1047,7 +1530,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:38:40.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1062,7 +1552,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:38:43.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1077,7 +1574,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:48:30.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1092,7 +1596,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:48:50.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1107,7 +1618,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:48:53.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1122,7 +1640,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:48:56.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1137,7 +1662,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:48:59.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1152,7 +1684,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:49:02.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1167,7 +1706,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:49:04.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1182,7 +1728,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:49:07.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1197,7 +1750,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:49:09.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1212,7 +1772,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:49:12.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1227,7 +1794,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:49:15.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1242,7 +1816,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:49:17.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1257,7 +1838,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:49:20.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1272,7 +1860,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:49:22.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1287,7 +1882,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:38:47.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1302,7 +1904,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:38:50.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1317,7 +1926,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:38:54.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1332,7 +1948,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:38:58.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1347,7 +1970,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:39:01.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1362,7 +1992,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:39:04.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1377,7 +2014,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:39:08.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1392,7 +2036,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:39:11.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1407,7 +2058,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:39:14.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1422,7 +2080,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:39:17.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1437,7 +2102,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:39:20.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1452,7 +2124,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:39:24.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1467,7 +2146,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:39:27.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1482,7 +2168,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:39:30.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1497,7 +2190,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:39:33.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1512,7 +2212,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:39:36.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1527,7 +2234,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:39:38.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1542,7 +2256,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:39:41.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1557,7 +2278,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:39:44.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1572,7 +2300,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:39:47.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1587,7 +2322,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:39:50.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1602,7 +2344,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:39:53.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1617,7 +2366,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:39:56.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1632,7 +2388,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:39:59.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1647,7 +2410,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:40:02.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1662,7 +2432,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:40:34.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1677,7 +2454,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:40:36.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1692,7 +2476,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:40:39.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1707,7 +2498,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1722,7 +2520,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:40:45.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1737,7 +2542,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:40:47.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1752,7 +2564,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:40:50.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1767,7 +2586,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:41:21.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1782,7 +2608,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:41:24.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1797,7 +2630,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:41:26.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1812,7 +2652,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:41:29.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1827,7 +2674,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:41:32.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1842,7 +2696,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:41:35.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1857,7 +2718,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:41:38.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1872,7 +2740,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:41:41.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1887,7 +2762,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:41:44.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1902,7 +2784,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:41:46.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1917,7 +2806,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:41:49.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1932,7 +2828,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:41:52.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1947,7 +2850,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:41:54.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1962,7 +2872,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:41:57.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1977,7 +2894,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:42:00.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -1992,7 +2916,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:42:03.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2007,7 +2938,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:42:06.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2022,7 +2960,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:42:09.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2037,7 +2982,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:42:11.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2052,7 +3004,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:42:14.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2067,7 +3026,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:42:17.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2082,7 +3048,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:42:21.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2097,7 +3070,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:42:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2112,7 +3092,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:42:29.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2127,7 +3114,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:42:33.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2142,7 +3136,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:42:36.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2157,7 +3158,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:42:40.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2172,7 +3180,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:42:45.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2187,7 +3202,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:42:49.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2202,7 +3224,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:42:52.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2217,7 +3246,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:42:56.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2232,7 +3268,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:43:00.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2247,7 +3290,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:43:05.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2262,7 +3312,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:43:08.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2277,7 +3334,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:43:11.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2292,7 +3356,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:43:15.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2307,7 +3378,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:43:17.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2322,7 +3400,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:43:20.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2337,7 +3422,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:43:22.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2352,7 +3444,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:43:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2367,7 +3466,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:43:27.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2382,7 +3488,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:43:31.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2397,7 +3510,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:43:33.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2412,7 +3532,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:43:36.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2427,7 +3554,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T11:10:39.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2442,7 +3576,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:43:39.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2457,7 +3598,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:43:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2472,7 +3620,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:43:44.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2487,7 +3642,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:43:47.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2502,7 +3664,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:43:49.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2517,7 +3686,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:43:52.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2532,7 +3708,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:43:54.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2547,7 +3730,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:43:58.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2562,7 +3752,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:44:01.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2577,7 +3774,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:44:03.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2592,7 +3796,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:44:06.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2607,7 +3818,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:44:09.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2622,7 +3840,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:44:11.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2637,7 +3862,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:44:14.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2652,7 +3884,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:44:18.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2667,7 +3906,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:44:23.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2682,7 +3928,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:44:27.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2697,7 +3950,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:44:31.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2712,7 +3972,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:44:34.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2727,7 +3994,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:44:37.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2742,7 +4016,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:44:40.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2757,7 +4038,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:44:43.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2772,7 +4060,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:44:47.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2787,7 +4082,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:44:50.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2802,7 +4104,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:44:53.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2817,7 +4126,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:44:56.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2832,7 +4148,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:44:59.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2847,7 +4170,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:45:02.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2862,7 +4192,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:45:05.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2877,7 +4214,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:45:08.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2892,7 +4236,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:45:11.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2907,7 +4258,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:45:13.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2922,7 +4280,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:45:16.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2937,7 +4302,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:45:18.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2952,7 +4324,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:45:21.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2967,7 +4346,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:45:23.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2982,7 +4368,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:45:27.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -2997,7 +4390,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:45:29.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3012,7 +4412,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:45:33.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3027,7 +4434,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:45:35.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3042,7 +4456,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:45:38.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3057,7 +4478,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:45:41.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3072,7 +4500,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:45:44.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3087,7 +4522,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:45:47.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3102,7 +4544,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:45:50.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3117,7 +4566,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:45:53.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3132,7 +4588,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:45:56.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3147,7 +4610,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:45:59.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3162,7 +4632,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:46:01.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3177,7 +4654,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:46:04.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3192,7 +4676,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:46:07.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3207,7 +4698,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:46:09.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3222,7 +4720,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:46:12.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3237,7 +4742,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:46:14.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3252,7 +4764,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:46:17.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3267,7 +4786,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:46:19.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3282,7 +4808,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:46:22.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3297,7 +4830,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:46:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3312,7 +4852,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:46:27.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3327,7 +4874,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:46:30.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3342,7 +4896,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:46:32.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3357,7 +4918,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:46:35.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3372,7 +4940,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:46:39.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3387,7 +4962,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:46:43.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3402,7 +4984,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:46:47.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3417,7 +5006,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:46:51.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3432,7 +5028,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:46:54.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3447,7 +5050,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:46:58.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3462,7 +5072,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:47:02.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3477,7 +5094,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:47:05.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3492,7 +5116,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:47:09.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3507,7 +5138,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:47:13.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3522,7 +5160,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:47:16.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Kukirin",
@@ -3537,7 +5182,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:47:20.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3552,7 +5204,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:57.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3567,7 +5226,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:03.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3582,7 +5248,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:06.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3597,7 +5270,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:10.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3612,7 +5292,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:13.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3627,7 +5314,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:17.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3642,7 +5336,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:22.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3657,7 +5358,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:26.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3672,7 +5380,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:30.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3687,7 +5402,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:34.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3702,7 +5424,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:38.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3717,7 +5446,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3732,7 +5468,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:45.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3747,7 +5490,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:49.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3762,7 +5512,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:55.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3777,7 +5534,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:00.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3792,7 +5556,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:03.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3807,7 +5578,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:06.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3822,7 +5600,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:10.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3837,7 +5622,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:13.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3852,7 +5644,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:17.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3867,7 +5666,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:20.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3882,7 +5688,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:23.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3897,7 +5710,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:26.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3912,7 +5732,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:57.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3927,7 +5754,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:03.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3942,7 +5776,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:06.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3957,7 +5798,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:57.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3972,7 +5820,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:03.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -3987,7 +5842,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:06.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4002,7 +5864,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:10.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4017,7 +5886,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:13.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4032,7 +5908,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:17.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4047,7 +5930,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:22.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4062,7 +5952,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:26.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4077,7 +5974,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:30.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4092,7 +5996,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:10.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4107,7 +6018,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:13.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4122,7 +6040,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:17.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4137,7 +6062,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:34.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4152,7 +6084,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:38.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4167,7 +6106,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4182,7 +6128,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:34.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4197,7 +6150,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:38.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4212,7 +6172,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4227,7 +6194,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:45.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4242,7 +6216,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:49.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4257,7 +6238,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:24:55.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4272,7 +6260,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:10.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4287,7 +6282,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:13.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4302,7 +6304,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:17.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4317,7 +6326,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:29.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4332,7 +6348,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:31.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4347,7 +6370,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:48.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4362,7 +6392,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:29.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4377,7 +6414,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:31.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4392,7 +6436,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:48.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4407,7 +6458,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:29.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4422,7 +6480,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:31.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4437,7 +6502,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:48.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4452,7 +6524,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:51.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4467,7 +6546,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:26:09.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4482,7 +6568,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:26:12.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4497,7 +6590,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:51.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4512,7 +6612,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:26:09.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4527,7 +6634,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:26:12.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4542,7 +6656,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:51.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4557,7 +6678,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:26:09.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4572,7 +6700,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:26:12.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4587,7 +6722,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:26:14.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4602,7 +6744,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:26:31.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4617,7 +6766,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:26:33.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4632,7 +6788,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:26:14.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4647,7 +6810,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:26:31.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4662,7 +6832,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:26:33.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4677,7 +6854,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4692,7 +6876,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4707,7 +6898,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4722,7 +6920,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:26:36.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4737,7 +6942,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:26:38.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4752,7 +6964,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:26:57.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4767,7 +6986,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:26:36.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4782,7 +7008,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:26:38.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4797,7 +7030,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:26:57.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4812,7 +7052,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:27:00.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4827,7 +7074,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:27:18.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4842,7 +7096,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:27:20.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4857,7 +7118,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:27:00.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4872,7 +7140,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:27:18.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4887,7 +7162,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:27:20.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4902,7 +7184,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:27:23.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4917,7 +7206,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:27:38.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4932,7 +7228,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:27:53.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4947,7 +7250,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:27:56.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4962,7 +7272,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:28:14.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4977,7 +7294,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:28:33.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -4992,7 +7316,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:27:56.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -5007,7 +7338,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:28:14.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -5022,7 +7360,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:28:33.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -5037,7 +7382,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:28:38.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -5052,7 +7404,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:28:44.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -5067,7 +7426,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:28:50.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -5082,7 +7448,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:00.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -5097,7 +7470,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:03.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "GPD",
@@ -5112,7 +7492,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:25:06.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Meepo",
@@ -5127,7 +7514,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:01.000+08:00",
     "profit": 2129.74,
     "cost": 679.5,
-    "shipping": 196.25
+    "shipping": 196.25,
+    "payout_rate": 0.961,
+    "shop_rate": 0.9985,
+    "fx_rate": 7.85,
+    "min_profit": 2129.74,
+    "min_price": 399.0,
+    "min_currency": "EUR",
+    "min_site": "Meepoboard-EU"
   },
   {
     "brand": "Meepo",
@@ -5142,7 +7536,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:01.000+08:00",
     "profit": 3089.58,
     "cost": 2732.66,
-    "shipping": 196.25
+    "shipping": 196.25,
+    "payout_rate": 0.961,
+    "shop_rate": 0.9985,
+    "fx_rate": 7.85,
+    "min_profit": 3089.58,
+    "min_price": 799.0,
+    "min_currency": "EUR",
+    "min_site": "Meepoboard-EU"
   },
   {
     "brand": "Meepo",
@@ -5157,7 +7558,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:02.000+08:00",
     "profit": 2125.16,
     "cost": 2943.83,
-    "shipping": 196.25
+    "shipping": 196.25,
+    "payout_rate": 0.961,
+    "shop_rate": 0.9985,
+    "fx_rate": 7.85,
+    "min_profit": 2125.16,
+    "min_price": 699.0,
+    "min_currency": "EUR",
+    "min_site": "Meepoboard-EU"
   },
   {
     "brand": "Meepo",
@@ -5172,7 +7580,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:03.000+08:00",
     "profit": 2913.8,
     "cost": 5168.2,
-    "shipping": 196.25
+    "shipping": 196.25,
+    "payout_rate": 0.961,
+    "shop_rate": 0.9985,
+    "fx_rate": 7.85,
+    "min_profit": 2913.8,
+    "min_price": 1099.0,
+    "min_currency": "EUR",
+    "min_site": "Meepoboard-EU"
   },
   {
     "brand": "Meepo",
@@ -5187,7 +7602,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:03.000+08:00",
     "profit": 1731.17,
     "cost": 1454.68,
-    "shipping": 196.25
+    "shipping": 196.25,
+    "payout_rate": 0.961,
+    "shop_rate": 0.9985,
+    "fx_rate": 7.85,
+    "min_profit": 1731.17,
+    "min_price": 449.0,
+    "min_currency": "EUR",
+    "min_site": "Meepoboard-EU"
   },
   {
     "brand": "Meepo",
@@ -5202,7 +7624,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:03.000+08:00",
     "profit": 1994.77,
     "cost": 1718.37,
-    "shipping": 196.25
+    "shipping": 196.25,
+    "payout_rate": 0.961,
+    "shop_rate": 0.9985,
+    "fx_rate": 7.85,
+    "min_profit": 1994.77,
+    "min_price": 519.0,
+    "min_currency": "EUR",
+    "min_site": "Meepoboard-EU"
   },
   {
     "brand": "Meepo",
@@ -5217,7 +7646,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:04.000+08:00",
     "profit": 1994.77,
     "cost": 1718.37,
-    "shipping": 196.25
+    "shipping": 196.25,
+    "payout_rate": 0.961,
+    "shop_rate": 0.9985,
+    "fx_rate": 7.85,
+    "min_profit": 1994.77,
+    "min_price": 519.0,
+    "min_currency": "EUR",
+    "min_site": "Meepoboard-EU"
   },
   {
     "brand": "Meepo",
@@ -5232,7 +7668,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:04.000+08:00",
     "profit": 1709.43,
     "cost": 1476.43,
-    "shipping": 196.25
+    "shipping": 196.25,
+    "payout_rate": 0.961,
+    "shop_rate": 0.9985,
+    "fx_rate": 7.85,
+    "min_profit": 1709.43,
+    "min_price": 449.0,
+    "min_currency": "EUR",
+    "min_site": "Meepoboard-EU"
   },
   {
     "brand": "Meepo",
@@ -5247,7 +7690,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:05.000+08:00",
     "profit": 2092.14,
     "cost": 2072.95,
-    "shipping": 196.25
+    "shipping": 196.25,
+    "payout_rate": 0.961,
+    "shop_rate": 0.9985,
+    "fx_rate": 7.85,
+    "min_profit": 2092.14,
+    "min_price": 579.0,
+    "min_currency": "EUR",
+    "min_site": "Meepoboard-EU"
   },
   {
     "brand": "Meepo",
@@ -5262,7 +7712,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:06.000+08:00",
     "profit": 2808.55,
     "cost": 3013.69,
-    "shipping": 196.25
+    "shipping": 196.25,
+    "payout_rate": 0.961,
+    "shop_rate": 0.9985,
+    "fx_rate": 7.85,
+    "min_profit": 2808.55,
+    "min_price": 799.0,
+    "min_currency": "EUR",
+    "min_site": "Meepoboard-EU"
   },
   {
     "brand": "Meepo",
@@ -5277,7 +7734,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:06.000+08:00",
     "profit": 1961.51,
     "cost": 2203.57,
-    "shipping": 196.25
+    "shipping": 196.25,
+    "payout_rate": 0.961,
+    "shop_rate": 0.9985,
+    "fx_rate": 7.85,
+    "min_profit": 1961.51,
+    "min_price": 579.0,
+    "min_currency": "EUR",
+    "min_site": "Meepoboard-EU"
   },
   {
     "brand": "Meepo",
@@ -5292,7 +7756,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:07.000+08:00",
     "profit": 4218.52,
     "cost": 4616.74,
-    "shipping": 196.25
+    "shipping": 196.25,
+    "payout_rate": 0.961,
+    "shop_rate": 0.9985,
+    "fx_rate": 7.85,
+    "min_profit": 4218.52,
+    "min_price": 1199.0,
+    "min_currency": "EUR",
+    "min_site": "Meepoboard-EU"
   },
   {
     "brand": "Meepo",
@@ -5307,7 +7778,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:09.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Meepo",
@@ -5322,7 +7800,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:10.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Meepo",
@@ -5337,7 +7822,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:11.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Meepo",
@@ -5352,7 +7844,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:11.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Meepo",
@@ -5367,7 +7866,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:12.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Meepo",
@@ -5382,7 +7888,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:13.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Meepo",
@@ -5397,7 +7910,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:13.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Meepo",
@@ -5412,7 +7932,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:14.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Meepo",
@@ -5427,7 +7954,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:15.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Meepo",
@@ -5442,7 +7976,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:16.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Meepo",
@@ -5457,7 +7998,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:16.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Meepo",
@@ -5472,7 +8020,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:23:17.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5487,7 +8042,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:15.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5502,7 +8064,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:16.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5517,7 +8086,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:16.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5532,7 +8108,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:17.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5547,7 +8130,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:18.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5562,7 +8152,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:18.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5577,7 +8174,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:19.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5592,7 +8196,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:20.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5607,7 +8218,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:21.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5622,7 +8240,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:22.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5637,7 +8262,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:22.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5652,7 +8284,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:23.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5667,7 +8306,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:24.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5682,7 +8328,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5697,7 +8350,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:26.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5712,7 +8372,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:27.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5727,7 +8394,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:28.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5742,7 +8416,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:29.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5757,7 +8438,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:30.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5772,7 +8460,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5787,7 +8482,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5802,7 +8504,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:44:29.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5817,7 +8526,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5832,7 +8548,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5847,7 +8570,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5862,7 +8592,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5877,7 +8614,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5892,7 +8636,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5907,7 +8658,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5922,7 +8680,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:49:04.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5937,7 +8702,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5952,7 +8724,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5967,7 +8746,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5982,7 +8768,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -5997,7 +8790,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6012,7 +8812,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:33.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6027,7 +8834,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:33.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6042,7 +8856,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:34.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6057,7 +8878,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:35.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6072,7 +8900,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:35.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6087,7 +8922,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:36.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6102,7 +8944,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:37.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6117,7 +8966,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:37.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6132,7 +8988,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:38.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6147,7 +9010,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:39.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6162,7 +9032,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:39.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6177,7 +9054,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:40.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6192,7 +9076,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:41.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6207,7 +9098,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:41.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6222,7 +9120,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6237,7 +9142,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:43.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6252,7 +9164,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:44.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6267,7 +9186,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:44.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6282,7 +9208,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:45.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6297,7 +9230,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:48.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6312,7 +9252,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:49.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6327,7 +9274,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:49.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6342,7 +9296,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:50.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6357,7 +9318,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:51.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6372,7 +9340,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:52.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6387,7 +9362,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:53.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6402,7 +9384,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:54.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6417,7 +9406,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:55.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6432,7 +9428,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:56.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6447,7 +9450,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:57.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6462,7 +9472,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:58.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6477,7 +9494,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T16:48:58.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6492,7 +9516,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:33:01.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6507,7 +9538,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:33:02.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6522,7 +9560,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:33:02.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6537,7 +9582,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:33:03.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6552,7 +9604,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:33:04.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6567,7 +9626,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:33:05.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6582,7 +9648,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6597,7 +9670,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6612,7 +9692,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6627,7 +9714,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:04:51.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6642,7 +9736,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6657,7 +9758,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6672,7 +9780,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6687,7 +9802,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6702,7 +9824,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6717,7 +9846,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6732,7 +9868,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-26T16:40:42.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6747,7 +9890,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6762,7 +9912,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6777,7 +9934,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6792,7 +9956,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6807,7 +9978,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6822,7 +10000,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6837,7 +10022,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6852,7 +10044,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6867,7 +10066,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6882,7 +10088,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6897,7 +10110,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6912,7 +10132,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6927,7 +10154,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6942,7 +10176,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6957,7 +10198,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6972,7 +10220,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -6987,7 +10242,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7002,7 +10264,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7017,7 +10286,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:38:01.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7032,7 +10308,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7047,7 +10330,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7062,7 +10352,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7077,7 +10374,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7092,7 +10396,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7107,7 +10418,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7122,7 +10440,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7137,7 +10462,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7152,7 +10484,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7167,7 +10506,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7182,7 +10528,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7197,7 +10550,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-31T09:32:59.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7212,7 +10572,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7227,7 +10594,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7242,7 +10616,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7257,7 +10638,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7272,7 +10660,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7287,7 +10682,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7302,7 +10704,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7317,7 +10726,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7332,7 +10748,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7347,7 +10770,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7362,7 +10792,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7377,7 +10814,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7392,7 +10836,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7407,7 +10858,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7422,7 +10880,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7437,7 +10902,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7452,7 +10924,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7467,7 +10946,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7482,7 +10968,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7497,7 +10990,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7512,7 +11012,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7527,7 +11034,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7542,7 +11056,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7557,7 +11078,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7572,7 +11100,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7587,7 +11122,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7602,7 +11144,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7617,7 +11166,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7632,7 +11188,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7647,7 +11210,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7662,7 +11232,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7677,7 +11254,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7692,7 +11276,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7707,7 +11298,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7722,7 +11320,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7737,7 +11342,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7752,7 +11364,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7767,7 +11386,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7782,7 +11408,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7797,7 +11430,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7812,7 +11452,14 @@ const PRICE_DATA = [
     "crawl_time": null,
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7827,7 +11474,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7842,7 +11496,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7857,7 +11518,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7872,7 +11540,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7887,7 +11562,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7902,7 +11584,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7917,7 +11606,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7932,7 +11628,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7947,7 +11650,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7962,7 +11672,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7977,7 +11694,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -7992,7 +11716,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -8007,7 +11738,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -8022,7 +11760,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -8037,7 +11782,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -8052,7 +11804,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -8067,7 +11826,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -8082,7 +11848,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -8097,7 +11870,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -8112,7 +11892,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -8127,7 +11914,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -8142,7 +11936,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -8157,7 +11958,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -8172,7 +11980,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -8187,7 +12002,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -8202,7 +12024,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -8217,7 +12046,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -8232,7 +12068,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -8247,7 +12090,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -8262,7 +12112,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -8277,7 +12134,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -8292,7 +12156,14 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   },
   {
     "brand": "Joyor",
@@ -8307,6 +12178,13 @@ const PRICE_DATA = [
     "crawl_time": "2026-08-24T17:01:25.000+08:00",
     "profit": null,
     "cost": null,
-    "shipping": null
+    "shipping": null,
+    "payout_rate": null,
+    "shop_rate": null,
+    "fx_rate": null,
+    "min_profit": null,
+    "min_price": null,
+    "min_currency": null,
+    "min_site": null
   }
 ];
