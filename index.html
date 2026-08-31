@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>竞品价格分析系统</title>
-    <script src="data.js?v=20260831095157"></script>
+    <script src="data.js?v=20260831111409"></script>
     <style>
         * {
             margin: 0;
@@ -834,7 +834,7 @@
                 displayModels = lowestOwnModels;
             }
 
-            let headerHTML = '<th class="model-col">型号</th>';
+            let headerHTML = '<th class="model-col">型号</th><th class="profit-col">利润(CNY)</th>';
             state.sites.forEach(site => {
                 const isOwn = site === state.ownSite;
                 headerHTML += `<th class="${isOwn ? 'own-site' : ''}">${site}${isOwn ? '<span class="own-badge">我方</span>' : ''}</th>`;
@@ -842,7 +842,7 @@
             header.innerHTML = headerHTML;
 
             if (displayModels.length === 0) {
-                body.innerHTML = `<tr><td colspan="${state.sites.length + 1}"><div class="matrix-empty">暂无匹配数据</div></td></tr>`;
+                body.innerHTML = `<tr><td colspan="${state.sites.length + 2}"><div class="matrix-empty">暂无匹配数据</div></td></tr>`;
                 return;
             }
 
@@ -862,6 +862,15 @@
                     bodyHTML += `<td class="model-cell"><a href="${modelUrl}" target="_blank" class="model-link">${model}</a></td>`;
                 } else {
                     bodyHTML += `<td class="model-cell">${model}</td>`;
+                }
+
+                // 利润列：显示该型号有利润记录（如 Meepo 欧洲站）的利润 CNY
+                const profitRecord = modelRecords.find(r => r.profit !== null && r.profit !== undefined);
+                const profitVal = profitRecord ? profitRecord.profit : null;
+                if (profitVal !== null) {
+                    bodyHTML += `<td class="profit-cell"><span class="price-current own">¥${profitVal.toFixed(0)}</span></td>`;
+                } else {
+                    bodyHTML += `<td class="profit-cell"><span class="no-data">—</span></td>`;
                 }
 
                 state.sites.forEach(site => {
