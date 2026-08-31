@@ -1,0 +1,8 @@
+# Cloudflare Pages 项目的绑定配置（KV 等）
+# Pages 构建时读取仓库根此文件自动绑定资源。
+name = "chris-price"
+compatibility_date = "2025-06-01"
+
+[[kv_namespaces]]
+binding = "PRICE_DATA_KV"
+id = "b18902d1fe6f4a16bd004efd7b913682"
