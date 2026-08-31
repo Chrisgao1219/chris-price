@@ -808,8 +808,10 @@
             const seen = new Set();
             const profitRecords = state.filteredData.filter(r => {
                 if (r.profit === null || r.profit === undefined) return false;
-                if (seen.has(r.model_url)) return false;
-                seen.add(r.model_url);
+                // 去重：型号 + 市场（Kukirin 多市场同型号各自一条）
+                const key = r.model + '|' + (r.market || '');
+                if (seen.has(key)) return false;
+                seen.add(key);
                 return true;
             }).sort((a, b) => modelRank(a.model, state.brand) - modelRank(b.model, state.brand));
             if (profitRecords.length === 0) {
@@ -819,9 +821,13 @@
             let html = '';
             profitRecords.forEach(r => {
                 const cs = getCurrencySymbol(r.currency) || '';
-                // 第一行：欧洲站售价利润
+                const modelText = r.market ? `${r.model}（${r.market}）` : r.model;
+                const modelCell = r.model_url
+                    ? `<td class="model-cell"><a href="${r.model_url}" target="_blank" class="model-link">${modelText}</a></td>`
+                    : `<td class="model-cell">${modelText}</td>`;
+                // 第一行：我方渠道售价利润
                 html += `<tr>
-                    <td class="model-cell"><a href="${r.model_url}" target="_blank" class="model-link">${r.model}</a></td>
+                    ${modelCell}
                     <td>${cs}${(r.price || 0).toFixed(0)}</td>
                     <td>¥${(r.cost || 0).toFixed(0)}</td>
                     <td>¥${(r.shipping || 0).toFixed(0)}</td>
