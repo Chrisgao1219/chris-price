@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>竞品价格分析系统</title>
-    <script src="data.js?v=20260831114335"></script>
+    <script src="data.js?v=20260831115124"></script>
     <style>
         * {
             margin: 0;
@@ -539,6 +539,24 @@
             </div>
         </div>
 
+        <!-- 利润计算器（手动填售价算利润） -->
+        <div class="matrix-container" id="calcSection">
+            <div class="matrix-header">
+                <h3>利润计算器</h3>
+            </div>
+            <div style="padding:16px 24px; display:flex; gap:16px; align-items:flex-end; flex-wrap:wrap;">
+                <div class="filter-group">
+                    <label>型号</label>
+                    <select id="calcModel" style="min-width:200px;"></select>
+                </div>
+                <div class="filter-group">
+                    <label>售价（EUR）</label>
+                    <input type="number" id="calcPrice" placeholder="输入售价" style="padding:8px 12px; border:1px solid #cbd5e0; border-radius:6px; font-size:14px; min-width:140px;">
+                </div>
+                <div id="calcResult" style="font-size:16px; font-weight:600; padding-bottom:8px;"></div>
+            </div>
+        </div>
+
         <!-- 利润表（独立展示各产品利润） -->
         <div class="matrix-container" id="profitSection">
             <div class="matrix-header">
@@ -557,24 +575,6 @@
                     </thead>
                     <tbody id="profitBody"></tbody>
                 </table>
-            </div>
-        </div>
-
-        <!-- 利润计算器（手动填售价算利润） -->
-        <div class="matrix-container" id="calcSection">
-            <div class="matrix-header">
-                <h3>利润计算器</h3>
-            </div>
-            <div style="padding:16px 24px; display:flex; gap:16px; align-items:flex-end; flex-wrap:wrap;">
-                <div class="filter-group">
-                    <label>型号</label>
-                    <select id="calcModel" style="min-width:200px;"></select>
-                </div>
-                <div class="filter-group">
-                    <label>售价（EUR）</label>
-                    <input type="number" id="calcPrice" placeholder="输入售价" style="padding:8px 12px; border:1px solid #cbd5e0; border-radius:6px; font-size:14px; min-width:140px;">
-                </div>
-                <div id="calcResult" style="font-size:16px; font-weight:600; padding-bottom:8px;"></div>
             </div>
         </div>
 
@@ -764,6 +764,19 @@
             renderAll();
         }
 
+        // 产品优先展示顺序（价格矩阵 + 利润表共用）
+        const PRIORITY_MODELS = ['V5', 'V3 Max', 'Edge', 'Flow', 'GO'];
+
+        function modelRank(m) {
+            const i = PRIORITY_MODELS.indexOf(m);
+            return i === -1 ? 100 : i;
+        }
+
+        function sortModels(models) {
+            // 稳定排序：优先型号在前，其余保持原顺序
+            return models.slice().sort((a, b) => modelRank(a) - modelRank(b));
+        }
+
         function renderAll() {
             renderKPI();
             renderMatrix();
@@ -780,7 +793,7 @@
                 if (seen.has(r.model_url)) return false;
                 seen.add(r.model_url);
                 return true;
-            });
+            }).sort((a, b) => modelRank(a.model) - modelRank(b.model));
             if (profitRecords.length === 0) {
                 body.innerHTML = '<tr><td colspan="5"><div class="matrix-empty">当前品牌暂无利润配置</div></td></tr>';
                 return;
@@ -920,8 +933,8 @@
                 ? [state.ownSite, ...allSites.filter(s => s !== state.ownSite)]
                 : allSites;
 
-            let displayModels = state.models;
-            
+            let displayModels = sortModels(state.models);
+
             if (state.matrixSearch) {
                 displayModels = displayModels.filter(m => m.toLowerCase().includes(state.matrixSearch));
             }
