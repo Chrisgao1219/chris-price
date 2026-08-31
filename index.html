@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>竞品价格分析系统</title>
-    <script src="data.js?v=20260831111409"></script>
+    <script src="data.js?v=20260831112548"></script>
     <style>
         * {
             margin: 0;
@@ -539,6 +539,27 @@
             </div>
         </div>
 
+        <!-- 利润表（独立展示各产品利润） -->
+        <div class="matrix-container" id="profitSection">
+            <div class="matrix-header">
+                <h3>利润表（CNY）</h3>
+            </div>
+            <div class="matrix-table-wrapper">
+                <table class="price-matrix" id="profitTable">
+                    <thead>
+                        <tr>
+                            <th class="model-col">型号</th>
+                            <th>售价</th>
+                            <th>成本(CNY)</th>
+                            <th>运费(CNY)</th>
+                            <th>利润(CNY)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="profitBody"></tbody>
+                </table>
+            </div>
+        </div>
+
         <!-- 洞察卡片 -->
         <div class="insight-card" id="insightCard">
             <h3>价格洞察</h3>
@@ -727,7 +748,36 @@
         function renderAll() {
             renderKPI();
             renderMatrix();
+            renderProfit();
             renderInsights();
+        }
+
+        // 渲染利润表（独立表格：有利润配置的产品，按型号去重）
+        function renderProfit() {
+            const body = document.getElementById('profitBody');
+            const seen = new Set();
+            const profitRecords = state.filteredData.filter(r => {
+                if (r.profit === null || r.profit === undefined) return false;
+                if (seen.has(r.model_url)) return false;
+                seen.add(r.model_url);
+                return true;
+            });
+            if (profitRecords.length === 0) {
+                body.innerHTML = '<tr><td colspan="5"><div class="matrix-empty">当前品牌暂无利润配置</div></td></tr>';
+                return;
+            }
+            let html = '';
+            profitRecords.forEach(r => {
+                const cs = getCurrencySymbol(r.currency) || '';
+                html += `<tr>
+                    <td class="model-cell"><a href="${r.model_url}" target="_blank" class="model-link">${r.model}</a></td>
+                    <td>${cs}${(r.price || 0).toFixed(0)}</td>
+                    <td>¥${(r.cost || 0).toFixed(0)}</td>
+                    <td>¥${(r.shipping || 0).toFixed(0)}</td>
+                    <td><span class="price-current own">¥${r.profit.toFixed(0)}</span></td>
+                </tr>`;
+            });
+            body.innerHTML = html;
         }
 
         // 渲染KPI
@@ -834,7 +884,7 @@
                 displayModels = lowestOwnModels;
             }
 
-            let headerHTML = '<th class="model-col">型号</th><th class="profit-col">利润(CNY)</th>';
+            let headerHTML = '<th class="model-col">型号</th>';
             state.sites.forEach(site => {
                 const isOwn = site === state.ownSite;
                 headerHTML += `<th class="${isOwn ? 'own-site' : ''}">${site}${isOwn ? '<span class="own-badge">我方</span>' : ''}</th>`;
@@ -842,7 +892,7 @@
             header.innerHTML = headerHTML;
 
             if (displayModels.length === 0) {
-                body.innerHTML = `<tr><td colspan="${state.sites.length + 2}"><div class="matrix-empty">暂无匹配数据</div></td></tr>`;
+                body.innerHTML = `<tr><td colspan="${state.sites.length + 1}"><div class="matrix-empty">暂无匹配数据</div></td></tr>`;
                 return;
             }
 
@@ -862,15 +912,6 @@
                     bodyHTML += `<td class="model-cell"><a href="${modelUrl}" target="_blank" class="model-link">${model}</a></td>`;
                 } else {
                     bodyHTML += `<td class="model-cell">${model}</td>`;
-                }
-
-                // 利润列：显示该型号有利润记录（如 Meepo 欧洲站）的利润 CNY
-                const profitRecord = modelRecords.find(r => r.profit !== null && r.profit !== undefined);
-                const profitVal = profitRecord ? profitRecord.profit : null;
-                if (profitVal !== null) {
-                    bodyHTML += `<td class="profit-cell"><span class="price-current own">¥${profitVal.toFixed(0)}</span></td>`;
-                } else {
-                    bodyHTML += `<td class="profit-cell"><span class="no-data">—</span></td>`;
                 }
 
                 state.sites.forEach(site => {
