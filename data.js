@@ -5126,8 +5126,8 @@ const PRICE_DATA = [
     "market": "FR",
     "crawl_time": "2026-08-31T09:23:01.000+08:00",
     "profit": 2129.74,
-    "cost": 86.56,
-    "shipping": 25.0
+    "cost": 679.5,
+    "shipping": 196.25
   },
   {
     "brand": "Meepo",
@@ -5141,8 +5141,8 @@ const PRICE_DATA = [
     "market": "FR",
     "crawl_time": "2026-08-31T09:23:01.000+08:00",
     "profit": 3089.58,
-    "cost": 348.11,
-    "shipping": 25.0
+    "cost": 2732.66,
+    "shipping": 196.25
   },
   {
     "brand": "Meepo",
@@ -5156,8 +5156,8 @@ const PRICE_DATA = [
     "market": "FR",
     "crawl_time": "2026-08-31T09:23:02.000+08:00",
     "profit": 2125.16,
-    "cost": 375.01,
-    "shipping": 25.0
+    "cost": 2943.83,
+    "shipping": 196.25
   },
   {
     "brand": "Meepo",
@@ -5171,8 +5171,8 @@ const PRICE_DATA = [
     "market": "FR",
     "crawl_time": "2026-08-31T09:23:03.000+08:00",
     "profit": 2913.8,
-    "cost": 658.37,
-    "shipping": 25.0
+    "cost": 5168.2,
+    "shipping": 196.25
   },
   {
     "brand": "Meepo",
@@ -5186,8 +5186,8 @@ const PRICE_DATA = [
     "market": "FR",
     "crawl_time": "2026-08-31T09:23:03.000+08:00",
     "profit": 1731.17,
-    "cost": 185.31,
-    "shipping": 25.0
+    "cost": 1454.68,
+    "shipping": 196.25
   },
   {
     "brand": "Meepo",
@@ -5201,8 +5201,8 @@ const PRICE_DATA = [
     "market": "FR",
     "crawl_time": "2026-08-31T09:23:03.000+08:00",
     "profit": 1994.77,
-    "cost": 218.9,
-    "shipping": 25.0
+    "cost": 1718.37,
+    "shipping": 196.25
   },
   {
     "brand": "Meepo",
@@ -5216,8 +5216,8 @@ const PRICE_DATA = [
     "market": "FR",
     "crawl_time": "2026-08-31T09:23:04.000+08:00",
     "profit": 1994.77,
-    "cost": 218.9,
-    "shipping": 25.0
+    "cost": 1718.37,
+    "shipping": 196.25
   },
   {
     "brand": "Meepo",
@@ -5231,8 +5231,8 @@ const PRICE_DATA = [
     "market": "FR",
     "crawl_time": "2026-08-31T09:23:04.000+08:00",
     "profit": 1709.43,
-    "cost": 188.08,
-    "shipping": 25.0
+    "cost": 1476.43,
+    "shipping": 196.25
   },
   {
     "brand": "Meepo",
@@ -5246,8 +5246,8 @@ const PRICE_DATA = [
     "market": "FR",
     "crawl_time": "2026-08-31T09:23:05.000+08:00",
     "profit": 2092.14,
-    "cost": 264.07,
-    "shipping": 25.0
+    "cost": 2072.95,
+    "shipping": 196.25
   },
   {
     "brand": "Meepo",
@@ -5261,8 +5261,8 @@ const PRICE_DATA = [
     "market": "FR",
     "crawl_time": "2026-08-31T09:23:06.000+08:00",
     "profit": 2808.55,
-    "cost": 383.91,
-    "shipping": 25.0
+    "cost": 3013.69,
+    "shipping": 196.25
   },
   {
     "brand": "Meepo",
@@ -5276,8 +5276,8 @@ const PRICE_DATA = [
     "market": "FR",
     "crawl_time": "2026-08-31T09:23:06.000+08:00",
     "profit": 1961.51,
-    "cost": 280.71,
-    "shipping": 25.0
+    "cost": 2203.57,
+    "shipping": 196.25
   },
   {
     "brand": "Meepo",
@@ -5291,8 +5291,8 @@ const PRICE_DATA = [
     "market": "FR",
     "crawl_time": "2026-08-31T09:23:07.000+08:00",
     "profit": 4218.52,
-    "cost": 588.12,
-    "shipping": 25.0
+    "cost": 4616.74,
+    "shipping": 196.25
   },
   {
     "brand": "Meepo",
