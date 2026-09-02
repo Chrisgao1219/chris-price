@@ -1,6 +1,6 @@
 # Cloudflare Pages 项目的绑定配置（KV 等）
 # Pages 构建时读取仓库根此文件自动绑定资源。
-# v6: add FlyingEagle to HL-Chris
+# v7: add FlyingEagle account
 name = "chris-price"
 compatibility_date = "2025-06-01"
 pages_build_output_dir = "."
