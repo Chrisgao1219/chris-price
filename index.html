@@ -567,7 +567,7 @@
                     <select id="calcModel" style="min-width:200px;"></select>
                 </div>
                 <div class="filter-group">
-                    <label>售价（EUR）</label>
+                    <label>售价（<span id="calcCurrency">EUR</span>）</label>
                     <input type="number" id="calcPrice" placeholder="输入售价" style="padding:8px 12px; border:1px solid #cbd5e0; border-radius:6px; font-size:14px; min-width:140px;">
                 </div>
                 <div id="calcResult" style="font-size:16px; font-weight:600; padding-bottom:8px;"></div>
@@ -854,31 +854,54 @@
         }
 
         // 利润计算器：选型号 + 填售价 → 实时算利润（公式参数从数据取）
+        // 同一型号可能跨市场（Kukirin 欧/英/美/波、GPD 法/英/美），各市场成本/汇率/货币不同，
+        // 必须按「型号+市场」区分选项，否则会误用别国市场的汇率与成本参数。
         function initCalc() {
             const sel = document.getElementById('calcModel');
             const input = document.getElementById('calcPrice');
             const result = document.getElementById('calcResult');
-            const recs = [];
-            const seen = new Set();
+            const curHint = document.getElementById('calcCurrency');
+            const recs = new Map();          // key = model||market → 记录
+            const cnt = new Map();           // model → 出现市场数
             PRICE_DATA.forEach(r => {
                 if (r.profit === null || r.profit === undefined) return;
-                if (seen.has(r.model)) return;
-                seen.add(r.model);
-                recs.push(r);
+                const key = r.model + '||' + (r.market || '');
+                if (recs.has(key)) return;
+                recs.set(key, r);
+                cnt.set(r.model, (cnt.get(r.model) || 0) + 1);
             });
-            recs.forEach(r => sel.appendChild(new Option(r.model, r.model)));
+            recs.forEach((r, key) => {
+                // 仅跨市场撞名的型号才标注市场，单市场品牌不加后缀
+                const label = (cnt.get(r.model) > 1 && r.market) ? `${r.model}（${r.market}）` : r.model;
+                sel.appendChild(new Option(label, key));
+            });
             const recalc = () => {
-                const rec = recs.find(r => r.model === sel.value);
+                const rec = recs.get(sel.value);
                 const price = parseFloat(input.value);
+                if (curHint && rec) curHint.textContent = rec.currency || 'EUR';
                 if (!rec || !price || price <= 0) { result.innerHTML = ''; return; }
                 const fx = rec.fx_rate || 1;
                 const profit = price * (rec.payout_rate || 1) * (rec.shop_rate || 1) * fx
                     - ((rec.cost || 0) + (rec.shipping || 0));
-                result.innerHTML = `售价 €${price} → 利润 <span style="color:#38a169;font-weight:700;">¥${profit.toFixed(0)}</span>`;
+                const cs = getCurrencySymbol(rec.currency) || '';
+                result.innerHTML = `售价 ${cs}${price} → 利润 <span style="color:#38a169;font-weight:700;">¥${profit.toFixed(0)}</span>`;
             };
-            sel.onchange = recalc;
-            input.oninput = recalc;
-            if (recs.length) { sel.value = recs[0].model; recalc(); }
+            // 用户手动改过售价后，切换型号不再覆盖其输入
+            let dirty = false;
+            sel.onchange = () => {
+                const rec = recs.get(sel.value);
+                if (!dirty && rec && rec.price) input.value = rec.price;
+                recalc();
+            };
+            input.oninput = () => { dirty = true; recalc(); };
+            // 默认选中第一个型号并预填其当前售价，便于对比
+            if (recs.size) {
+                const first = recs.keys().next().value;
+                sel.value = first;
+                const r0 = recs.get(first);
+                if (r0.price) input.value = r0.price;
+                recalc();
+            }
         }
 
         // 渲染KPI
