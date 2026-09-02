@@ -1228,7 +1228,11 @@
             const idle = { background: '#fff', color: '#0d9488', border: '1px solid #0d9488', padding: '6px 13px' };
             Object.assign(bp.style, show ? idle : act);
             Object.assign(bg.style, show ? act : idle);
-            if (show && !_pageViewShown) { _pageViewShown = true; _populatePageType(); renderPageEvents(); }
+            if (show && !_pageViewShown) {
+                _pageViewShown = true; _populatePageType(); renderPageEvents();
+                // 首次进入若数据尚未拉到（部署时序等），再拉一次
+                if (!PAGE_EVENTS.length) loadPages(localStorage.getItem('price_token') || '');
+            }
         }
 
         function _populatePageType() {
