@@ -862,17 +862,19 @@
             const result = document.getElementById('calcResult');
             const curHint = document.getElementById('calcCurrency');
             const recs = new Map();          // key = model||market → 记录
-            const cnt = new Map();           // model → 出现市场数
+            const brandMarkets = new Map();  // brand → 出现的市场集合
             PRICE_DATA.forEach(r => {
                 if (r.profit === null || r.profit === undefined) return;
                 const key = r.model + '||' + (r.market || '');
                 if (recs.has(key)) return;
                 recs.set(key, r);
-                cnt.set(r.model, (cnt.get(r.model) || 0) + 1);
+                if (!brandMarkets.has(r.brand)) brandMarkets.set(r.brand, new Set());
+                brandMarkets.get(r.brand).add(r.market || '');
             });
+            // 跨市场品牌（Kukirin/GPD）所有选项都标注市场，单市场品牌（Meepo/Joyor）不加后缀
+            const multiBrand = new Set([...brandMarkets].filter(([, m]) => m.size > 1).map(([b]) => b));
             recs.forEach((r, key) => {
-                // 仅跨市场撞名的型号才标注市场，单市场品牌不加后缀
-                const label = (cnt.get(r.model) > 1 && r.market) ? `${r.model}（${r.market}）` : r.model;
+                const label = (multiBrand.has(r.brand) && r.market) ? `${r.model}（${r.market}）` : r.model;
                 sel.appendChild(new Option(label, key));
             });
             const recalc = () => {
