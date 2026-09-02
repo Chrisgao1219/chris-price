@@ -503,9 +503,14 @@
                 <span style="font-size:12px; color:#6b7280; margin-left:8px;">竞品价格 · 我方对比 · 利润 · 每日更新</span>
             </div>
         </div>
-        <a href="./guide.html" style="color:#fff; text-decoration:none; background:#0d9488; padding:7px 16px; border-radius:6px; font-size:13px; font-weight:600;">📖 使用说明</a>
+        <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <button id="viewPriceBtn" onclick="switchView('price')" style="cursor:pointer;background:#0d9488;color:#fff;border:1px solid #0d9488;padding:6px 14px;border-radius:6px;font-size:13px;font-weight:600;">📊 价格对比</button>
+            <button id="viewPagesBtn" onclick="switchView('pages')" style="cursor:pointer;background:#fff;color:#0d9488;border:1px solid #0d9488;padding:6px 13px;border-radius:6px;font-size:13px;font-weight:600;">📋 页面动态</button>
+            <a href="./guide.html" style="color:#fff; text-decoration:none; background:#134e4a; padding:7px 16px; border-radius:6px; font-size:13px; font-weight:600;">📖 使用说明</a>
+        </div>
     </div>
     <div class="container" style="padding-top: 16px;">
+        <div id="priceView">
         <!-- 筛选器 -->
         <div class="filters">
             <div class="filter-group">
@@ -599,6 +604,27 @@
         <div class="insight-card" id="insightCard">
             <h3>价格洞察</h3>
             <ul class="insight-list" id="insightList"></ul>
+        </div>
+        </div><!-- /priceView -->
+
+        <!-- 页面动态视图（渠道 新品/下架/促销/首页变化） -->
+        <div id="pageView" style="display:none;">
+            <div class="matrix-container">
+                <div class="matrix-header"><h3>📋 页面动态</h3></div>
+                <div class="filters" style="padding:12px 24px; gap:12px; flex-wrap:wrap;">
+                    <div class="filter-group"><label>事件类型</label><select id="pageTypeFilter"><option value="">全部类型</option></select></div>
+                    <div class="filter-group"><label>关键词</label><input id="pageSearch" placeholder="页面名 / 详情关键词" style="padding:8px 12px;border:1px solid #cbd5e0;border-radius:6px;font-size:13px;min-width:200px;"></div>
+                    <div class="filter-group"><label>时间</label><select id="pageDays"><option value="7">近 7 天</option><option value="14" selected>近 14 天</option><option value="30">近 30 天</option><option value="90">近 90 天</option><option value="">全部</option></select></div>
+                    <span style="margin-left:auto;font-size:12px;color:#6b7280;align-self:flex-end;padding-bottom:8px;" id="pageCount"></span>
+                </div>
+                <div class="matrix-table-wrapper">
+                    <table class="price-matrix">
+                        <thead><tr><th style="width:150px;min-width:150px;">时间</th><th style="width:104px;">类型</th><th style="width:230px;">页面 / 渠道</th><th style="min-width:340px;">详情</th><th style="width:64px;">链接</th></tr></thead>
+                        <tbody id="pageBody"></tbody>
+                    </table>
+                </div>
+                <div style="padding:14px 24px;color:#9ca3af;font-size:13px;" id="pageEmpty">加载中…</div>
+            </div>
         </div>
     </div>
     </div>
@@ -1185,6 +1211,73 @@
             insightList.innerHTML = insights.map(i => `<li>${i}</li>`).join('');
         }
 
+        // ===== 页面动态视图 =====
+        let PAGE_EVENTS = [];
+        let _pageViewShown = false;
+        const _PAGE_ICONS = { '新品上架': '🆕', '产品下架': '🗑️', '页面变化': '🔁', '新文章': '📝', '博客新文章': '📝', '新博客': '📝' };
+
+        function _esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
+
+        function switchView(v) {
+            const pv = document.getElementById('priceView'), gv = document.getElementById('pageView');
+            const bp = document.getElementById('viewPriceBtn'), bg = document.getElementById('viewPagesBtn');
+            const show = (v === 'pages');
+            pv.style.display = show ? 'none' : '';
+            gv.style.display = show ? '' : 'none';
+            const act = { background: '#0d9488', color: '#fff', border: '1px solid #0d9488', padding: '6px 13px' };
+            const idle = { background: '#fff', color: '#0d9488', border: '1px solid #0d9488', padding: '6px 13px' };
+            Object.assign(bp.style, show ? idle : act);
+            Object.assign(bg.style, show ? act : idle);
+            if (show && !_pageViewShown) { _pageViewShown = true; _populatePageType(); renderPageEvents(); }
+        }
+
+        function _populatePageType() {
+            const sel = document.getElementById('pageTypeFilter');
+            const types = [...new Set(PAGE_EVENTS.map(e => e.type).filter(Boolean))];
+            sel.innerHTML = '<option value="">全部类型</option>' +
+                types.map(t => `<option value="${_esc(t)}">${t}</option>`).join('');
+        }
+
+        function renderPageEvents() {
+            const body = document.getElementById('pageBody');
+            const type = document.getElementById('pageTypeFilter').value;
+            const kw = (document.getElementById('pageSearch').value || '').trim().toLowerCase();
+            const days = document.getElementById('pageDays').value;
+            let minT = null;
+            if (days !== '') { const t = new Date(); t.setDate(t.getDate() - parseInt(days, 10)); minT = t.getTime(); }
+            let rows = PAGE_EVENTS.filter(e => {
+                if (type && e.type !== type) return false;
+                if (kw && !((e.page || '') + ' ' + (e.detail || '')).toLowerCase().includes(kw)) return false;
+                if (minT && e.ts && e.ts < minT) return false;
+                return true;
+            }).sort((a, b) => (b.ts || 0) - (a.ts || 0));
+            document.getElementById('pageCount').textContent = `${rows.length} 条事件`;
+            if (!rows.length) { body.innerHTML = ''; document.getElementById('pageEmpty').textContent = '无匹配事件'; return; }
+            document.getElementById('pageEmpty').textContent = '';
+            body.innerHTML = rows.map(e => {
+                const link = e.url ? `<a href="${_esc(e.url)}" target="_blank" style="color:#0d9488;font-size:12px;text-decoration:none;">打开 ↗</a>` : '—';
+                const icon = _PAGE_ICONS[e.type] || '•';
+                const det = _esc(e.detail || '').slice(0, 700);
+                return `<tr>
+                  <td style="font-size:12px;color:#6b7280;white-space:nowrap;">${_esc(e.time || '')}</td>
+                  <td style="font-size:12px;white-space:nowrap;">${icon} ${_esc(e.type || '')}</td>
+                  <td style="font-size:13px;color:#134e4a;">${_esc(e.page || '')}</td>
+                  <td style="font-size:12px;color:#374151;white-space:pre-wrap;line-height:1.6;">${det}</td>
+                  <td>${link}</td></tr>`;
+            }).join('');
+        }
+
+        async function loadPages(token) {
+            try {
+                const res = await fetch('/api/page_events', { headers: { Authorization: 'Bearer ' + token } });
+                if (res.ok) {
+                    const d = await res.json();
+                    PAGE_EVENTS = (Array.isArray(d) ? d : []).map(x => ({ ...x, ts: new Date(x.time || 0).getTime() }));
+                }
+                if (_pageViewShown) { _populatePageType(); renderPageEvents(); }
+            } catch (e) { /* 页面动态加载失败不阻塞价格视图 */ }
+        }
+
         // 登录 + 数据加载流程
         function showLogin() {
             document.getElementById('login').style.display = 'block';
@@ -1204,6 +1297,7 @@
                 document.getElementById('login').style.display = 'none';
                 document.getElementById('app').style.display = 'block';
                 init();
+                loadPages(token); // 页面动态（失败不阻塞价格视图）
             } catch (e) {
                 showLogin();
             }
@@ -1235,6 +1329,11 @@
         document.getElementById('loginPass').addEventListener('keydown', (e) => {
             if (e.key === 'Enter') document.getElementById('loginBtn').click();
         });
+
+        // 页面动态筛选控件（DOM 常驻）
+        document.getElementById('pageTypeFilter').addEventListener('change', renderPageEvents);
+        document.getElementById('pageSearch').addEventListener('input', renderPageEvents);
+        document.getElementById('pageDays').addEventListener('change', renderPageEvents);
     </script>
 </body>
 </html>
