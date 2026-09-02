@@ -947,6 +947,25 @@
         }
 
         // 渲染矩阵价格表
+        // 竞品渠道 → 官网链接（价格矩阵列头可点击跳转）
+        const SITE_URLS = {
+            'eu-kukirin': 'https://eu-kukirin.com/',
+            'kugoo.eu': 'https://kugoo.eu/collections/electric-scooters',
+            'kugookirineu': 'https://www.kugookirineu.com/collections/electric-scooter',
+            'kukirin-escooter': 'https://kukirin-escooter.com/collections/electric-scooters',
+            'kukirin-scooter': 'https://www.kukirin-scooter.com/collections/electric-scooter',
+            'kukirineu': 'https://eu-kukirin.com/',
+            'officialkukirin': 'https://officialkukirin.com/collections/electric-scooter',
+            'kukirin-scooter.pl': 'https://www.kukirin-scooter.pl',
+            'kukirin.pl': 'https://www.kukirin.pl',
+            'kukirin-escooter.co.uk': 'https://kukirin-escooter.co.uk/',
+            'kukirin.co.uk': 'https://kukirin.co.uk/',
+            'kukirinscooter.uk': 'https://www.kukirinscooter.uk/',
+            'kukiringlobal': 'https://kukiringlobal.com/collections/electric-scooter',
+            'kukirinscooterusa': 'https://www.kugooscooterusa.com/collections/electric-scooters',
+            'kukirinscooterusa.com': 'https://kukirinscooterusa.com/',
+        };
+
         function renderMatrix() {
             const header = document.getElementById('matrixHeader');
             const body = document.getElementById('matrixBody');
@@ -982,7 +1001,11 @@
             let headerHTML = '<th class="model-col">型号</th>';
             state.sites.forEach(site => {
                 const isOwn = site === state.ownSite;
-                headerHTML += `<th class="${isOwn ? 'own-site' : ''}">${site}${isOwn ? '<span class="own-badge">我方</span>' : ''}</th>`;
+                const siteUrl = SITE_URLS[site] || '';
+                const nameHtml = siteUrl
+                    ? `<a href="${siteUrl}" target="_blank" style="color:inherit;">${site}</a>`
+                    : site;
+                headerHTML += `<th class="${isOwn ? 'own-site' : ''}">${nameHtml}${isOwn ? '<span class="own-badge">我方</span>' : ''}</th>`;
             });
             header.innerHTML = headerHTML;
 
