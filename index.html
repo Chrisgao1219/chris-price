@@ -612,6 +612,7 @@
             <div class="matrix-container">
                 <div class="matrix-header"><h3>📋 页面动态</h3></div>
                 <div class="filters" style="padding:12px 24px; gap:12px; flex-wrap:wrap;">
+                    <div class="filter-group" id="pageBrandWrap" style="display:none;"><label>品牌</label><select id="pageBrand"><option value="">全部品牌</option></select></div>
                     <div class="filter-group"><label>事件类型</label><select id="pageTypeFilter"><option value="">全部类型</option></select></div>
                     <div class="filter-group"><label>关键词</label><input id="pageSearch" placeholder="页面名 / 详情关键词" style="padding:8px 12px;border:1px solid #cbd5e0;border-radius:6px;font-size:13px;min-width:200px;"></div>
                     <div class="filter-group"><label>时间</label><select id="pageDays"><option value="7">近 7 天</option><option value="14" selected>近 14 天</option><option value="30">近 30 天</option><option value="90">近 90 天</option><option value="">全部</option></select></div>
@@ -1213,6 +1214,7 @@
 
         // ===== 页面动态视图 =====
         let PAGE_EVENTS = [];
+        let ALLOWED_BRANDS = [];
         let _pageViewShown = false;
         const _PAGE_ICONS = { '新品上架': '🆕', '产品下架': '🗑️', '页面变化': '🔁', '新文章': '📝', '博客新文章': '📝', '新博客': '📝' };
 
@@ -1242,6 +1244,18 @@
                 types.map(t => `<option value="${_esc(t)}">${t}</option>`).join('');
         }
 
+        // 品牌下拉：仅主账号（多品牌）显示，可切换看各品牌页面动态；子账号只有一个品牌则隐藏
+        function _populateBrand() {
+            const wrap = document.getElementById('pageBrandWrap');
+            const sel = document.getElementById('pageBrand');
+            if (ALLOWED_BRANDS.length <= 1) { wrap.style.display = 'none'; return; }
+            wrap.style.display = '';
+            const cur = sel.value;
+            sel.innerHTML = '<option value="">全部品牌</option>' +
+                ALLOWED_BRANDS.map(b => `<option value="${_esc(b)}">${b}</option>`).join('');
+            sel.value = cur;
+        }
+
         function renderPageEvents() {
             const body = document.getElementById('pageBody');
             const type = document.getElementById('pageTypeFilter').value;
@@ -1249,7 +1263,9 @@
             const days = document.getElementById('pageDays').value;
             let minT = null;
             if (days !== '') { const t = new Date(); t.setDate(t.getDate() - parseInt(days, 10)); minT = t.getTime(); }
+            const brand = document.getElementById('pageBrand').value;
             let rows = PAGE_EVENTS.filter(e => {
+                if (brand && e.brand !== brand) return false;
                 if (type && e.type !== type) return false;
                 if (kw && !((e.page || '') + ' ' + (e.detail || '')).toLowerCase().includes(kw)) return false;
                 if (minT && e.ts && e.ts < minT) return false;
@@ -1276,7 +1292,10 @@
                 const res = await fetch('/api/page_events', { headers: { Authorization: 'Bearer ' + token } });
                 if (res.ok) {
                     const d = await res.json();
-                    PAGE_EVENTS = (Array.isArray(d) ? d : []).map(x => ({ ...x, ts: new Date(x.time || 0).getTime() }));
+                    ALLOWED_BRANDS = (d && Array.isArray(d.brands)) ? d.brands : [];
+                    const list = (d && Array.isArray(d.events)) ? d.events : (Array.isArray(d) ? d : []);
+                    PAGE_EVENTS = list.map(x => ({ ...x, ts: new Date(x.time || 0).getTime() }));
+                    _populateBrand();
                 }
                 if (_pageViewShown) { _populatePageType(); renderPageEvents(); }
             } catch (e) { /* 页面动态加载失败不阻塞价格视图 */ }
@@ -1335,6 +1354,7 @@
         });
 
         // 页面动态筛选控件（DOM 常驻）
+        document.getElementById('pageBrand').addEventListener('change', renderPageEvents);
         document.getElementById('pageTypeFilter').addEventListener('change', renderPageEvents);
         document.getElementById('pageSearch').addEventListener('input', renderPageEvents);
         document.getElementById('pageDays').addEventListener('change', renderPageEvents);
