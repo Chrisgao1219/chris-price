@@ -733,6 +733,7 @@
                 updateCurrencyFilter();
                 updateOwnSiteFilter();
                 applyFilters();
+                renderCalcOptions(); // 计算器型号跟随品牌/市场
             });
 
             document.getElementById('marketSelect').addEventListener('change', (e) => {
@@ -740,6 +741,7 @@
                 updateCurrencyFilter();
                 updateOwnSiteFilter();
                 applyFilters();
+                renderCalcOptions(); // 计算器型号跟随品牌/市场
             });
 
             document.getElementById('currencySelect').addEventListener('change', (e) => {
@@ -853,57 +855,76 @@
             body.innerHTML = html;
         }
 
-        // 利润计算器：选型号 + 填售价 → 实时算利润（公式参数从数据取）
-        // 同一型号可能跨市场（Kukirin 欧/英/美/波、GPD 法/英/美），各市场成本/汇率/货币不同，
-        // 必须按「型号+市场」区分选项，否则会误用别国市场的汇率与成本参数。
-        function initCalc() {
+        // 利润计算器：选型号 + 填售价 → 实时算利润（公式参数从数据取）。
+        // 型号下拉跟随顶部品牌/市场筛选：切品牌只显示该品牌型号；同型号跨多个市场
+        // （Kukirin 欧/英/美/波、GPD 法/英/美）按「型号+市场」分行，选中哪条就用该市场
+        // 的汇率/成本/货币（售价单位随 #calcCurrency 实时提示）。
+        let calcRecs = new Map();   // 当前筛选下的可选利润记录：key = model||market → 记录
+        let calcDirty = false;      // 用户是否手动改过售价（用于切型号时是否预填）
+
+        function calcRecalc() {
             const sel = document.getElementById('calcModel');
             const input = document.getElementById('calcPrice');
             const result = document.getElementById('calcResult');
             const curHint = document.getElementById('calcCurrency');
-            const recs = new Map();          // key = model||market → 记录
-            const brandMarkets = new Map();  // brand → 出现的市场集合
+            const rec = calcRecs.get(sel.value);
+            const price = parseFloat(input.value);
+            if (curHint) curHint.textContent = rec ? (rec.currency || 'EUR') : 'EUR';
+            if (!rec || !price || price <= 0) { result.innerHTML = ''; return; }
+            const fx = rec.fx_rate || 1;
+            const profit = price * (rec.payout_rate || 1) * (rec.shop_rate || 1) * fx
+                - ((rec.cost || 0) + (rec.shipping || 0));
+            const cs = getCurrencySymbol(rec.currency) || '';
+            result.innerHTML = `售价 ${cs}${price} → 利润 <span style="color:#38a169;font-weight:700;">¥${profit.toFixed(0)}</span>`;
+        }
+
+        // 按当前 state.brand / state.market（顶部筛选）重建计算器型号下拉
+        function renderCalcOptions() {
+            const sel = document.getElementById('calcModel');
+            const input = document.getElementById('calcPrice');
+            calcDirty = false; // 切品牌/市场后重置，自动预填新选项的当前售价
+            calcRecs = new Map();
+            const cnt = new Map(); // model → 候选里出现的市场数
             PRICE_DATA.forEach(r => {
                 if (r.profit === null || r.profit === undefined) return;
+                if (r.brand !== state.brand) return;                        // 只列当前品牌
+                if (state.market && r.market_group !== state.market) return; // 顶部已选市场则只列该市场
                 const key = r.model + '||' + (r.market || '');
-                if (recs.has(key)) return;
-                recs.set(key, r);
-                if (!brandMarkets.has(r.brand)) brandMarkets.set(r.brand, new Set());
-                brandMarkets.get(r.brand).add(r.market || '');
+                if (calcRecs.has(key)) return;
+                calcRecs.set(key, r);
+                cnt.set(r.model, (cnt.get(r.model) || 0) + 1);
             });
-            // 跨市场品牌（Kukirin/GPD）所有选项都标注市场，单市场品牌（Meepo/Joyor）不加后缀
-            const multiBrand = new Set([...brandMarkets].filter(([, m]) => m.size > 1).map(([b]) => b));
-            recs.forEach((r, key) => {
-                const label = (multiBrand.has(r.brand) && r.market) ? `${r.model}（${r.market}）` : r.model;
-                sel.appendChild(new Option(label, key));
-            });
-            const recalc = () => {
-                const rec = recs.get(sel.value);
-                const price = parseFloat(input.value);
-                if (curHint && rec) curHint.textContent = rec.currency || 'EUR';
-                if (!rec || !price || price <= 0) { result.innerHTML = ''; return; }
-                const fx = rec.fx_rate || 1;
-                const profit = price * (rec.payout_rate || 1) * (rec.shop_rate || 1) * fx
-                    - ((rec.cost || 0) + (rec.shipping || 0));
-                const cs = getCurrencySymbol(rec.currency) || '';
-                result.innerHTML = `售价 ${cs}${price} → 利润 <span style="color:#38a169;font-weight:700;">¥${profit.toFixed(0)}</span>`;
-            };
-            // 用户手动改过售价后，切换型号不再覆盖其输入
-            let dirty = false;
-            sel.onchange = () => {
-                const rec = recs.get(sel.value);
-                if (!dirty && rec && rec.price) input.value = rec.price;
-                recalc();
-            };
-            input.oninput = () => { dirty = true; recalc(); };
-            // 默认选中第一个型号并预填其当前售价，便于对比
-            if (recs.size) {
-                const first = recs.keys().next().value;
-                sel.value = first;
-                const r0 = recs.get(first);
+            const marketRank = { '欧洲': 0, '英国': 1, '美国': 2, '波兰': 3, '法国': 4, '全球': 9 };
+            const opts = [...calcRecs].map(([key, r]) => ({
+                key, r,
+                // 候选里同型号出现在多个市场才加市场后缀（如 GPD 全球视角下的美/英/法）
+                label: (cnt.get(r.model) > 1 && r.market) ? `${r.model}（${r.market}）` : r.model
+            })).sort((a, b) =>
+                (modelRank(a.r.model, state.brand) - modelRank(b.r.model, state.brand))
+                || ((marketRank[a.r.market] ?? 9) - (marketRank[b.r.market] ?? 9))
+                || a.r.model.localeCompare(b.r.model));
+            sel.innerHTML = '';
+            opts.forEach(({ key, label }) => sel.appendChild(new Option(label, key)));
+            input.value = '';
+            if (opts.length) {
+                sel.value = opts[0].key;
+                const r0 = calcRecs.get(opts[0].key);
                 if (r0.price) input.value = r0.price;
-                recalc();
             }
+            calcRecalc();
+        }
+
+        function initCalc() {
+            const sel = document.getElementById('calcModel');
+            const input = document.getElementById('calcPrice');
+            sel.onchange = () => {
+                const rec = calcRecs.get(sel.value);
+                // 用户手动改过售价后不再覆盖其输入；否则自动带入该市场型号当前售价
+                if (!calcDirty && rec && rec.price) input.value = rec.price;
+                calcRecalc();
+            };
+            input.oninput = () => { calcDirty = true; calcRecalc(); };
+            renderCalcOptions();
         }
 
         // 渲染KPI
