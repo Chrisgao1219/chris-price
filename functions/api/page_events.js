@@ -1,5 +1,5 @@
-// GET /api/page_events：校验 token → 从 KV 读页面动态事件列表返回。
-// 页面事件无品牌维度（同公司内部可见），任一有效账号登录即可查看。
+// GET /api/page_events：校验 token → 按账号品牌过滤页面动态 → 返回 { brands, events }。
+// 主账号（多品牌）返回全部并带可用品牌列表供前端切换；子账号只见自己品牌的动态。
 import { verifyToken } from '../_lib/auth.js';
 
 export async function onRequestGet({ request, env }) {
@@ -7,9 +7,13 @@ export async function onRequestGet({ request, env }) {
   const sub = await verifyToken(env.SECRET, auth);
   if (!sub) return Response.json({ error: '未授权' }, { status: 401 });
   const accounts = JSON.parse(env.ACCOUNTS || '{}');
-  if (!accounts[sub]) return Response.json({ error: '未授权' }, { status: 401 });
+  const acc = accounts[sub];
+  if (!acc) return Response.json({ error: '未授权' }, { status: 401 });
 
+  const brands = new Set(acc.brands || []);
   const events = await env.PRICE_DATA_KV.get('page_events', 'json');
-  if (!events) return Response.json([], { headers: { 'Cache-Control': 'no-store' } });
-  return Response.json(events, { headers: { 'Cache-Control': 'no-store' } });
+  const list = Array.isArray(events) ? events : [];
+  const filtered = list.filter(e => !e.brand || brands.has(e.brand));
+  const head = { 'Cache-Control': 'no-store' };
+  return Response.json({ brands: [...brands].sort(), events: filtered }, { headers: head });
 }
