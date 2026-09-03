@@ -506,6 +506,7 @@
         <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
             <button id="viewPriceBtn" onclick="switchView('price')" style="cursor:pointer;background:#0d9488;color:#fff;border:1px solid #0d9488;padding:6px 14px;border-radius:6px;font-size:13px;font-weight:600;">📊 价格对比</button>
             <button id="viewPagesBtn" onclick="switchView('pages')" style="cursor:pointer;background:#fff;color:#0d9488;border:1px solid #0d9488;padding:6px 13px;border-radius:6px;font-size:13px;font-weight:600;">📋 页面动态</button>
+            <button id="viewInsightBtn" onclick="switchView('insight')" style="cursor:pointer;background:#fff;color:#0d9488;border:1px solid #0d9488;padding:6px 13px;border-radius:6px;font-size:13px;font-weight:600;">🔎 洞察</button>
             <a href="./guide.html" style="color:#fff; text-decoration:none; background:#134e4a; padding:7px 16px; border-radius:6px; font-size:13px; font-weight:600;">📖 使用说明</a>
         </div>
     </div>
@@ -625,6 +626,29 @@
                     </table>
                 </div>
                 <div style="padding:14px 24px;color:#9ca3af;font-size:13px;" id="pageEmpty">加载中…</div>
+            </div>
+        </div>
+
+        <!-- 洞察视图（促销活动库 / 主推 / 首页 / 转化信任 / PDP / 博客） -->
+        <div id="insightView" style="display:none;">
+            <div class="matrix-container">
+                <div class="matrix-header"><h3>🔎 洞察</h3></div>
+                <div class="filters" style="padding:12px 24px; gap:12px; flex-wrap:wrap; align-items:flex-end;">
+                    <div class="filter-group" id="insightBrandWrap" style="display:none;"><label>品牌</label><select id="insightBrand"><option value="">全部品牌</option></select></div>
+                    <div class="matrix-tags" style="flex-wrap:wrap; margin:0;" id="insightTabs">
+                        <span class="mod-tag active" data-insight="促销活动" style="cursor:pointer;padding:6px 12px;border:1px solid #cbd5e0;border-radius:999px;font-size:13px;background:#0d9488;color:#fff;margin-right:6px;margin-bottom:6px;">促销活动</span>
+                        <span class="mod-tag" data-insight="主推记录" style="cursor:pointer;padding:6px 12px;border:1px solid #cbd5e0;border-radius:999px;font-size:13px;margin-right:6px;margin-bottom:6px;">主推记录</span>
+                        <span class="mod-tag" data-insight="首页结构" style="cursor:pointer;padding:6px 12px;border:1px solid #cbd5e0;border-radius:999px;font-size:13px;margin-right:6px;margin-bottom:6px;">首页结构</span>
+                        <span class="mod-tag" data-insight="转化信任" style="cursor:pointer;padding:6px 12px;border:1px solid #cbd5e0;border-radius:999px;font-size:13px;margin-right:6px;margin-bottom:6px;">转化信任</span>
+                        <span class="mod-tag" data-insight="PDP 深度" style="cursor:pointer;padding:6px 12px;border:1px solid #cbd5e0;border-radius:999px;font-size:13px;margin-right:6px;margin-bottom:6px;">PDP 深度</span>
+                        <span class="mod-tag" data-insight="博客 SEO" style="cursor:pointer;padding:6px 12px;border:1px solid #cbd5e0;border-radius:999px;font-size:13px;margin-right:6px;margin-bottom:6px;">博客 SEO</span>
+                    </div>
+                    <span style="margin-left:auto;font-size:12px;color:#6b7280;" id="insightCount"></span>
+                </div>
+                <div class="matrix-table-wrapper">
+                    <table class="price-matrix"><thead><tr id="insightHead"></tr></thead><tbody id="insightBody"></tbody></table>
+                </div>
+                <div style="padding:14px 24px;color:#9ca3af;font-size:13px;" id="insightEmpty">加载中…</div>
             </div>
         </div>
     </div>
@@ -1220,20 +1244,29 @@
 
         function _esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
 
+        const _VIEWS = { 'price': ['priceView', 'viewPriceBtn'], 'pages': ['pageView', 'viewPagesBtn'], 'insight': ['insightView', 'viewInsightBtn'] };
+        let _insightShown = false;
+
         function switchView(v) {
-            const pv = document.getElementById('priceView'), gv = document.getElementById('pageView');
-            const bp = document.getElementById('viewPriceBtn'), bg = document.getElementById('viewPagesBtn');
-            const show = (v === 'pages');
-            pv.style.display = show ? 'none' : '';
-            gv.style.display = show ? '' : 'none';
             const act = { background: '#0d9488', color: '#fff', border: '1px solid #0d9488', padding: '6px 13px' };
             const idle = { background: '#fff', color: '#0d9488', border: '1px solid #0d9488', padding: '6px 13px' };
-            Object.assign(bp.style, show ? idle : act);
-            Object.assign(bg.style, show ? act : idle);
-            if (show && !_pageViewShown) {
+            for (const k in _VIEWS) {
+                const [vid, bid] = _VIEWS[k];
+                const el = document.getElementById(vid), btn = document.getElementById(bid);
+                if (!el || !btn) continue;
+                const on = (k === v);
+                el.style.display = on ? '' : 'none';
+                Object.assign(btn.style, on ? act : idle);
+            }
+            const token = localStorage.getItem('price_token') || '';
+            if (v === 'pages' && !_pageViewShown) {
                 _pageViewShown = true; _populatePageType(); renderPageEvents();
-                // 首次进入若数据尚未拉到（部署时序等），再拉一次
-                if (!PAGE_EVENTS.length) loadPages(localStorage.getItem('price_token') || '');
+                if (!PAGE_EVENTS.length) loadPages(token);
+            }
+            if (v === 'insight' && !_insightShown) {
+                _insightShown = true;
+                _populateInsightBrand(); renderInsight();
+                if (!INSIGHT_MODULES || !Object.keys(INSIGHT_MODULES).length) loadInsight(token);
             }
         }
 
@@ -1301,6 +1334,85 @@
             } catch (e) { /* 页面动态加载失败不阻塞价格视图 */ }
         }
 
+        // ===== 洞察视图（促销库/主推/首页/转化信任/PDP/博客）=====
+        let INSIGHT_MODULES = null;
+        let INSIGHT_BRANDS = [];
+        let _curInsight = '促销活动';
+        const INSIGHT_COLS = {
+            '促销活动': ['状态', '活动名称', '折扣机制', '折扣值', 'Coupon Code', '赠品', '主推型号', '最近更新', '证据URL'],
+            '主推记录': ['周次', '主推型号', '来源页面', 'AI摘要'],
+            '首页结构': ['抓取时间', 'Hero主推款', 'Hero标题', '首页模块顺序', 'Bestseller型号', '是否强调折扣', '是否推新品', '是否推配件', '是否有UGC'],
+            '转化信任': ['抓取时间', '页面URL', '转化工具清单', '信任体系清单', '备注'],
+            'PDP 深度': ['型号', '前3卖点', '视频情况', '评论评分', '库存提示', 'CTA与Sticky', '配件Bundle'],
+            '博客 SEO': ['文章标题', '发布时间', '博客类型', '是否对比', '导向产品handle', '文章URL'],
+        };
+        const _DT_COLS = new Set(['抓取时间', '首次发现', '最近更新']);
+
+        function _insDT(v) {
+            if (v == null) return '';
+            if (typeof v === 'number' && v > 1e11) { try { return new Date(v).toISOString().slice(0, 10); } catch (e) { } }
+            const s = String(v);
+            if (/^\d{13}$/.test(s)) { try { return new Date(Number(s)).toISOString().slice(0, 10); } catch (e) { } }
+            return s;
+        }
+
+        function _populateInsightBrand() {
+            const wrap = document.getElementById('insightBrandWrap');
+            const sel = document.getElementById('insightBrand');
+            if (!wrap || !sel) return;
+            if (INSIGHT_BRANDS.length <= 1) { wrap.style.display = 'none'; return; }
+            wrap.style.display = '';
+            const cur = sel.value;
+            sel.innerHTML = '<option value="">全部品牌</option>' +
+                INSIGHT_BRANDS.map(b => `<option value="${_esc(b)}">${b}</option>`).join('');
+            sel.value = cur;
+        }
+
+        function _showInsightTag(mod) {
+            document.querySelectorAll('#insightTabs .mod-tag').forEach(el => {
+                const on = el.dataset.insight === mod;
+                el.style.background = on ? '#0d9488' : '';
+                el.style.color = on ? '#fff' : '';
+                el.style.borderColor = on ? '#0d9488' : '#cbd5e0';
+            });
+        }
+
+        function renderInsight() {
+            const head = document.getElementById('insightHead'), body = document.getElementById('insightBody'),
+                  emp = document.getElementById('insightEmpty');
+            const brand = document.getElementById('insightBrand').value;
+            let rows = (INSIGHT_MODULES && INSIGHT_MODULES[_curInsight]) || [];
+            if (brand) rows = rows.filter(r => !r.brand || r.brand === brand);
+            document.getElementById('insightCount').textContent = rows.length + ' 条记录';
+            const keys = INSIGHT_COLS[_curInsight] || [];
+            head.innerHTML = keys.map(k => `<th>${_esc(k)}</th>`).join('');
+            if (!rows.length) { body.innerHTML = ''; emp.textContent = '暂无记录'; return; }
+            emp.textContent = '';
+            body.innerHTML = rows.slice(0, 200).map(r => `<tr>${keys.map(k => {
+                const v = _DT_COLS.has(k) ? _insDT(r[k]) : (r[k] == null ? '' : String(r[k]));
+                return `<td style="font-size:12px;color:#374151;white-space:pre-wrap;min-width:120px;max-width:420px;">${_esc(v)}</td>`;
+            }).join('')}</tr>`).join('');
+        }
+
+        function setInsightModule(mod) {
+            _curInsight = mod;
+            _showInsightTag(mod);
+            renderInsight();
+        }
+
+        async function loadInsight(token) {
+            try {
+                const res = await fetch('/api/insight', { headers: { Authorization: 'Bearer ' + token } });
+                if (res.ok) {
+                    const d = await res.json();
+                    INSIGHT_BRANDS = (d && Array.isArray(d.brands)) ? d.brands : [];
+                    INSIGHT_MODULES = (d && d.modules) ? d.modules : {};
+                    _populateInsightBrand();
+                }
+                if (_insightShown) renderInsight();
+            } catch (e) { /* 洞察加载失败不阻塞 */ }
+        }
+
         // 登录 + 数据加载流程
         function showLogin() {
             document.getElementById('login').style.display = 'block';
@@ -1321,6 +1433,7 @@
                 document.getElementById('app').style.display = 'block';
                 init();
                 loadPages(token); // 页面动态（失败不阻塞价格视图）
+                loadInsight(token); // 洞察（失败不阻塞）
             } catch (e) {
                 showLogin();
             }
@@ -1358,6 +1471,11 @@
         document.getElementById('pageTypeFilter').addEventListener('change', renderPageEvents);
         document.getElementById('pageSearch').addEventListener('input', renderPageEvents);
         document.getElementById('pageDays').addEventListener('change', renderPageEvents);
+        // 洞察视图控件
+        document.getElementById('insightBrand').addEventListener('change', renderInsight);
+        document.querySelectorAll('#insightTabs .mod-tag').forEach(el => {
+            el.addEventListener('click', () => setInsightModule(el.dataset.insight));
+        });
     </script>
 </body>
 </html>
