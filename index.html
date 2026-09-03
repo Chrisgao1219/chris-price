@@ -1353,6 +1353,7 @@
             if (typeof v === 'number' && v > 1e11) { try { return new Date(v).toISOString().slice(0, 10); } catch (e) { } }
             const s = String(v);
             if (/^\d{13}$/.test(s)) { try { return new Date(Number(s)).toISOString().slice(0, 10); } catch (e) { } }
+            if (/^20\d\d-\d\d-\d\dT/.test(s)) return s.slice(0, 10);   // ISO 长串只留日期
             return s;
         }
 
