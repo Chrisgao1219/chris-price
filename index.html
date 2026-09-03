@@ -505,7 +505,6 @@
         </div>
         <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
             <button id="viewPriceBtn" onclick="switchView('price')" style="cursor:pointer;background:#0d9488;color:#fff;border:1px solid #0d9488;padding:6px 14px;border-radius:6px;font-size:13px;font-weight:600;">📊 价格对比</button>
-            <button id="viewPagesBtn" onclick="switchView('pages')" style="cursor:pointer;background:#fff;color:#0d9488;border:1px solid #0d9488;padding:6px 13px;border-radius:6px;font-size:13px;font-weight:600;">📋 页面动态</button>
             <button id="viewInsightBtn" onclick="switchView('insight')" style="cursor:pointer;background:#fff;color:#0d9488;border:1px solid #0d9488;padding:6px 13px;border-radius:6px;font-size:13px;font-weight:600;">🔎 洞察</button>
             <a href="./guide.html" style="color:#fff; text-decoration:none; background:#134e4a; padding:7px 16px; border-radius:6px; font-size:13px; font-weight:600;">📖 使用说明</a>
         </div>
@@ -635,8 +634,10 @@
                 <div class="matrix-header"><h3>🔎 洞察</h3></div>
                 <div class="filters" style="padding:12px 24px; gap:12px; flex-wrap:wrap; align-items:flex-end;">
                     <div class="filter-group" id="insightBrandWrap" style="display:none;"><label>品牌</label><select id="insightBrand"><option value="">全部品牌</option></select></div>
+                    <div class="filter-group" id="insightQWrap" style="display:none;"><label>关键词</label><input id="insightQ" placeholder="搜索型号/页面/详情" style="padding:8px 12px;border:1px solid #cbd5e0;border-radius:6px;font-size:13px;min-width:180px;"></div>
                     <div class="matrix-tags" style="flex-wrap:wrap; margin:0;" id="insightTabs">
-                        <span class="mod-tag active" data-insight="促销活动" style="cursor:pointer;padding:6px 12px;border:1px solid #cbd5e0;border-radius:999px;font-size:13px;background:#0d9488;color:#fff;margin-right:6px;margin-bottom:6px;">促销活动</span>
+                        <span class="mod-tag active" data-insight="动态" style="cursor:pointer;padding:6px 12px;border:1px solid #0d9488;border-radius:999px;font-size:13px;background:#0d9488;color:#fff;margin-right:6px;margin-bottom:6px;">动态</span>
+                        <span class="mod-tag" data-insight="促销活动" style="cursor:pointer;padding:6px 12px;border:1px solid #cbd5e0;border-radius:999px;font-size:13px;margin-right:6px;margin-bottom:6px;">促销活动</span>
                         <span class="mod-tag" data-insight="主推记录" style="cursor:pointer;padding:6px 12px;border:1px solid #cbd5e0;border-radius:999px;font-size:13px;margin-right:6px;margin-bottom:6px;">主推记录</span>
                         <span class="mod-tag" data-insight="首页结构" style="cursor:pointer;padding:6px 12px;border:1px solid #cbd5e0;border-radius:999px;font-size:13px;margin-right:6px;margin-bottom:6px;">首页结构</span>
                         <span class="mod-tag" data-insight="转化信任" style="cursor:pointer;padding:6px 12px;border:1px solid #cbd5e0;border-radius:999px;font-size:13px;margin-right:6px;margin-bottom:6px;">转化信任</span>
@@ -1244,7 +1245,7 @@
 
         function _esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
 
-        const _VIEWS = { 'price': ['priceView', 'viewPriceBtn'], 'pages': ['pageView', 'viewPagesBtn'], 'insight': ['insightView', 'viewInsightBtn'] };
+        const _VIEWS = { 'price': ['priceView', 'viewPriceBtn'], 'insight': ['insightView', 'viewInsightBtn'] };
         let _insightShown = false;
 
         function switchView(v) {
@@ -1258,15 +1259,12 @@
                 el.style.display = on ? '' : 'none';
                 Object.assign(btn.style, on ? act : idle);
             }
-            const token = localStorage.getItem('price_token') || '';
-            if (v === 'pages' && !_pageViewShown) {
-                _pageViewShown = true; _populatePageType(); renderPageEvents();
-                if (!PAGE_EVENTS.length) loadPages(token);
-            }
             if (v === 'insight' && !_insightShown) {
                 _insightShown = true;
                 _populateInsightBrand(); renderInsight();
+                const token = localStorage.getItem('price_token') || '';
                 if (!INSIGHT_MODULES || !Object.keys(INSIGHT_MODULES).length) loadInsight(token);
+                if (!PAGE_EVENTS.length) loadPages(token);   // 「动态」模块需要页面事件
             }
         }
 
@@ -1337,7 +1335,7 @@
         // ===== 洞察视图（促销库/主推/首页/转化信任/PDP/博客）=====
         let INSIGHT_MODULES = null;
         let INSIGHT_BRANDS = [];
-        let _curInsight = '促销活动';
+        let _curInsight = '动态';
         const INSIGHT_COLS = {
             '促销活动': ['状态', '活动名称', '折扣机制', '折扣值', 'Coupon Code', '赠品', '主推型号', '最近更新', '证据URL'],
             '主推记录': ['周次', '主推型号', '来源页面', 'AI摘要'],
@@ -1382,6 +1380,8 @@
             const head = document.getElementById('insightHead'), body = document.getElementById('insightBody'),
                   emp = document.getElementById('insightEmpty');
             const brand = document.getElementById('insightBrand').value;
+            if (_curInsight === '动态') { renderInsightDynamic(brand); return; }
+            document.getElementById('insightQWrap').style.display = 'none';
             let rows = (INSIGHT_MODULES && INSIGHT_MODULES[_curInsight]) || [];
             if (brand) rows = rows.filter(r => !r.brand || r.brand === brand);
             document.getElementById('insightCount').textContent = rows.length + ' 条记录';
@@ -1399,6 +1399,33 @@
             _curInsight = mod;
             _showInsightTag(mod);
             renderInsight();
+        }
+
+        // 「动态」= 原页面动态事件流（并入洞察的第一个模块）
+        function renderInsightDynamic(brand) {
+            document.getElementById('insightQWrap').style.display = '';
+            const head = document.getElementById('insightHead'), body = document.getElementById('insightBody'),
+                  emp = document.getElementById('insightEmpty');
+            const kw = (document.getElementById('insightQ').value || '').trim().toLowerCase();
+            let rows = PAGE_EVENTS.filter(e => {
+                if (brand && e.brand !== brand) return false;
+                if (kw && !((e.page || '') + ' ' + (e.detail || '') + ' ' + (e.type || '')).toLowerCase().includes(kw)) return false;
+                return true;
+            }).sort((a, b) => (b.ts || 0) - (a.ts || 0)).slice(0, 200);
+            document.getElementById('insightCount').textContent = rows.length + ' 条事件';
+            head.innerHTML = '<th>时间</th><th>类型</th><th>页面 / 渠道</th><th style="min-width:340px;">详情</th><th>链接</th>';
+            if (!rows.length) { body.innerHTML = ''; emp.textContent = '暂无动态'; return; }
+            emp.textContent = '';
+            const icon = t => ({ '新品上架': '🆕', '产品下架': '🗑️', '页面变化': '🔁', '新文章': '📝', '博客新文章': '📝', '新博客': '📝' }[t] || '•');
+            body.innerHTML = rows.map(e => {
+                const link = e.url ? `<a href="${_esc(e.url)}" target="_blank" style="color:#0d9488;font-size:12px;text-decoration:none;">打开 ↗</a>` : '—';
+                return `<tr>
+                  <td style="font-size:12px;color:#6b7280;white-space:nowrap;">${_esc(String(e.time||'').slice(0,16).replace('T',' '))}</td>
+                  <td style="font-size:12px;white-space:nowrap;">${icon(e.type)} ${_esc(e.type||'')}</td>
+                  <td style="font-size:13px;color:#134e4a;">${_esc(e.page||'')}</td>
+                  <td style="font-size:12px;color:#374151;white-space:pre-wrap;line-height:1.6;">${_esc((e.detail||'').slice(0,700))}</td>
+                  <td>${link}</td></tr>`;
+            }).join('');
         }
 
         async function loadInsight(token) {
@@ -1474,6 +1501,7 @@
         document.getElementById('pageDays').addEventListener('change', renderPageEvents);
         // 洞察视图控件
         document.getElementById('insightBrand').addEventListener('change', renderInsight);
+        document.getElementById('insightQ').addEventListener('input', renderInsight);
         document.querySelectorAll('#insightTabs .mod-tag').forEach(el => {
             el.addEventListener('click', () => setInsightModule(el.dataset.insight));
         });
