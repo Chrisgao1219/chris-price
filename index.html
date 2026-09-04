@@ -639,7 +639,6 @@
                     <div class="matrix-tags" style="flex-wrap:wrap; margin:0;" id="insightTabs">
                         <span class="mod-tag active" data-insight="动态" style="cursor:pointer;padding:6px 12px;border:1px solid #0d9488;border-radius:999px;font-size:13px;background:#0d9488;color:#fff;margin-right:6px;margin-bottom:6px;">动态</span>
                         <span class="mod-tag" data-insight="促销活动" style="cursor:pointer;padding:6px 12px;border:1px solid #cbd5e0;border-radius:999px;font-size:13px;margin-right:6px;margin-bottom:6px;">促销活动</span>
-                        <span class="mod-tag" data-insight="主推记录" style="cursor:pointer;padding:6px 12px;border:1px solid #cbd5e0;border-radius:999px;font-size:13px;margin-right:6px;margin-bottom:6px;">主推记录</span>
                         <span class="mod-tag" data-insight="首页结构" style="cursor:pointer;padding:6px 12px;border:1px solid #cbd5e0;border-radius:999px;font-size:13px;margin-right:6px;margin-bottom:6px;">首页结构</span>
                         <span class="mod-tag" data-insight="转化信任" style="cursor:pointer;padding:6px 12px;border:1px solid #cbd5e0;border-radius:999px;font-size:13px;margin-right:6px;margin-bottom:6px;">转化信任</span>
                         <span class="mod-tag" data-insight="PDP 深度" style="cursor:pointer;padding:6px 12px;border:1px solid #cbd5e0;border-radius:999px;font-size:13px;margin-right:6px;margin-bottom:6px;">PDP 深度</span>
@@ -1340,24 +1339,21 @@
         let _curInsight = '动态';
         const INSIGHT_COLS = {
             '促销活动': ['状态', '站点', '活动名称', '折扣机制', '折扣值', 'Coupon Code', '赠品', '主推型号', '最近更新', '证据URL'],
-            '主推记录': ['周次', '站点', '主推型号', '来源页面'],
             '首页结构': ['抓取时间', '站点', 'Hero主推款', 'Hero标题', '首页模块顺序', 'Bestseller型号', '是否强调折扣', '是否推新品', '是否推配件', '是否有UGC', '是否强调价格', 'CTA'],
             '转化信任': ['抓取时间', '站点', '页面URL', '转化工具清单', '信任体系清单', '备注'],
             'PDP 深度': ['型号', '前3卖点', '参数要点', '库存提示', '产品URL'],
             '博客 SEO': ['站点', '文章标题', '发布时间', '博客类型', '是否对比', '导向产品handle', '文章URL'],
         };
         // 每模块展示策略
-        const INSIGHT_HIDE_EMPTY = { '主推记录': ['主推型号'] };              // 该列无实质内容(空/未知) → 整行不显示
         const INSIGHT_DEDUPE = { 'PDP 深度': '产品URL' };                     // 同一产品只显示最新一条快照
-        const INSIGHT_STRONG = { '主推记录': ['主推型号'], 'PDP 深度': ['型号', '前3卖点'] }; // 关键列加粗
+        const INSIGHT_STRONG = { 'PDP 深度': ['型号', '前3卖点'], '首页结构': ['Hero主推款', 'Bestseller型号'] }; // 关键列加粗
         const INSIGHT_EMPTYISH = /^(未知|无|未找到|未提供|未具体|none|null|\s*)$/i;        // 这些值当空展示为 —
         const INSIGHT_DESC = {
-            '动态': '竞品页面变化事件流（新品上架/下架/页面变化/促销链接发现），可搜索、按时间范围过滤。',
+            '动态': '竞品页面变化事件流（新品上架/下架/页面变化），促销详情请看「促销活动」tab。',
             '促销活动': '各品牌正在进行的促销：折扣机制 / 优惠码 / 赠品 / 主推款。识别到就入库，不打扰。',
-            '主推记录': '每周快照：各竞品站当前主推 / 首页重点型号。',
-            '首页结构': '每周快照：官网首页 Hero 主推款、模块顺序、Bestseller，是否推折扣/新品/UGC。',
-            '转化信任': '竞品页面用了哪些转化手段（弹窗/倒计时/Sticky）与信任要素（质保/免运/评论）。',
-            'PDP 深度': '各品牌主力产品的卖点 / 参数 / 视频 / 评论 / 信任区 / CTA 深挖。',
+            '首页结构': '每周快照：官网首页主推型号（Hero/Bestseller）、模块顺序，是否推折扣/新品/UGC。',
+            '转化信任': '各站首页用了哪些转化手段（弹窗/倒计时/Sticky）与信任要素（质保/免运/评论）。',
+            'PDP 深度': '各品牌主力产品的卖点 / 参数 / 库存 / 信任区深挖（点击型号查全部字段）。',
             '博客 SEO': '竞品博客文章类型（导购/对比/How-to）与导向的型号，看关键词布局。',
         };
         const _DT_COLS = new Set(['抓取时间', '首次发现', '最近更新']);
@@ -1433,14 +1429,6 @@
                 rows.push(r);
             }
             rows.sort((a, b) => (_rowTs(b) || 0) - (_rowTs(a) || 0)); // 最新在前，无时间自然沉底
-            // 隐藏无效行（如主推型号为空/未知的记录）
-            const hideCols = INSIGHT_HIDE_EMPTY[_curInsight] || [];
-            if (hideCols.length) {
-                rows = rows.filter(r => hideCols.every(c => {
-                    const v = String(r[c] == null ? '' : r[c]).trim();
-                    return v && !INSIGHT_EMPTYISH.test(v);
-                }));
-            }
             // 去重：同一产品只显示最新一条（已按时间倒序 → 保留首次出现即最新）
             const dupKey = INSIGHT_DEDUPE[_curInsight];
             if (dupKey) {
@@ -1511,6 +1499,8 @@
             let rows = PAGE_EVENTS.filter(e => {
                 if (brand && e.brand !== brand) return false;
                 if (kw && !((e.page || '') + ' ' + (e.detail || '') + ' ' + (e.type || '')).toLowerCase().includes(kw)) return false;
+                // 「发现新促销/活动链接」类事件归促销活动 tab 管，动态里不重复出现
+                if (/新促销|活动链接|促销.*链接/.test((e.detail || '') + ' ' + (e.type || ''))) return false;
                 if (!_inRange(e.ts)) return false;
                 return true;
             }).sort((a, b) => (b.ts || 0) - (a.ts || 0)).slice(0, 200);
@@ -1538,9 +1528,10 @@
                     INSIGHT_BRANDS = (d && Array.isArray(d.brands)) ? d.brands : [];
                     INSIGHT_MODULES = (d && d.modules) ? d.modules : {};
                     _populateInsightBrand();
-                    // 恢复上次查看的 tab 与品牌
+                    // 恢复上次查看的 tab 与品牌（旧版本保存过的主推记录已并入首页结构）
                     try {
-                        const tab = localStorage.getItem('cp_ins_tab');
+                        let tab = localStorage.getItem('cp_ins_tab');
+                        if (tab === '主推记录') tab = '首页结构';
                         if (tab && (tab === '动态' || INSIGHT_COLS[tab])) setInsightModule(tab);
                         const bb = localStorage.getItem('cp_ins_brand');
                         const sel = document.getElementById('insightBrand');
