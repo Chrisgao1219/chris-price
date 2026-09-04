@@ -1348,12 +1348,14 @@
         const INSIGHT_DEDUPE = { 'PDP 深度': '产品URL' };                     // 同一产品只显示最新一条快照
         const INSIGHT_STRONG = { 'PDP 深度': ['型号', '前3卖点'], '首页结构': ['Hero主推款', 'Bestseller型号'] }; // 关键列加粗
         const INSIGHT_EMPTYISH = /^(未知|无|未找到|未提供|未具体|none|null|\s*)$/i;        // 这些值当空展示为 —
+        // 展开详情里隐藏的字段：全站统一的信任/质保/配送只在「转化信任」看，PDP 详情不再重复
+        const INSIGHT_DETAIL_HIDE = { 'PDP 深度': ['信任区块', 'CTA与Sticky'] };
         const INSIGHT_DESC = {
             '动态': '竞品页面变化事件流（新品上架/下架/页面变化），促销详情请看「促销活动」tab。',
             '促销活动': '各品牌正在进行的促销：折扣机制 / 优惠码 / 赠品 / 主推款。识别到就入库，不打扰。',
             '首页结构': '每周快照：官网首页主推型号（Hero/Bestseller）、模块顺序，是否推折扣/新品/UGC。',
             '转化信任': '各站首页用了哪些转化手段（弹窗/倒计时/Sticky）与信任要素（质保/免运/评论）。',
-            'PDP 深度': '各品牌主力产品的卖点 / 参数 / 库存 / 信任区深挖（点击型号查全部字段）。',
+            'PDP 深度': '各品牌主力产品的卖点 / 参数 / 库存 / 素材情况（点击型号查全部字段；质保配送等全站信任请到「转化信任」）。',
             '博客 SEO': '竞品博客文章类型（导购/对比/How-to）与导向的型号，看关键词布局。',
         };
         const _DT_COLS = new Set(['抓取时间', '首次发现', '最近更新']);
@@ -1465,7 +1467,7 @@
                     const col = strongSet.has(k) ? '#0f172a;font-weight:700' : '#374151';
                     return `<td style="font-size:12px;color:${col};white-space:pre-wrap;min-width:100px;max-width:330px;" title="${_esc(s).replace(/"/g, '&quot;')}">${_esc(shown)}</td>`;
                 }).join('');
-                const detailKeys = Object.keys(r).filter(kk => kk !== 'brand');
+                const detailKeys = Object.keys(r).filter(kk => kk !== 'brand' && !(INSIGHT_DETAIL_HIDE[_curInsight] || []).includes(kk));
                 const detail = detailKeys.map(kk => {
                     const v = r[kk] == null ? '' : String(r[kk]);
                     const vt = v.trim();
