@@ -1422,7 +1422,7 @@
             const keys = INSIGHT_COLS[_curInsight] || [];
             const kw = (document.getElementById('insightQ').value || '').trim().toLowerCase();
             const all = (INSIGHT_MODULES && INSIGHT_MODULES[_curInsight]) || [];
-            const rows = [];
+            let rows = [];
             for (let i = 0; i < all.length; i++) {
                 const r = all[i];
                 if (brand && r.brand !== brand) continue;
