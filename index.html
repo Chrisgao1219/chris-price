@@ -481,6 +481,45 @@
                 font-size: 22px;
             }
         }
+        /* ---------- 价格历史 sparkline + 放大弹层 ---------- */
+        .sparkline {
+            display: block;
+            margin-top: 3px;
+            cursor: pointer;
+        }
+        .sparkline:hover polyline {
+            stroke: #134e4a;
+        }
+        .hist-dot-max { fill: #e53e3e; }
+        .hist-dot-min { fill: #d69e2e; }
+        #histModal {
+            position: fixed;
+            inset: 0;
+            background: rgba(15, 23, 42, .45);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+        }
+        #histModal.open { display: flex; }
+        .hist-panel {
+            background: #fff;
+            border-radius: 10px;
+            padding: 18px 22px 16px;
+            width: min(760px, 94vw);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, .18);
+            max-height: 90vh;
+            overflow: auto;
+        }
+        .hist-title { font-size: 16px; font-weight: 700; color: #134e4a; margin: 0 0 2px; }
+        .hist-sub { font-size: 12px; color: #6b7280; margin: 0 0 10px; }
+        .hist-close {
+            border: none; background: #edf2f7; border-radius: 6px;
+            cursor: pointer; font-size: 13px; padding: 5px 12px; color: #1a202c;
+        }
+        .hist-chart { overflow-x: auto; }
+        .hist-chart svg text { font-family: -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+        .hist-hint { font-size: 12px; color: #9ca3af; margin-top: 10px; }
     </style>
 </head>
 <body>
@@ -656,9 +695,26 @@
     </div>
     </div>
 
+    <!-- 价格历史曲线 弹层（点 sparkline 打开） -->
+    <div id="histModal">
+      <div class="hist-panel">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;">
+          <div style="min-width:0;">
+            <div class="hist-title" id="histTitle"></div>
+            <div class="hist-sub" id="histSub"></div>
+          </div>
+          <button class="hist-close" id="histClose" type="button">✕ 关闭</button>
+        </div>
+        <div class="hist-chart" id="histChart"></div>
+        <div class="hist-hint" id="histHint"></div>
+      </div>
+    </div>
+
     <script>
         // 全局数据（登录后由 /api/data 填充，未登录为空）
         let PRICE_DATA = [];
+        // 价格历史曲线（登录后 /api/price_history 填充）：{ "<url>|<market>|<sku>": entry }
+        let PRICE_HIST = null;
 
         // 全局状态
         let state = {
@@ -1174,10 +1230,14 @@
                         priceClass = 'competitor';
                     }
 
+                    const hl = histLookup(record);
+                    const spark = (hl && histPriced(hl.entry).length > 0)
+                        ? `<div class="sparkline" data-k="${esc(hl.key)}" title="点击查看价格历史">${sparkInner(hl.entry)}</div>`
+                        : '';
                     bodyHTML += `<td><div class="price-cell ${cellClass}">
                         <span class="price-current ${priceClass}">${currencySymbol}${record.price.toFixed(2)}</span>
                         ${diffBadge}
-                    </div></td>`;
+                    </div>${spark}</td>`;
                 });
 
                 bodyHTML += '</tr>';
@@ -1565,6 +1625,7 @@
                 init();
                 loadPages(token); // 页面动态（失败不阻塞价格视图）
                 loadInsight(token); // 洞察（失败不阻塞）
+                loadHistory(token); // 价格历史曲线（失败不阻塞；成功后刷新 sparkline）
             } catch (e) {
                 showLogin();
             }
@@ -1611,6 +1672,192 @@
         document.getElementById('insightRange').addEventListener('change', renderInsight);
         document.querySelectorAll('#insightTabs .mod-tag').forEach(el => {
             el.addEventListener('click', () => setInsightModule(el.dataset.insight));
+        });
+
+        // ================= 价格历史曲线（sparkline + 点开放大） =================
+        function esc(s) {
+            return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+
+        function histNormUrl(u) {
+            if (!u) return '';
+            try {
+                const p = new URL(u);
+                return p.origin + p.pathname;          // 去查询串/锚点，与 price_daily.url 口径一致
+            } catch (e) {
+                return String(u).split(/[?#]/)[0];
+            }
+        }
+
+        // 按记录 model_url + currency 匹配历史序列（GPD 一 URL 多 market → 用币种对齐显示价）
+        function histLookup(record) {
+            if (!PRICE_HIST || !record) return null;
+            const u = histNormUrl(record.model_url);
+            if (!u) return null;
+            let found = null, fk = null;
+            for (const k of Object.keys(PRICE_HIST)) {
+                if (k.startsWith(u + '|')) {
+                    if (!found) { found = PRICE_HIST[k]; fk = k; }
+                    if (PRICE_HIST[k].currency === record.currency) { found = PRICE_HIST[k]; fk = k; break; }
+                }
+            }
+            return found ? { key: fk, entry: found } : null;
+        }
+
+        function histPriced(entry) {
+            return ((entry && entry.series) || []).filter(p => typeof p.p === 'number');
+        }
+
+        function sparkInner(entry) {
+            // 极简 SVG 折线：中性墨线 + 历史最高(红)/最低(黄)点
+            const ps = histPriced(entry);
+            if (!ps.length) return '';
+            const W = 84, H = 18, PAD = 2;
+            const vals = ps.map(p => p.p);
+            const lo = Math.min(...vals), hi = Math.max(...vals);
+            const span = (hi - lo) || 1;
+            const X = i => PAD + (ps.length === 1 ? (W - PAD * 2) / 2 : i * (W - PAD * 2) / (ps.length - 1));
+            const Y = p => H - PAD - ((p - lo) / span) * (H - PAD * 2);
+            const pts = ps.map((p, i) => `${X(i).toFixed(1)},${Y(p.p).toFixed(1)}`).join(' ');
+            let dots = '';
+            if (ps.length > 1 && hi > lo) {
+                const imin = vals.indexOf(lo), imax = vals.indexOf(hi);
+                if (imin !== imax) {
+                    dots = `<circle class="hist-dot-max" cx="${X(imax).toFixed(1)}" cy="${Y(hi).toFixed(1)}" r="2"/>
+                        <circle class="hist-dot-min" cx="${X(imin).toFixed(1)}" cy="${Y(lo).toFixed(1)}" r="2"/>`;
+                }
+            }
+            const last = entry.series[entry.series.length - 1];
+            const oos = (last && last.a === 'OutOfStock')
+                ? `<line x1="${(W - PAD).toFixed(1)}" y1="${PAD}" x2="${(W - PAD).toFixed(1)}" y2="${H - PAD}" stroke="#cbd5e0" stroke-width="1"/>` : '';
+            return `<svg viewBox="0 0 ${W} ${H}" width="84" height="18" role="img" aria-label="${esc(entry.model || '')} 价格走势">
+                <polyline points="${pts}" fill="none" stroke="#374151" stroke-width="1.5"
+                    stroke-linejoin="round" stroke-linecap="round"/>${dots}${oos}</svg>`;
+        }
+
+        async function loadHistory(token) {
+            try {
+                const res = await fetch('/api/price_history', { headers: { Authorization: 'Bearer ' + token } });
+                if (res.ok) PRICE_HIST = await res.json();
+            } catch (e) { /* 不阻塞价格视图 */ }
+            if (state.brand) renderMatrix();   // 刷新 sparkline
+        }
+
+        function fmtDate(d) { // YYYY-MM-DD → MM-DD
+            return String(d).slice(5);
+        }
+
+        function histBigSvg(entry) {
+            const ps = histPriced(entry);
+            const W = 700, H = 230, ML = 56, MR = 20, MT = 24, MB = 34;
+            const innerW = W - ML - MR, innerH = H - MT - MB;
+            if (!ps.length) {
+                return `<svg viewBox="0 0 ${W} ${H}" width="100%" height="auto" role="img" aria-label="暂无价格数据">
+                    <text x="${W / 2}" y="${H / 2}" text-anchor="middle" font-size="13" fill="#9ca3af">暂无价格数据</text></svg>`;
+            }
+            const all = entry.series.map(p => p.d);
+            const t0 = +new Date(all[0]), t1 = +new Date(all[all.length - 1]);
+            const tSpan = (t1 - t0) || 1;
+            const X = d => ML + ((+new Date(d) - t0) / tSpan) * innerW;
+            const vals = ps.map(p => p.p);
+            const lo = Math.min(...vals), hi = Math.max(...vals);
+            const span = (hi - lo) || 1;
+            const Y = p => MT + (1 - (p - lo) / span) * innerH;
+            const lastAvail = entry.series[entry.series.length - 1].a;
+            const lastVal = vals[vals.length - 1];
+
+            // 缺货段灰底（availability=OutOfStock 的日期范围）
+            let oosRects = '';
+            const oosRuns = [];
+            let run = null;
+            entry.series.forEach(p => {
+                if (p.a === 'OutOfStock') {
+                    if (!run) run = [p.d, p.d];
+                    else run[1] = p.d;
+                } else if (run) { oosRuns.push(run); run = null; }
+            });
+            if (run) oosRuns.push(run);
+            oosRuns.forEach(r => {
+                oosRects += `<rect x="${X(r[0])}" y="${MT}" width="${Math.max(X(r[1]) - X(r[0]), 2)}"
+                    height="${innerH}" fill="#f1f5f9"/>`;
+            });
+
+            const pts = ps.map(p => `${X(p.d).toFixed(1)},${Y(p.p).toFixed(1)}`).join(' ');
+            const imin = vals.indexOf(lo), imax = vals.indexOf(hi);
+
+            // 最低/最高标注 + 现价虚线
+            let annos = '';
+            if (ps.length > 1 && hi > lo) {
+                if (imin !== imax) {
+                    annos += `<circle cx="${X(ps[imax].d)}" cy="${Y(hi)}" r="4" fill="#e53e3e"/>
+                        <circle cx="${X(ps[imin].d)}" cy="${Y(lo)}" r="4" fill="#d69e2e"/>`;
+                }
+            }
+            const curP = ps[ps.length - 1];
+            const showCur = Math.abs(curP.p - lo) > 1e-9 && Math.abs(curP.p - hi) > 1e-9;
+            if (showCur) {
+                annos += `<line x1="${ML}" y1="${Y(curP.p)}" x2="${ML + innerW}" y2="${Y(curP.p)}"
+                    stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 3"/>`;
+            }
+
+            // 日期轴刻度（首/中/末）
+            const n = all.length;
+            const tickIdx = n <= 1 ? [0] : (n <= 4 ? [0, n - 1] : [0, Math.floor((n - 1) / 2), n - 1]);
+            let ticks = '';
+            tickIdx.forEach(i => {
+                const d = all[i];
+                ticks += `<text x="${X(d)}" y="${H - 12}" text-anchor="middle" font-size="11" fill="#6b7280">${fmtDate(d)}</text>`;
+            });
+            // Y 轴 数字刻度（最低/最高/当前）
+            const cur = (entry.currency || '');
+            let ylab = `<text x="${ML - 8}" y="${Y(hi) + 4}" text-anchor="end" font-size="11" fill="#6b7280">${hi}${cur}</text>
+                <text x="${ML - 8}" y="${Y(lo) + 4}" text-anchor="end" font-size="11" fill="#6b7280">${lo}${cur}</text>`;
+
+            let hint = '';
+            if (all.length <= 2) {
+                hint = `<text x="${W / 2}" y="${MT - 8}" text-anchor="middle" font-size="11" fill="#d69e2e">日线自归档起样本仅 ${all.length} 天，曲线会随日线累积自动丰富</text>`;
+            }
+            const oosNote = (lastAvail === 'OutOfStock') ? '｜灰色段=缺货（当前缺货）' : '';
+            document.getElementById('histHint').textContent =
+                `红线点=历史最高 黄线点=历史最低${oosNote}。点空白处关闭。`;
+
+            return `<svg viewBox="0 0 ${W} ${H}" width="100%" height="auto" role="img" aria-label="${esc(entry.model || '')} 价格历史曲线">
+                ${oosRects}
+                <line x1="${ML}" y1="${MT}" x2="${ML}" y2="${MT + innerH}" stroke="#e2e8f0" stroke-width="1"/>
+                <line x1="${ML}" y1="${MT + innerH}" x2="${ML + innerW}" y2="${MT + innerH}" stroke="#e2e8f0" stroke-width="1"/>
+                <polyline points="${pts}" fill="none" stroke="#374151" stroke-width="2"
+                    stroke-linejoin="round" stroke-linecap="round"/>
+                ${annos}
+                ${ticks}${ylab}${hint}
+            </svg>`;
+        }
+
+        function openHistModal(key) {
+            if (!PRICE_HIST || !PRICE_HIST[key]) return;
+            const entry = PRICE_HIST[key];
+            const meta = [];
+            if (entry.brand) meta.push(entry.brand);
+            if (entry.site) meta.push(entry.site);
+            if (entry.currency) meta.push(entry.currency);
+            if (entry.sku) meta.push('SKU ' + entry.sku);
+            document.getElementById('histTitle').textContent = (entry.model || '') + ' 价格历史';
+            document.getElementById('histSub').textContent = meta.join(' · ');
+            document.getElementById('histChart').innerHTML = histBigSvg(entry);
+            document.getElementById('histModal').classList.add('open');
+        }
+
+        function closeHistModal() {
+            document.getElementById('histModal').classList.remove('open');
+        }
+
+        document.addEventListener('click', (e) => {
+            const sp = e.target.closest ? e.target.closest('.sparkline') : null;
+            if (sp && sp.dataset.k) { openHistModal(sp.dataset.k); return; }
+            const m = document.getElementById('histModal');
+            if (m && m.classList.contains('open')) {
+                if (e.target === m || (e.target.id === 'histClose')) closeHistModal();
+            }
         });
     </script>
 </body>
