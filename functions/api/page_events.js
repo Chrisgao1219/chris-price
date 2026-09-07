@@ -11,9 +11,11 @@ export async function onRequestGet({ request, env }) {
   if (!acc) return Response.json({ error: '未授权' }, { status: 401 });
 
   const brands = new Set(acc.brands || []);
+  // 主账号（管理员，含全部品牌）放行 brand='' 的未归属事件，子账号只见自己品牌、看不到未归属动态
+  const isAdmin = sub === 'HL-Chris' || (brands.size >= 5);
   const events = await env.PRICE_DATA_KV.get('page_events', 'json');
   const list = Array.isArray(events) ? events : [];
-  const filtered = list.filter(e => !e.brand || brands.has(e.brand));
+  const filtered = list.filter(e => (e.brand ? brands.has(e.brand) : isAdmin));
   const head = { 'Cache-Control': 'no-store' };
   return Response.json({ brands: [...brands].sort(), events: filtered }, { headers: head });
 }
