@@ -518,6 +518,7 @@
             cursor: pointer; font-size: 13px; padding: 5px 12px; color: #1a202c;
         }
         .hist-chart { overflow-x: auto; }
+        .hist-chart svg { width: 100%; height: auto; display: block; }
         .hist-chart svg text { font-family: -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
         .hist-hint { font-size: 12px; color: #9ca3af; margin-top: 10px; }
     </style>
@@ -1757,7 +1758,7 @@
             const W = 700, H = 230, ML = 56, MR = 20, MT = 24, MB = 34;
             const innerW = W - ML - MR, innerH = H - MT - MB;
             if (!ps.length) {
-                return `<svg viewBox="0 0 ${W} ${H}" width="100%" height="auto" role="img" aria-label="暂无价格数据">
+                return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="暂无价格数据">
                     <text x="${W / 2}" y="${H / 2}" text-anchor="middle" font-size="13" fill="#9ca3af">暂无价格数据</text></svg>`;
             }
             const all = entry.series.map(p => p.d);
@@ -1829,7 +1830,7 @@
             document.getElementById('histHint').textContent =
                 `红线点=历史最高 黄线点=历史最低${oosNote}。点空白处关闭。`;
 
-            return `<svg viewBox="0 0 ${W} ${H}" width="100%" height="auto" role="img" aria-label="${esc(entry.model || '')} 价格历史曲线">
+            return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(entry.model || '')} 价格历史曲线">
                 ${oosRects}
                 <line x1="${ML}" y1="${MT}" x2="${ML}" y2="${MT + innerH}" stroke="#e2e8f0" stroke-width="1"/>
                 <line x1="${ML}" y1="${MT + innerH}" x2="${ML + innerW}" y2="${MT + innerH}" stroke="#e2e8f0" stroke-width="1"/>
