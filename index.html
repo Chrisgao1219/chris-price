@@ -1717,7 +1717,11 @@
             const vals = ps.map(p => p.p);
             const lo = Math.min(...vals), hi = Math.max(...vals);
             const span = (hi - lo) || 1;
-            const X = i => PAD + (ps.length === 1 ? (W - PAD * 2) / 2 : i * (W - PAD * 2) / (ps.length - 1));
+            if (ps.length === 1) {   // 单样本：画中点（趋势待日线累积）
+                return `<svg viewBox="0 0 ${W} ${H}" width="84" height="18" role="img" aria-label="${esc(entry.model || '')} 价格走势">
+                    <circle cx="${W / 2}" cy="${H / 2}" r="2.6" fill="#64748b"/></svg>`;
+            }
+            const X = i => PAD + i * (W - PAD * 2) / (ps.length - 1);
             const Y = p => H - PAD - ((p - lo) / span) * (H - PAD * 2);
             const pts = ps.map((p, i) => `${X(i).toFixed(1)},${Y(p.p).toFixed(1)}`).join(' ');
             let dots = '';
@@ -1799,6 +1803,9 @@
             if (showCur) {
                 annos += `<line x1="${ML}" y1="${Y(curP.p)}" x2="${ML + innerW}" y2="${Y(curP.p)}"
                     stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 3"/>`;
+            }
+            if (ps.length === 1) {   // 单样本：画当前价圆点
+                annos += `<circle cx="${X(curP.d)}" cy="${Y(curP.p)}" r="4.5" fill="#134e4a"/>`;
             }
 
             // 日期轴刻度（首/中/末）
