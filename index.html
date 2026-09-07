@@ -942,8 +942,8 @@
                 const cs = getCurrencySymbol(r.currency) || '';
                 const modelText = r.market ? `${r.model}（${r.market}）` : r.model;
                 const modelCell = r.model_url
-                    ? `<td class="model-cell"><a href="${r.model_url}" target="_blank" class="model-link">${modelText}</a></td>`
-                    : `<td class="model-cell">${modelText}</td>`;
+                    ? `<td class="model-cell"><a href="${esc(r.model_url)}" target="_blank" class="model-link">${esc(modelText)}</a></td>`
+                    : `<td class="model-cell">${esc(modelText)}</td>`;
                 // 第一行：我方渠道售价利润
                 html += `<tr>
                     ${modelCell}
@@ -1166,8 +1166,8 @@
                 const isOwn = site === state.ownSite;
                 const siteUrl = SITE_URLS[site] || '';
                 const nameHtml = siteUrl
-                    ? `<a href="${siteUrl}" target="_blank" style="color:inherit;">${site}</a>`
-                    : site;
+                    ? `<a href="${esc(siteUrl)}" target="_blank" style="color:inherit;">${esc(site)}</a>`
+                    : esc(site);
                 headerHTML += `<th class="${isOwn ? 'own-site' : ''}">${nameHtml}${isOwn ? '<span class="own-badge">我方</span>' : ''}</th>`;
             });
             header.innerHTML = headerHTML;
@@ -1190,9 +1190,9 @@
                 bodyHTML += '<tr>';
                 
                 if (modelUrl) {
-                    bodyHTML += `<td class="model-cell"><a href="${modelUrl}" target="_blank" class="model-link">${model}</a></td>`;
+                    bodyHTML += `<td class="model-cell"><a href="${esc(modelUrl)}" target="_blank" class="model-link">${esc(model)}</a></td>`;
                 } else {
-                    bodyHTML += `<td class="model-cell">${model}</td>`;
+                    bodyHTML += `<td class="model-cell">${esc(model)}</td>`;
                 }
 
                 state.sites.forEach(site => {
@@ -1691,19 +1691,26 @@
             }
         }
 
-        // 按记录 model_url + currency 匹配历史序列（GPD 一 URL 多 market → 用币种对齐显示价）
+        // 按记录 model_url + sku/currency 匹配历史序列。
+        // 候选评分：① 同币种且 SKU 含于型号文本(GPD 多 SKU 同页区分) → ② 同币种 → ③ SKU 匹配 → ④ 首个。
+        // 不用"任意首个命中"当错误答案：宁缺勿错只发生在完全无候选时。
         function histLookup(record) {
             if (!PRICE_HIST || !record) return null;
             const u = histNormUrl(record.model_url);
             if (!u) return null;
-            let found = null, fk = null;
+            const cands = [];
             for (const k of Object.keys(PRICE_HIST)) {
-                if (k.startsWith(u + '|')) {
-                    if (!found) { found = PRICE_HIST[k]; fk = k; }
-                    if (PRICE_HIST[k].currency === record.currency) { found = PRICE_HIST[k]; fk = k; break; }
-                }
+                if (k.startsWith(u + '|')) cands.push({ k, e: PRICE_HIST[k] });
             }
-            return found ? { key: fk, entry: found } : null;
+            if (!cands.length) return null;
+            const modelKey = String(record.model || '').toLowerCase().replace(/\s+/g, '');
+            const hasSku = e => !e.sku || modelKey.indexOf(String(e.sku).toLowerCase().replace(/\s+/g, '')) >= 0;
+            const rc = record.currency;
+            const pick = cands.find(c => c.e.currency === rc && hasSku(c.e))
+                || cands.find(c => c.e.currency === rc)
+                || cands.find(c => hasSku(c.e))
+                || cands[0];
+            return pick ? { key: pick.k, entry: pick.e } : null;
         }
 
         function histPriced(entry) {
@@ -1716,14 +1723,17 @@
             if (!ps.length) return '';
             const W = 84, H = 18, PAD = 2;
             const vals = ps.map(p => p.p);
-            const lo = Math.min(...vals), hi = Math.max(...vals);
-            const span = (hi - lo) || 1;
+            const lo = Math.min(...vals), hi = Math.max(...vals);   // 真实最值
+            // 平价/单值段对称垫高，避免贴底读成"接近 0"
+            const padR = (hi > lo) ? 0 : Math.max((hi || 1) * 0.02, 1);
+            const dLo = lo - padR, dHi = hi + padR;
+            const span = (dHi - dLo) || 1;
             if (ps.length === 1) {   // 单样本：画中点（趋势待日线累积）
                 return `<svg viewBox="0 0 ${W} ${H}" width="84" height="18" role="img" aria-label="${esc(entry.model || '')} 价格走势">
                     <circle cx="${W / 2}" cy="${H / 2}" r="2.6" fill="#64748b"/></svg>`;
             }
             const X = i => PAD + i * (W - PAD * 2) / (ps.length - 1);
-            const Y = p => H - PAD - ((p - lo) / span) * (H - PAD * 2);
+            const Y = p => H - PAD - ((p - dLo) / span) * (H - PAD * 2);
             const pts = ps.map((p, i) => `${X(i).toFixed(1)},${Y(p.p).toFixed(1)}`).join(' ');
             let dots = '';
             if (ps.length > 1 && hi > lo) {
@@ -1766,9 +1776,12 @@
             const tSpan = (t1 - t0) || 1;
             const X = d => ML + ((+new Date(d) - t0) / tSpan) * innerW;
             const vals = ps.map(p => p.p);
-            const lo = Math.min(...vals), hi = Math.max(...vals);
-            const span = (hi - lo) || 1;
-            const Y = p => MT + (1 - (p - lo) / span) * innerH;
+            const lo = Math.min(...vals), hi = Math.max(...vals);   // 真实最值（供标注/现价判断）
+            // 平价/单值段对称垫高，避免曲线贴底读成"接近 0"
+            const padR = (hi > lo) ? 0 : Math.max((hi || 1) * 0.02, 1);
+            const dLo = lo - padR, dHi = hi + padR;
+            const span = (dHi - dLo) || 1;
+            const Y = p => MT + (1 - (p - dLo) / span) * innerH;
             const lastAvail = entry.series[entry.series.length - 1].a;
             const lastVal = vals[vals.length - 1];
 
@@ -1817,10 +1830,15 @@
                 const d = all[i];
                 ticks += `<text x="${X(d)}" y="${H - 12}" text-anchor="middle" font-size="11" fill="#6b7280">${fmtDate(d)}</text>`;
             });
-            // Y 轴 数字刻度（最低/最高/当前）
-            const cur = (entry.currency || '');
-            let ylab = `<text x="${ML - 8}" y="${Y(hi) + 4}" text-anchor="end" font-size="11" fill="#6b7280">${hi}${cur}</text>
-                <text x="${ML - 8}" y="${Y(lo) + 4}" text-anchor="end" font-size="11" fill="#6b7280">${lo}${cur}</text>`;
+            // Y 轴 数字刻度（有波动才分别标最高/最低；平价时只居中标一个值）
+            const cur = esc(entry.currency || '');
+            let ylab = '';
+            if (hi > lo) {
+                ylab = `<text x="${ML - 8}" y="${Y(hi) + 4}" text-anchor="end" font-size="11" fill="#6b7280">${hi} ${cur}</text>
+                    <text x="${ML - 8}" y="${Y(lo) + 4}" text-anchor="end" font-size="11" fill="#6b7280">${lo} ${cur}</text>`;
+            } else {
+                ylab = `<text x="${ML - 8}" y="${Y(hi) + 4}" text-anchor="end" font-size="11" fill="#6b7280">${hi} ${cur}</text>`;
+            }
 
             let hint = '';
             if (all.length <= 2) {
