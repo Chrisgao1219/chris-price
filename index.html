@@ -1754,6 +1754,11 @@
         async function loadHistory(token) {
             try {
                 const res = await fetch('/api/price_history', { headers: { Authorization: 'Bearer ' + token } });
+                if (res.status === 401) {       // token 过期与 /api/data 同进退
+                    localStorage.removeItem('price_token');
+                    showLogin();
+                    return;
+                }
                 if (res.ok) PRICE_HIST = await res.json();
             } catch (e) { /* 不阻塞价格视图 */ }
             if (state.brand) renderMatrix();   // 刷新 sparkline
