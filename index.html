@@ -481,15 +481,13 @@
                 font-size: 22px;
             }
         }
-        /* ---------- 价格历史 sparkline + 放大弹层 ---------- */
-        .sparkline {
-            display: block;
-            margin-top: 3px;
-            cursor: pointer;
+        /* ---------- 价格历史弹层（点击有历史记录的 cell 打开） ---------- */
+        .price-cell.hist-click { cursor: pointer; }
+        .price-cell.hist-click .price-current {
+            border-bottom: 1px dashed #cbd5e0;
+            padding-bottom: 1px;
         }
-        .sparkline:hover polyline {
-            stroke: #134e4a;
-        }
+        .price-cell.hist-click:hover .price-current { border-bottom-color: #134e4a; }
         .hist-dot-max { fill: #e53e3e; }
         .hist-dot-min { fill: #d69e2e; }
         #histModal {
@@ -696,7 +694,7 @@
     </div>
     </div>
 
-    <!-- 价格历史曲线 弹层（点 sparkline 打开） -->
+    <!-- 价格历史曲线 弹层（点击有历史的价格 cell 打开） -->
     <div id="histModal">
       <div class="hist-panel">
         <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;">
@@ -1239,13 +1237,14 @@
                     }
 
                     const hl = histLookup(record);
-                    const spark = (hl && histPriced(hl.entry).length > 0)
-                        ? `<div class="sparkline" data-k="${esc(hl.key)}" title="点击查看价格历史">${sparkInner(hl.entry)}</div>`
-                        : '';
-                    bodyHTML += `<td><div class="price-cell ${cellClass}">
+                    const hasHist = hl && histPriced(hl.entry).length > 0;
+                    const cellOpen = hasHist
+                        ? ` data-k="${esc(hl.key)}" title="点击查看价格历史曲线" class="price-cell ${cellClass} hist-click"`
+                        : ` class="price-cell ${cellClass}"`;
+                    bodyHTML += `<td><div${cellOpen}>
                         <span class="price-current ${priceClass}">${currencySymbol}${record.price.toFixed(2)}</span>
                         ${diffBadge}
-                    </div>${spark}</td>`;
+                    </div></td>`;
                 });
 
                 bodyHTML += '</tr>';
@@ -1633,7 +1632,7 @@
                 init();
                 loadPages(token); // 页面动态（失败不阻塞价格视图）
                 loadInsight(token); // 洞察（失败不阻塞）
-                loadHistory(token); // 价格历史曲线（失败不阻塞；成功后刷新 sparkline）
+                loadHistory(token); // 价格历史曲线（失败不阻塞；成功后有历史的价格可点击）
             } catch (e) {
                 showLogin();
             }
@@ -1682,7 +1681,7 @@
             el.addEventListener('click', () => setInsightModule(el.dataset.insight));
         });
 
-        // ================= 价格历史曲线（sparkline + 点开放大） =================
+        // ================= 价格历史曲线（点有历史的价格打开） =================
         function esc(s) {
             return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
                 .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -1724,40 +1723,6 @@
             return ((entry && entry.series) || []).filter(p => typeof p.p === 'number');
         }
 
-        function sparkInner(entry) {
-            // 极简 SVG 折线：中性墨线 + 历史最高(红)/最低(黄)点
-            const ps = histPriced(entry);
-            if (!ps.length) return '';
-            const W = 84, H = 18, PAD = 2;
-            const vals = ps.map(p => p.p);
-            const lo = Math.min(...vals), hi = Math.max(...vals);   // 真实最值
-            // 平价/单值段对称垫高，避免贴底读成"接近 0"
-            const padR = (hi > lo) ? 0 : Math.max((hi || 1) * 0.02, 1);
-            const dLo = lo - padR, dHi = hi + padR;
-            const span = (dHi - dLo) || 1;
-            if (ps.length === 1) {   // 单样本：画中点（趋势待日线累积）
-                return `<svg viewBox="0 0 ${W} ${H}" width="84" height="18" role="img" aria-label="${esc(entry.model || '')} 价格走势">
-                    <circle cx="${W / 2}" cy="${H / 2}" r="2.6" fill="#64748b"/></svg>`;
-            }
-            const X = i => PAD + i * (W - PAD * 2) / (ps.length - 1);
-            const Y = p => H - PAD - ((p - dLo) / span) * (H - PAD * 2);
-            const pts = ps.map((p, i) => `${X(i).toFixed(1)},${Y(p.p).toFixed(1)}`).join(' ');
-            let dots = '';
-            if (ps.length > 1 && hi > lo) {
-                const imin = vals.indexOf(lo), imax = vals.indexOf(hi);
-                if (imin !== imax) {
-                    dots = `<circle class="hist-dot-max" cx="${X(imax).toFixed(1)}" cy="${Y(hi).toFixed(1)}" r="2"/>
-                        <circle class="hist-dot-min" cx="${X(imin).toFixed(1)}" cy="${Y(lo).toFixed(1)}" r="2"/>`;
-                }
-            }
-            const last = entry.series[entry.series.length - 1];
-            const oos = (last && last.a === 'OutOfStock')
-                ? `<line x1="${(W - PAD).toFixed(1)}" y1="${PAD}" x2="${(W - PAD).toFixed(1)}" y2="${H - PAD}" stroke="#cbd5e0" stroke-width="1"/>` : '';
-            return `<svg viewBox="0 0 ${W} ${H}" width="84" height="18" role="img" aria-label="${esc(entry.model || '')} 价格走势">
-                <polyline points="${pts}" fill="none" stroke="#374151" stroke-width="1.5"
-                    stroke-linejoin="round" stroke-linecap="round"/>${dots}${oos}</svg>`;
-        }
-
         async function loadHistory(token) {
             try {
                 const res = await fetch('/api/price_history', { headers: { Authorization: 'Bearer ' + token } });
@@ -1768,7 +1733,7 @@
                 }
                 if (res.ok) PRICE_HIST = await res.json();
             } catch (e) { /* 不阻塞价格视图 */ }
-            if (state.brand) renderMatrix();   // 刷新 sparkline
+            if (state.brand) renderMatrix();   // 刷新矩阵（重算历史可点状态）
         }
 
         function fmtDate(d) { // YYYY-MM-DD → MM-DD
@@ -1890,7 +1855,7 @@
         }
 
         document.addEventListener('click', (e) => {
-            const sp = e.target.closest ? e.target.closest('.sparkline') : null;
+            const sp = e.target.closest ? e.target.closest('.price-cell.hist-click') : null;
             if (sp && sp.dataset.k) { openHistModal(sp.dataset.k); return; }
             const m = document.getElementById('histModal');
             if (m && m.classList.contains('open')) {
