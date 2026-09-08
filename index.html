@@ -511,6 +511,10 @@
         }
         .hist-title { font-size: 16px; font-weight: 700; color: #134e4a; margin: 0 0 2px; }
         .hist-sub { font-size: 12px; color: #6b7280; margin: 0 0 10px; }
+        .hist-compare {
+            font-size: 12px; color: #0f766e; font-weight: 600;
+            margin: 2px 0 6px;
+        }
         .hist-close {
             border: none; background: #edf2f7; border-radius: 6px;
             cursor: pointer; font-size: 13px; padding: 5px 12px; color: #1a202c;
@@ -705,6 +709,7 @@
           <button class="hist-close" id="histClose" type="button">✕ 关闭</button>
         </div>
         <div class="hist-chart" id="histChart"></div>
+        <div class="hist-compare" id="histCompare" style="display:none"></div>
         <div class="hist-hint" id="histHint"></div>
       </div>
     </div>
@@ -1824,6 +1829,23 @@
             const oosNote = (lastAvail === 'OutOfStock') ? '｜灰色段=缺货（当前缺货）' : '';
             document.getElementById('histHint').textContent =
                 `红线点=历史最高 黄线点=历史最低${oosNote}。点空白处关闭。`;
+            // S1 划线原价：取序列最近一个有 compare_at(c) 的点，c > 当日价才展示「原价+折扣」
+            const ce = document.getElementById('histCompare');
+            let cmpNote = '';
+            for (let _i = entry.series.length - 1; _i >= 0; _i--) {
+                const _s = entry.series[_i];
+                if (_s && _s.c && _s.p) {
+                    const _cmp = Number(_s.c), _pp = Number(_s.p);
+                    if (_cmp > 0 && _pp > 0 && _cmp > _pp) {
+                        cmpNote = `🏷️ 划线原价 ${_cmp} ${cur}（较现价 -${Math.round((1 - _pp / _cmp) * 100)}%）`;
+                    }
+                    break;
+                }
+            }
+            if (ce) {
+                ce.style.display = cmpNote ? 'block' : 'none';
+                ce.textContent = cmpNote;
+            }
 
             return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(entry.model || '')} 价格历史曲线">
                 ${oosRects}
