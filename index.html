@@ -1144,6 +1144,14 @@
             'kukirinscooterusa.com': 'https://kukirinscooterusa.com/',
         };
 
+        // 渠道备注（列头显示「渠道名（备注）」；只影响显示文字，不影响列头跳转地址）
+        const SITE_TAGS = {
+            'kukirin-escooter': '爱坤',
+            'kukirinescooter.co.uk': '爱坤',
+            'kukirinscooterusa': '爱坤',
+            'kukirin-scooter.pl': '爱坤',
+        };
+
         function renderMatrix() {
             const header = document.getElementById('matrixHeader');
             const body = document.getElementById('matrixBody');
@@ -1187,9 +1195,12 @@
                         if (rec && /^https?:\/\//.test(rec.model_url)) siteUrl = new URL(rec.model_url).origin + '/';
                     } catch (e) { /* 推导失败则保持无链接 */ }
                 }
+                // 备注：只拼进显示文字，跳转地址仍用 siteUrl（不受影响）
+                const tag = SITE_TAGS[site] ? `（${SITE_TAGS[site]}）` : '';
+                const label = site + tag;
                 const nameHtml = siteUrl
-                    ? `<a href="${esc(siteUrl)}" target="_blank" title="打开 ${esc(site)} 官网" style="color:inherit;">${esc(site)}</a>`
-                    : esc(site);
+                    ? `<a href="${esc(siteUrl)}" target="_blank" title="打开 ${esc(label)} 官网" style="color:inherit;">${esc(label)}</a>`
+                    : esc(label);
                 headerHTML += `<th class="${isOwn ? 'own-site' : ''}">${nameHtml}${isOwn ? '<span class="own-badge">我方</span>' : ''}</th>`;
             });
             header.innerHTML = headerHTML;
