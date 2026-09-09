@@ -904,10 +904,22 @@
         const BRAND_PRIORITY = {
             'Meepo': ['V5', 'V3 Max', 'Edge', 'Flow', 'GO'],
             'Joyor': ['T10', 'S10S-Z', 'T6E Pro', 'T6E', 'T6', 'T-Pro', 'S8S-Z', 'S8-Z', 'S8E', 'S5-Z', 'S5 ABE', 'S5 Pro', 'Y8-S', 'Y6-S', 'C10E', 'C10', 'F5', 'E6-S', 'T6D'],
-            'FlyingEagle': ['FBS', 'F4 Raven', 'F5S+', 'Shrike Pro S7680', 'F6S Pro', 'X3 Shrike', 'X7F Reaver', 'X7D Reaver  4*90mm', 'F7 Optimum', 'F7 Optimum 110MM']
+            'FlyingEagle': ['FBS', 'F4 Raven', 'F5S+', 'Shrike Pro S7680', 'F6S Pro', 'X3 Shrike', 'X7F Reaver', 'X7D Reaver  4*90mm', 'F7 Optimum', 'F7 Optimum 110MM'],
+            // Kukirin 按归一 core 匹配：同型号跨渠道拼写多样（Kukirin/KuKirin/无前缀 + 大小写空格、紧凑 G2MASTER/G2P…）
+            'Kukirin': ['Kukirin G2', 'Kukirin G2 MAX', 'Kukirin G4', 'Kukirin G2 Master', 'Kukirin G2 Pro', 'KuKirin G2 Ultra', 'KuKirin X1', 'Kukirin M4 Max', 'Kukirin T3', 'Kukirin S1 Max', 'Kukirin G2 VMP', 'Kukirin G2 Pro VMP', 'Kukirin G2 Pro ABE', 'Kukirin G3 Pro', 'KuKirin A1']
         };
 
+        function kkCore(m) {
+            const s = String(m || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+            return s.indexOf('kukirin') === 0 ? s.slice(7) : s;
+        }
+
         function modelRank(m, brand) {
+            if (brand === 'Kukirin') {
+                const keys = (BRAND_PRIORITY['Kukirin'] || []).map(kkCore);
+                const i = keys.indexOf(kkCore(m));
+                return i === -1 ? 100 : i;
+            }
             const i = (BRAND_PRIORITY[brand] || []).indexOf(m);
             return i === -1 ? 100 : i;
         }
