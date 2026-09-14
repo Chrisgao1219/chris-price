@@ -14,7 +14,8 @@ export async function onRequestGet({ request, env }) {
   if (!kv) return Response.json({ brands: [...brands].sort(), modules: {} },
                                 { headers: { 'Cache-Control': 'no-store' } });
   const modules = {};
-  const per = (arr) => (Array.isArray(arr) ? arr.filter(x => !x.brand || brands.has(x.brand)) : []);
+  // fail-closed：缺少 brand 的行**不外发**（此前是 `!x.brand ||` 放行 → 任何品牌账号都能看到未归属数据）
+  const per = (arr) => (Array.isArray(arr) ? arr.filter(x => x.brand && brands.has(x.brand)) : []);
   for (const k of Object.keys(kv.modules || {})) modules[k] = per(kv.modules[k]);
   return Response.json({ brands: [...brands].sort(), modules },
                        { headers: { 'Cache-Control': 'no-store' } });
