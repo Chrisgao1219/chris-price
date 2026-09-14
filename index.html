@@ -758,7 +758,8 @@
             'Kukirin_英国': 'kukirinscooter-uk',
             'Joyor_全球': 'joyor-escooter',
             'Meepo_全球': 'Meepoboard-EU',
-            'GPD_全球': 'GPD-minipc'
+            'GPD_全球': 'GPD-minipc',
+            'FlyingEagle_全球': 'flyingeagleskate'   // 我方站（注意：竞品是带 s 的 flyingeagleskates.com）
         };
 
         // 填充筛选器
@@ -818,7 +819,7 @@
                 r.brand === state.brand && 
                 r.market_group === state.market &&
                 (state.currency === 'all' || r.currency === state.currency)
-            ).map(r => r.website))].sort();
+            ).map(r => r.website).filter(s => s && String(s).trim()))].sort();   // 过滤空 website（空记录会排在首位、导致己方列匹配不到）
             const ownSiteSelect = document.getElementById('ownSiteSelect');
             ownSiteSelect.innerHTML = '';
             sites.forEach(s => {
@@ -1216,9 +1217,10 @@
                 const modelRecords = state.filteredData.filter(r => r.model === model);
                 const modelUrl = modelRecords[0]?.model_url || '';
                 
-                // 获取己方价格作为基准
+                // 获取己方价格作为基准（记录其币种：跨币种不可直接相减，见下）
                 const ownRecord = modelRecords.find(r => r.website === state.ownSite);
                 const ownPrice = ownRecord ? ownRecord.price : null;
+                const ownCurrency = ownRecord ? ownRecord.currency : null;
 
                 bodyHTML += '<tr>';
                 
@@ -1229,8 +1231,12 @@
                 }
 
                 state.sites.forEach(site => {
-                    const record = modelRecords.find(r => r.website === site);
-                    
+                    // 同一站点在同型号下可能有多条（多市场/多币种）记录 → 优先取与己方同币种的那条，
+                    // 否则「$ 直接减 €」会得出失真的涨跌幅
+                    const record = (ownCurrency
+                        ? modelRecords.find(r => r.website === site && r.currency === ownCurrency)
+                        : null) || modelRecords.find(r => r.website === site);
+
                     if (!record) {
                         bodyHTML += `<td><div class="price-cell"><span class="no-data">—</span></div></td>`;
                         return;
@@ -1245,7 +1251,8 @@
                     
                     if (isOwn) {
                         priceClass = 'own';
-                    } else if (ownPrice !== null) {
+                    } else if (ownPrice !== null && ownCurrency && record.currency === ownCurrency) {
+                        // 仅同币种才比价（跨币种相减会得出错误涨跌幅）
                         const diff = record.price - ownPrice;
                         const diffPct = ((diff / ownPrice) * 100).toFixed(1);
                         if (diff < 0) {
