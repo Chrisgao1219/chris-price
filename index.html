@@ -963,7 +963,7 @@
                 // 第一行：我方渠道售价利润
                 html += `<tr>
                     ${modelCell}
-                    <td>${cs}${(r.price || 0).toFixed(0)}</td>
+                    <td>${esc(cs || '')}${(r.price || 0).toFixed(0)}</td>
                     <td>¥${(r.cost || 0).toFixed(0)}</td>
                     <td>¥${(r.shipping || 0).toFixed(0)}</td>
                     <td><span class="price-current own">¥${r.profit.toFixed(0)}</span></td>
@@ -971,8 +971,8 @@
                 // 第二行：全渠道最低价利润
                 if (r.min_profit !== null && r.min_profit !== undefined) {
                     html += `<tr class="min-price-row">
-                        <td class="model-cell">↳ 最低价（${r.min_site || ''}）</td>
-                        <td>${r.min_currency || ''}${(r.min_price || 0).toFixed(0)}</td>
+                        <td class="model-cell">↳ 最低价（${esc(r.min_site || '')}）</td>
+                        <td>${esc(r.min_currency || '')}${(r.min_price || 0).toFixed(0)}</td>
                         <td>¥${(r.cost || 0).toFixed(0)}</td>
                         <td>¥${(r.shipping || 0).toFixed(0)}</td>
                         <td><span class="price-current own">¥${r.min_profit.toFixed(0)}</span></td>
@@ -1300,32 +1300,53 @@
 
             const insights = [];
 
+            // ⚠️ 跨币种不可直接统计：默认「全部货币」下会在同一组里混算 EUR/USD/GBP 的均价与价差
+            // （2026-09-15 审查发现）。统一锁定**基准币种**：优先己方渠道币种，否则取出现最多的币种。
+            let baseCur = state.currency !== 'all' ? state.currency : '';
+            if (!baseCur) {
+                const ownRec = data.find(r => r.website === state.ownSite && r.currency);
+                if (ownRec) baseCur = ownRec.currency;
+                else {
+                    const cnt = {};
+                    data.forEach(r => { if (r.currency) cnt[r.currency] = (cnt[r.currency] || 0) + 1; });
+                    baseCur = Object.entries(cnt).sort((a, b) => b[1] - a[1])[0] ? Object.entries(cnt).sort((a, b) => b[1] - a[1])[0][0] : '';
+                }
+            }
+            const dataCur = baseCur ? data.filter(r => r.currency === baseCur) : data;
+            if (baseCur && state.currency === 'all') {
+                insights.push(`以下统计仅含 <strong>${esc(baseCur)}</strong> 币种渠道（跨币种不可比）`);
+            }
+
             const siteAvgs = {};
             state.sites.forEach(site => {
-                const prices = data.filter(r => r.website === site).map(r => r.price);
-                siteAvgs[site] = prices.reduce((a, b) => a + b, 0) / prices.length;
+                const prices = dataCur.filter(r => r.website === site).map(r => r.price);
+                if (prices.length) siteAvgs[site] = prices.reduce((a, b) => a + b, 0) / prices.length;
             });
             const sortedSites = Object.entries(siteAvgs).sort((a, b) => a[1] - b[1]);
-            insights.push(`价格最低网站: <strong>${sortedSites[0][0]}</strong> (均价 ${sortedSites[0][1].toFixed(2)} ${state.currency})，价格最高网站: <strong>${sortedSites[sortedSites.length - 1][0]}</strong> (均价 ${sortedSites[sortedSites.length - 1][1].toFixed(2)} ${state.currency})`);
+            if (sortedSites.length) {
+                insights.push(`价格最低网站: <strong>${esc(sortedSites[0][0])}</strong> (均价 ${sortedSites[0][1].toFixed(2)} ${esc(baseCur || state.currency)})，价格最高网站: <strong>${esc(sortedSites[sortedSites.length - 1][0])}</strong> (均价 ${sortedSites[sortedSites.length - 1][1].toFixed(2)} ${esc(baseCur || state.currency)})`);
+            }
 
             const ownRank = sortedSites.findIndex(s => s[0] === state.ownSite) + 1;
             const ownAvg = siteAvgs[state.ownSite];
-            insights.push(`己方网站 <strong>${state.ownSite}</strong> 均价排名第 ${ownRank}/${sortedSites.length} 位，均价 ${ownAvg ? ownAvg.toFixed(2) : '-'} ${state.currency}`);
+            if (ownAvg) {
+                insights.push(`己方网站 <strong>${esc(state.ownSite)}</strong> 均价排名第 ${ownRank}/${sortedSites.length} 位，均价 ${ownAvg.toFixed(2)} ${esc(baseCur || state.currency)}`);
+            }
 
             const modelPriceRanges = {};
             state.models.forEach(model => {
-                const prices = data.filter(r => r.model === model).map(r => r.price);
+                const prices = dataCur.filter(r => r.model === model).map(r => r.price);
                 if (prices.length > 1) modelPriceRanges[model] = Math.max(...prices) - Math.min(...prices);
             });
             const sortedModels = Object.entries(modelPriceRanges).sort((a, b) => b[1] - a[1]);
             if (sortedModels.length > 0) {
-                insights.push(`价差最大型号: <strong>${sortedModels[0][0]}</strong>，各网站价差达 ${sortedModels[0][1].toFixed(2)} ${state.currency}`);
+                insights.push(`价差最大型号: <strong>${esc(sortedModels[0][0])}</strong>，各网站价差达 ${sortedModels[0][1].toFixed(2)} ${esc(baseCur || state.currency)}`);
             }
 
             const modelComparison = [];
             state.models.forEach(model => {
-                const ownPrice = data.find(r => r.model === model && r.website === state.ownSite);
-                const compPrices = data.filter(r => r.model === model && r.website !== state.ownSite).map(r => r.price);
+                const ownPrice = dataCur.find(r => r.model === model && r.website === state.ownSite);
+                const compPrices = dataCur.filter(r => r.model === model && r.website !== state.ownSite).map(r => r.price);
                 if (ownPrice && compPrices.length > 0) {
                     const compAvg = compPrices.reduce((a, b) => a + b, 0) / compPrices.length;
                     modelComparison.push({ model, diff: ((ownPrice.price - compAvg) / compAvg * 100) });
