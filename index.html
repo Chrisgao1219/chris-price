@@ -1104,17 +1104,17 @@
                 <div class="kpi-card">
                     <div class="label">价格记录数</div>
                     <div class="value">${data.length}</div>
-                    <div class="sub">${state.brand} - ${marketDisplay}</div>
+                    <div class="sub">${esc(state.brand)} - ${esc(marketDisplay)}</div>
                 </div>
                 <div class="kpi-card">
                     <div class="label">平均价格</div>
-                    <div class="value" style="font-size: 20px;">${avgPriceDisplay}</div>
-                    <div class="sub">${priceRangeDisplay}</div>
+                    <div class="value" style="font-size: 20px;">${esc(avgPriceDisplay)}</div>
+                    <div class="sub">${esc(priceRangeDisplay)}</div>
                 </div>
                 <div class="kpi-card">
                     <div class="label">己方 vs 竞品均价</div>
-                    <div class="value">${ownAvg} / ${compAvg}</div>
-                    <div class="sub">${state.ownSite} (${ownCurrency})</div>
+                    <div class="value">${esc(ownAvg)} / ${esc(compAvg)}</div>
+                    <div class="sub">${esc(state.ownSite)} (${esc(ownCurrency)})</div>
                 </div>
             `;
         }
