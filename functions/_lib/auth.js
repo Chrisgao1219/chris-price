@@ -38,7 +38,19 @@ export async function verifyPassword(password, stored) {
   }
 }
 
+// 环境变量缺失守卫：SECRET/ACCOUNTS 未配置时必须**显式失败**，不能默默用 undefined 签名——
+// TextEncoder().encode(undefined) 会编码成字面量 "undefined"，HMAC 照常工作 →
+// 任何读过这段代码的人都能离线伪造管理员 token（2026-09-14 安全审查发现）。
+export function envReady(env) {
+  return !!(env && env.SECRET && env.ACCOUNTS);
+}
+
+export function misconfigured() {
+  return Response.json({ error: '服务未正确配置（缺少 SECRET/ACCOUNTS）' }, { status: 500 });
+}
+
 export async function signToken(secret, sub, ttl) {
+  if (!secret) throw new Error('SECRET missing');
   const exp = Math.floor(Date.now() / 1000) + (+ttl || 86400);
   const payload = b64url(encoder.encode(JSON.stringify({ sub, exp })));
   const sig = b64url(await hmac(secret, payload));
@@ -46,6 +58,7 @@ export async function signToken(secret, sub, ttl) {
 }
 
 export async function verifyToken(secret, token) {
+  if (!secret) return null;                 // 无密钥 → 一律不通过（防 "undefined" 密钥伪造）
   const [p, s] = String(token || '').split('.');
   if (!p || !s) return null;
   const sig = b64url(await hmac(secret, p));
