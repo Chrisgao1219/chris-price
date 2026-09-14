@@ -1,7 +1,8 @@
 // POST /api/login：校验账号密码 → 签发 token
-import { verifyPassword, signToken } from '../_lib/auth.js';
+import { verifyPassword, signToken , envReady, misconfigured } from '../_lib/auth.js';
 
 export async function onRequestPost({ request, env }) {
+  if (!envReady(env)) return misconfigured();   // 缺 SECRET/ACCOUNTS 时显式 500，防伪造 token
   const { username, password } = await request.json().catch(() => ({}));
   const accounts = JSON.parse(env.ACCOUNTS || '{}');
   const acc = accounts[username];
