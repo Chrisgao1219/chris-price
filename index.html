@@ -322,13 +322,15 @@
             position: relative;
         }
 
-        /* 方案A：以己方为基准 */
+        /* 方案A：以己方为基准
+           配色（2026-09-17 用户指定）：竞品**比我方便宜 = 红**（威胁/重点关注），
+           **比我方贵 = 绿**。注意：这与早先版本相反，勿再改回。 */
         .price-cell.cheaper {
-            background: #f0fff4;
+            background: #fff5f5;      /* 竞品更低 → 浅红底 */
         }
 
         .price-cell.dearer {
-            background: #fff5f5;
+            background: #f0fff4;      /* 竞品更高 → 浅绿底 */
         }
 
         .price-cell.same {
@@ -336,11 +338,11 @@
         }
 
         .price-current.cheaper {
-            color: #38a169;
+            color: #e53e3e;      /* 竞品更低 → 红 */
         }
 
         .price-current.dearer {
-            color: #e53e3e;
+            color: #38a169;      /* 竞品更高 → 绿 */
         }
 
         .price-current.same {
@@ -354,11 +356,11 @@
         }
 
         .diff-badge.cheaper {
-            color: #38a169;
+            color: #e53e3e;      /* ↓ x% 竞品更低 → 红 */
         }
 
         .diff-badge.dearer {
-            color: #e53e3e;
+            color: #38a169;      /* ↑ x% 竞品更高 → 绿 */
         }
 
         .price-current {
