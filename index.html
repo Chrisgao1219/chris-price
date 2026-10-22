@@ -898,7 +898,7 @@
                 r.price !== null
             );
             // 己方网站排第一位，其他按字母排序
-            const allSites = [...new Set(state.filteredData.map(r => r.website))].sort();
+            const allSites = [...new Set(state.filteredData.map(r => r.website).filter(s => s && String(s).trim()))].sort();
             state.sites = state.ownSite 
                 ? [state.ownSite, ...allSites.filter(s => s !== state.ownSite)]
                 : allSites;
@@ -1138,7 +1138,8 @@
         // 获取货币符号
         function getCurrencySymbol(currency) {
             const symbols = { 'EUR': '€', 'USD': '$', 'GBP': '£', 'PLN': 'zł', 'CNY': '¥' };
-            return symbols[currency] || currency + ' ';
+            // 未知货币不回显原文（上游字段可能含 HTML），统一用安全占位符
+            return Object.prototype.hasOwnProperty.call(symbols, currency) ? symbols[currency] : '¤';
         }
 
         // 渲染矩阵价格表
@@ -1177,7 +1178,7 @@
             const body = document.getElementById('matrixBody');
 
             // 确保己方网站排第一位
-            const allSites = [...new Set(state.filteredData.map(r => r.website))].sort();
+            const allSites = [...new Set(state.filteredData.map(r => r.website).filter(s => s && String(s).trim()))].sort();
             state.sites = state.ownSite 
                 ? [state.ownSite, ...allSites.filter(s => s !== state.ownSite)]
                 : allSites;
@@ -1415,7 +1416,7 @@
             const sel = document.getElementById('pageTypeFilter');
             const types = [...new Set(PAGE_EVENTS.map(e => e.type).filter(Boolean))];
             sel.innerHTML = '<option value="">全部类型</option>' +
-                types.map(t => `<option value="${_esc(t)}">${t}</option>`).join('');
+                types.map(t => `<option value="${_esc(t)}">${_esc(t)}</option>`).join('');
         }
 
         // 品牌下拉：仅主账号（多品牌）显示，可切换看各品牌页面动态；子账号只有一个品牌则隐藏
@@ -1426,7 +1427,7 @@
             wrap.style.display = '';
             const cur = sel.value;
             sel.innerHTML = '<option value="">全部品牌</option>' +
-                ALLOWED_BRANDS.map(b => `<option value="${_esc(b)}">${b}</option>`).join('');
+                ALLOWED_BRANDS.map(b => `<option value="${_esc(b)}">${_esc(b)}</option>`).join('');
             sel.value = cur;
         }
 
@@ -1519,7 +1520,7 @@
             wrap.style.display = '';
             const cur = sel.value;
             sel.innerHTML = '<option value="">全部品牌</option>' +
-                INSIGHT_BRANDS.map(b => `<option value="${_esc(b)}">${b}</option>`).join('');
+                INSIGHT_BRANDS.map(b => `<option value="${_esc(b)}">${_esc(b)}</option>`).join('');
             sel.value = cur;
         }
 
