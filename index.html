@@ -1099,6 +1099,14 @@
             const compPrices = data.filter(r => r.website !== state.ownSite && r.currency === ownCurrency).map(r => r.price);
             const ownAvg = ownPrices.length ? (ownPrices.reduce((a, b) => a + b, 0) / ownPrices.length).toFixed(2) : '-';
             const compAvg = compPrices.length ? (compPrices.reduce((a, b) => a + b, 0) / compPrices.length).toFixed(2) : '-';
+            // 己方 vs 竞品均价：拆成两行并给出价差百分比，避免“两个数字并排”误读
+            let diffText = '价差参考';
+            const _oa = parseFloat(ownAvg), _ca = parseFloat(compAvg);
+            if (isFinite(_oa) && isFinite(_ca) && _ca !== 0) {
+                const _pct = (_oa - _ca) / _ca * 100;
+                diffText = Math.abs(_pct) < 0.05 ? '与竞品持平'
+                    : (_pct < 0 ? `低于竞品 ${Math.abs(_pct).toFixed(1)}%` : `高于竞品 ${_pct.toFixed(1)}%`);
+            }
 
             kpiRow.innerHTML = `
                 <div class="kpi-card">
@@ -1118,8 +1126,11 @@
                 </div>
                 <div class="kpi-card">
                     <div class="label">己方 vs 竞品均价</div>
-                    <div class="value">${esc(ownAvg)} / ${esc(compAvg)}</div>
-                    <div class="sub">${esc(state.ownSite)} (${esc(ownCurrency)})</div>
+                    <div class="value" style="font-size:18px;line-height:1.6;">
+                        <div style="color:#0d9488;">己方 ${esc(ownAvg)}</div>
+                        <div style="color:#e94560;">竞品 ${esc(compAvg)}</div>
+                    </div>
+                    <div class="sub">${esc(diffText)} · ${esc(state.ownSite)} (${esc(ownCurrency)})</div>
                 </div>
             `;
         }
