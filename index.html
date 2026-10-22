@@ -545,15 +545,18 @@
             <div>
                 <b style="font-size:18px; color:#134e4a; font-weight:700;">竞品分析系统</b>
                 <span style="font-size:12px; color:#6b7280; margin-left:8px;">每日更新</span>
+                <span id="lastUpdated" style="font-size:12px; color:#6b7280; margin-left:8px;">最后更新：--</span>
             </div>
         </div>
         <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
             <button id="viewPriceBtn" onclick="switchView('price')" style="cursor:pointer;background:#0d9488;color:#fff;border:1px solid #0d9488;padding:6px 14px;border-radius:6px;font-size:13px;font-weight:600;">📊 价格对比</button>
             <button id="viewInsightBtn" onclick="switchView('insight')" style="cursor:pointer;background:#fff;color:#0d9488;border:1px solid #0d9488;padding:6px 13px;border-radius:6px;font-size:13px;font-weight:600;">🔎 洞察</button>
+            <button id="refreshBtn" onclick="refreshData()" style="cursor:pointer;background:#fff;color:#0d9488;border:1px solid #0d9488;padding:6px 13px;border-radius:6px;font-size:13px;font-weight:600;">⟳ 刷新数据</button>
             <a href="./guide.html" style="color:#fff; text-decoration:none; background:#134e4a; padding:7px 16px; border-radius:6px; font-size:13px; font-weight:600;">📖 使用说明</a>
         </div>
     </div>
     <div class="container" style="padding-top: 16px;">
+        <div id="dataStatus" style="display:none;margin-bottom:12px;padding:10px 14px;border-radius:6px;font-size:13px;"></div>
         <div id="priceView">
         <!-- 筛选器 -->
         <div class="filters">
@@ -1675,24 +1678,88 @@
             document.getElementById('app').style.display = 'none';
         }
 
+        function setDataStatus(msg, type) {
+            const el = document.getElementById('dataStatus');
+            if (!el) return;
+            if (!msg) { el.style.display = 'none'; el.innerHTML = ''; return; }
+            el.style.display = 'block';
+            el.innerHTML = '';
+            el.style.background = type === 'error' ? '#fef2f2' : '#f0fdfa';
+            el.style.color = type === 'error' ? '#b91c1c' : '#0f766e';
+            el.style.border = type === 'error' ? '1px solid #fecaca' : '1px solid #99f6e4';
+            el.textContent = msg;
+        }
+
+        function updateLastUpdated() {
+            const el = document.getElementById('lastUpdated');
+            if (!el) return;
+            const times = (PRICE_DATA || []).map(r => r.crawl_time).filter(Boolean)
+                .map(t => { const d = new Date(t); return isNaN(d.getTime()) ? null : d; })
+                .filter(Boolean);
+            if (!times.length) { el.textContent = '最后更新：--'; return; }
+            const max = new Date(Math.max(...times.map(d => d.getTime())));
+            const p = n => String(n).padStart(2, '0');
+            el.textContent = `最后更新：${max.getFullYear()}-${p(max.getMonth()+1)}-${p(max.getDate())} ${p(max.getHours())}:${p(max.getMinutes())}`;
+        }
+
+        function refreshData() {
+            const token = localStorage.getItem('price_token');
+            if (!token) { showLogin(); return; }
+            loadData(token);
+        }
+
         async function loadData(token) {
+            const appEl = document.getElementById('app');
+            const loginEl = document.getElementById('login');
+            const btn = document.getElementById('refreshBtn');
+            const firstLoad = appEl.style.display !== 'block';
+            if (firstLoad) {
+                const le = document.getElementById('loginErr');
+                le.style.color = '#6b7280';
+                le.textContent = '数据加载中…';
+            } else {
+                setDataStatus('数据加载中…', 'loading');
+            }
+            if (btn) { btn.disabled = true; btn.textContent = '加载中…'; }
             try {
                 const res = await fetch('/api/data', { headers: { Authorization: 'Bearer ' + token } });
                 if (res.status === 401) {
                     localStorage.removeItem('price_token');
+                    setDataStatus('');
+                    const le = document.getElementById('loginErr');
+                    le.style.color = '#e53e3e';
+                    le.textContent = '登录已过期，请重新登录';
                     showLogin();
                     return;
                 }
-                if (!res.ok) { showLogin(); return; }
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
                 PRICE_DATA = await res.json();
-                document.getElementById('login').style.display = 'none';
-                document.getElementById('app').style.display = 'block';
+                loginEl.style.display = 'none';
+                appEl.style.display = 'block';
+                setDataStatus('');
                 init();
+                updateLastUpdated();
                 loadPages(token); // 页面动态（失败不阻塞价格视图）
                 loadInsight(token); // 洞察（失败不阻塞）
                 loadHistory(token); // 价格历史曲线（失败不阻塞；成功后有历史的价格可点击）
             } catch (e) {
-                showLogin();
+                const msg = `数据加载失败（${e.message || '网络错误'}），请检查网络后重试。`;
+                if (appEl.style.display === 'block') {
+                    setDataStatus(msg, 'error');
+                    const el = document.getElementById('dataStatus');
+                    const retry = document.createElement('button');
+                    retry.textContent = '重试';
+                    retry.style.cssText = 'margin-left:12px;padding:4px 12px;border:1px solid #b91c1c;border-radius:4px;background:#fff;color:#b91c1c;cursor:pointer;font-size:12px;';
+                    retry.onclick = refreshData;
+                    el.appendChild(retry);
+                } else {
+                    const le = document.getElementById('loginErr');
+                    le.style.color = '#e53e3e';
+                    le.textContent = msg;
+                    showLogin();
+                }
+            } finally {
+                if (btn) { btn.disabled = false; btn.textContent = '⟳ 刷新数据'; }
             }
         }
 
@@ -1706,6 +1773,7 @@
             const p = document.getElementById('loginPass').value;
             const err = document.getElementById('loginErr');
             err.textContent = '';
+            err.style.color = '#e53e3e';
             try {
                 const res = await fetch('/api/login', {
                     method: 'POST', headers: { 'Content-Type': 'application/json' },
